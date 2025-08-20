@@ -33,7 +33,6 @@ module:
   menu_ui: 0
   mysql: 0
   node: 0
-  node_export: 0
   options: 0
   page_cache: 0
   path: 0
