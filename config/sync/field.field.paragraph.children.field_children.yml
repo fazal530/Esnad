@@ -1,0 +1,41 @@
+uuid: a80f3d16-d9fa-42f4-b68f-180e47cc4f3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_children
+    - paragraphs.paragraphs_type.children
+    - paragraphs.paragraphs_type.parent
+  module:
+    - entity_reference_revisions
+id: paragraph.children.field_children
+field_name: field_children
+entity_type: paragraph
+bundle: children
+label: Children
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      children: children
+      parent: parent
+    negate: 1
+    target_bundles_drag_drop:
+      attachments:
+        weight: 4
+        enabled: false
+      children:
+        weight: 5
+        enabled: true
+      parent:
+        weight: 7
+        enabled: true
+      text:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
