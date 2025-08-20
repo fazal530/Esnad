@@ -193,7 +193,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body16
 .body16 {
-  font-family: Arial;
+  font-family:$font_IBM_plex;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -213,7 +213,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body18
 .body18 {
-  font-family: Arial;
+  font-family: $font_IBM_plex;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;

@@ -192,7 +192,7 @@
 }
 
 .body16 {
-  font-family: Arial;
+  font-family: "IBM_plex", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -211,7 +211,7 @@
 }
 
 .body18 {
-  font-family: Arial;
+  font-family: "IBM_plex", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
