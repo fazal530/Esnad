@@ -17,12 +17,6 @@ global:
   css:
     base:
       css/style.css: {}
-
-  version: 5.15.4
-  css:
-    theme:
-      libs/fontawesome/css/all.css: {}
-
   custom_modal:
   dependencies:
     - core/jquery
