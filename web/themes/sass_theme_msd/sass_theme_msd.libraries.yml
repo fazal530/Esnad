@@ -10,25 +10,14 @@ slick:
       libs/slick.css: {}
 global:
   js:
-    js/toggleMenu.js: {}
-    js/local-menu.js: {}
-    js/sliders.js: {}
-    js/formred.js: {}
-    js/toggleform.js: {}
-    js/scroll.js: {}
-
-   
-  
-
-
+    js/menu.js: {}
   dependencies:
     - core/drupal
     - core/jquery
   css:
     base:
       css/style.css: {}
-      css/custom.css: {}
-fontawesome:
+
   version: 5.15.4
   css:
     theme:

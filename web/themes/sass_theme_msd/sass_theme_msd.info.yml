@@ -8,7 +8,6 @@ core_version_requirement: ^8 || ^9 || ^10 || ^11
 libraries:
   - sass_theme_msd/global
   - sass_theme_msd/slick
-  - sass_theme_msd/fontawesome
 regions:
   menubar: "Menu bar"
   header: Header
