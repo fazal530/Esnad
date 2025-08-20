@@ -4,285 +4,35 @@
 .example {
   font-size: calculate-values (12, 20, 768, 1280);
 */
-.h1,
-h1 {
-  font-family: "tajawal", sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-}
-@media (min-width: 768px) {
-  .h1,
-  h1 {
-    font-size: 44px;
-    line-height: 60px;
-  }
-}
-@media (min-width: 1280px) {
-  .h1,
-  h1 {
-    font-size: 56px;
-    line-height: 75px;
-  }
-}
-
-.h2,
-h2 {
-  font-family: "tajawal", sans-serif;
-  font-size: 28px;
-  font-style: normal;
+@font-face {
+  font-family: "IBM_plex";
+  src: url(../fonts/IBM_plex/IBMPlexSans-Regular.ttf);
   font-weight: 400;
-  line-height: 42px;
 }
-@media (min-width: 768px) {
-  .h2,
-  h2 {
-    font-size: 34px;
-    line-height: 50px;
-  }
-}
-@media (min-width: 1280px) {
-  .h2,
-  h2 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-}
-
-.h3,
-h3 {
-  font-family: "tajawal", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
-}
-@media (min-width: 768px) {
-  .h3,
-  h3 {
-    font-size: 30px;
-    line-height: 42px;
-  }
-}
-@media (min-width: 1280px) {
-  .h3,
-  h3 {
-    font-size: 36px;
-    line-height: 45px;
-  }
-}
-
-.h4,
-h4 {
-  font-family: "tajawal", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-@media (min-width: 768px) {
-  .h4,
-  h4 {
-    font-size: 26px;
-    line-height: 36px;
-  }
-}
-@media (min-width: 1280px) {
-  .h4,
-  h4 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-.h5,
-h5 {
-  font-family: "tajawal", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-}
-@media (min-width: 768px) {
-  .h5,
-  h5 {
-    font-size: 22px;
-    line-height: 32px;
-  }
-}
-@media (min-width: 1280px) {
-  .h5,
-  h5 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-.h6, .button,
-h6 {
-  font-family: "tajawal", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-@media (min-width: 768px) {
-  .h6, .button,
-  h6 {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 26px;
-  }
-}
-@media (min-width: 1280px) {
-  .h6, .button,
-  h6 {
-    font-size: 20px;
-    line-height: 27px;
-  }
-}
-
-.body1 {
-  font-family: "tajawal", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
-@media (min-width: 768px) {
-  .body1 {
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-@media (min-width: 1280px) {
-  .body1 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-.body2 {
-  font-family: "tajawal", sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  color: #706F6F;
-}
-@media (min-width: 768px) {
-  .body2 {
-    font-size: 14px;
-    line-height: 24px;
-  }
-}
-@media (min-width: 1280px) {
-  .body2 {
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
-.button {
-  border-radius: 20px;
-}
-
-.program_button {
-  padding-block: 13px;
-  padding-inline: 60px;
-  border: none;
-  background-color: #fff;
-  color: #000 !important;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: background 0.3s ease;
-}
-
-.see_button {
-  padding: 10px 50px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  text-decoration: none;
-  transition: background 0.5s ease;
-}
-
-.overlay {
-  background: var(--COLORS-2-G1, linear-gradient(180deg, #3D788A 0%, rgba(115, 115, 115, 0) 100%));
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-
-.space-line {
-  margin-block: 30px;
-  width: 100%;
-  height: 1px;
-}
-
-.link-button {
-  border: 1px solid #706F6F;
-  display: block;
-  padding: 10px 59px;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .link-button {
-    padding: 10px 50px;
-    display: inline;
-  }
-}
-.link-button a {
-  font-family: "tajawal", sans-serif;
-  font-size: 20px;
-  font-style: normal;
+@font-face {
+  font-family: "IBM_plex";
+  src: url(../fonts/IBMPlexSans-SemiBold.ttf);
   font-weight: 600;
-  line-height: 27px;
-  text-decoration: none;
-  color: #706F6F;
-}
-.link-button:hover {
-  background-color: #D5C18E;
-}
-.link-button:hover a {
-  color: #fff;
-}
-
-@font-face {
-  font-family: "tajawal";
-  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-ExtraLight.ttf);
-  font-weight: 200;
 }
 @font-face {
-  font-family: "tajawal";
-  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Light.ttf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: "tajawal";
-  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "tajawal";
-  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "tajawal";
-  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Bold.ttf);
+  font-family: "IBM_plex";
+  src: url(../fonts/IBM_plex/IBMPlexSans-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
-  font-family: "tajawal";
-  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-ExtraBold.ttf);
-  font-weight: 800;
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
-  font-family: "tajawal";
-  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Black.ttf);
-  font-weight: 900;
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: 700;
 }
 .container {
   padding-inline: 25px !important;
