@@ -1,0 +1,22 @@
+uuid: a6e16808-8efc-4956-bd1a-4b78a4fd6c85
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sass_theme_msd
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: sass_theme_msd_help
+theme: sass_theme_msd
+region: menubar
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
