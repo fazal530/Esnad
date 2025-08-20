@@ -370,15 +370,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'drupal/node_export' => array(
-            'pretty_version' => '1.4.0',
-            'version' => '1.4.0.0',
-            'reference' => '8.x-1.4',
-            'type' => 'drupal-module',
-            'install_path' => __DIR__ . '/../../web/modules/contrib/node_export',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'drupal/paragraphs' => array(
             'pretty_version' => '1.19.0',
             'version' => '1.19.0.0',
@@ -966,9 +957,9 @@
             'dev_requirement' => false,
         ),
         'symfony/polyfill-php83' => array(
-            'pretty_version' => 'v1.32.0',
-            'version' => '1.32.0.0',
-            'reference' => '2fb86d65e2d424369ad2905e83b236a8805ba491',
+            'pretty_version' => 'v1.33.0',
+            'version' => '1.33.0.0',
+            'reference' => '17f6f9a6b1735c0f163024d959f700cfbc5155e5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-php83',
             'aliases' => array(),
