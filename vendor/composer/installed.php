@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b913224ec82b5d4b6d28e81fff715e38a2afd3ed',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -398,9 +398,9 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b913224ec82b5d4b6d28e81fff715e38a2afd3ed',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -412,6 +412,15 @@
             'reference' => '7.1.3',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/simplelogin',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/superfish' => array(
+            'pretty_version' => '1.13.0',
+            'version' => '1.13.0.0',
+            'reference' => '8.x-1.13',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/superfish',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -520,6 +529,15 @@
             'reference' => 'd3cebb0ff4685ff61c749e54b27db49319e2ec00',
             'type' => 'library',
             'install_path' => __DIR__ . '/../league/container',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'lobsterr/drupal-superfish' => array(
+            'pretty_version' => '2.3.10',
+            'version' => '2.3.10.0',
+            'reference' => '618cb095efa3c95ae64c34f626dda6c3a642bfac',
+            'type' => 'drupal-library',
+            'install_path' => __DIR__ . '/../../web/libraries/drupal-superfish',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -649,8 +667,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.1|2.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.1|2.0',
             ),
         ),
         'psr/event-dispatcher' => array(

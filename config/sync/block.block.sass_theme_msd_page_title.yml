@@ -9,7 +9,7 @@ _core:
 id: sass_theme_msd_page_title
 theme: sass_theme_msd
 region: menubar
-weight: -5
+weight: -2
 provider: null
 plugin: page_title_block
 settings:

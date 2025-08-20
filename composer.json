@@ -25,6 +25,7 @@
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
         "drupal/simplelogin": "^7.1",
+        "drupal/superfish": "^1.13",
         "drupal/twig_tweak": "^3.4",
         "drupal/webform": "^6.3@beta",
         "drush/drush": "^13.6"
