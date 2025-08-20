@@ -1,11 +1,12 @@
 // FONT FAMILIES
-$font_IBM_plex: 'IBM_plex', sans-serif;
-$font_Roboto: 'Roboto', sans-serif;
+$font_IBM_plex: 'IBM_plex', Arial;
+$font_Roboto: 'Roboto', Arial;
+$font_Arial: Arial;
 // FONT FAMILIES
 
 // Body1
 .body1 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -13,7 +14,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body2
 .body2 {
-  font-family: Roboto;
+  font-family: $font_Roboto;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
@@ -26,7 +27,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body3
 .body3 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 700;
   font-size: 10.2px;
   line-height: 16.11px;
@@ -44,7 +45,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body4
 .body4 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
@@ -52,7 +53,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body5
 .body5 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -60,7 +61,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body6
 .body6 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 700;
   font-size: 12.2px;
   line-height: 18.37px;
@@ -78,7 +79,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body7
 .body7 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 700;
   font-size: 30px;
   line-height: 56px;
@@ -91,7 +92,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body8
 .body8 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -99,7 +100,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body9
 .body9 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 19.2px;
   line-height: 32.8px;
@@ -117,7 +118,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body10
 .body10 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 12.2px;
   line-height: 18.37px;
@@ -135,7 +136,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body11
 .body11 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 25px;
   line-height: 35px;
@@ -153,7 +154,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body12
 .body12 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -161,7 +162,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body13
 .body13 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 40px;
   line-height: 56px;
@@ -169,7 +170,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body14
 .body14 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -177,7 +178,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body15
 .body15 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 14.2px;
   line-height: 100%;
@@ -231,7 +232,7 @@ $font_Roboto: 'Roboto', sans-serif;
 
 // Body19
 .body19 {
-  font-family: Arial;
+  font-family: $font_Arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;

@@ -12,7 +12,7 @@
 }
 
 .body2 {
-  font-family: Roboto;
+  font-family: "Roboto", Arial;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
@@ -192,14 +192,14 @@
 }
 
 .body16 {
-  font-family: "IBM_plex", sans-serif;
+  font-family: "IBM_plex", Arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
 }
 
 .body17 {
-  font-family: "IBM_plex", sans-serif;
+  font-family: "IBM_plex", Arial;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -211,7 +211,7 @@
 }
 
 .body18 {
-  font-family: "IBM_plex", sans-serif;
+  font-family: "IBM_plex", Arial;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
