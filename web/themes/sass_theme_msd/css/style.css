@@ -1,0 +1,557 @@
+@charset "UTF-8";
+/* One should use it like this
+
+.example {
+  font-size: calculate-values (12, 20, 768, 1280);
+*/
+.h1,
+h1 {
+  font-family: "tajawal", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+@media (min-width: 768px) {
+  .h1,
+  h1 {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .h1,
+  h1 {
+    font-size: 56px;
+    line-height: 75px;
+  }
+}
+
+.h2,
+h2 {
+  font-family: "tajawal", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+}
+@media (min-width: 768px) {
+  .h2,
+  h2 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .h2,
+  h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+.h3,
+h3 {
+  font-family: "tajawal", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+@media (min-width: 768px) {
+  .h3,
+  h3 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 1280px) {
+  .h3,
+  h3 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.h4,
+h4 {
+  font-family: "tajawal", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+@media (min-width: 768px) {
+  .h4,
+  h4 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .h4,
+  h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.h5,
+h5 {
+  font-family: "tajawal", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+@media (min-width: 768px) {
+  .h5,
+  h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .h5,
+  h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.h6, .button,
+h6 {
+  font-family: "tajawal", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .h6, .button,
+  h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+}
+@media (min-width: 1280px) {
+  .h6, .button,
+  h6 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.body1 {
+  font-family: "tajawal", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .body1 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media (min-width: 1280px) {
+  .body1 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.body2 {
+  font-family: "tajawal", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #706F6F;
+}
+@media (min-width: 768px) {
+  .body2 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .body2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.button {
+  border-radius: 20px;
+}
+
+.program_button {
+  padding-block: 13px;
+  padding-inline: 60px;
+  border: none;
+  background-color: #fff;
+  color: #000 !important;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.see_button {
+  padding: 10px 50px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-decoration: none;
+  transition: background 0.5s ease;
+}
+
+.overlay {
+  background: var(--COLORS-2-G1, linear-gradient(180deg, #3D788A 0%, rgba(115, 115, 115, 0) 100%));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.space-line {
+  margin-block: 30px;
+  width: 100%;
+  height: 1px;
+}
+
+.link-button {
+  border: 1px solid #706F6F;
+  display: block;
+  padding: 10px 59px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .link-button {
+    padding: 10px 50px;
+    display: inline;
+  }
+}
+.link-button a {
+  font-family: "tajawal", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  text-decoration: none;
+  color: #706F6F;
+}
+.link-button:hover {
+  background-color: #D5C18E;
+}
+.link-button:hover a {
+  color: #fff;
+}
+
+@font-face {
+  font-family: "tajawal";
+  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "tajawal";
+  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "tajawal";
+  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "tajawal";
+  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "tajawal";
+  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "tajawal";
+  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "tajawal";
+  src: url(../fonts/Tajawal/ArbFONTS-Tajawal-Black.ttf);
+  font-weight: 900;
+}
+.container {
+  padding-inline: 25px !important;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 50px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    padding-inline: 100px !important;
+    margin-inline: auto !important;
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-2 {
+    padding-inline: 100px !important;
+    margin-inline: auto !important;
+    max-width: 1440px;
+  }
+}
+
+.icon-google-plus {
+  background-image: url("../icons/icon3.png");
+}
+
+.icon-discord {
+  background-image: url("../icons/icon4.png");
+}
+
+.icon-youtube {
+  background-image: url("../icons/icon5.png");
+}
+
+.icon-twitter {
+  background-image: url("../icons/icon6.png");
+}
+
+.icon-instagram {
+  background-image: url("../icons/icon7.png");
+}
+
+.success-message {
+  position: fixed;
+  z-index: 5;
+  top: 80px;
+  right: 0;
+  left: 0;
+  padding: 1.5rem 3.5rem;
+  padding-left: 6rem;
+  color: black;
+  border: 2px solid #cfe8d3;
+  border-radius: 8px;
+  background-color: #f1f8f4;
+}
+.success-message::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  content: "✓";
+  transform: translate(30%, -50%);
+  color: #51dc6c;
+  border: 10px solid #51dc6c;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+.error-message {
+  position: fixed;
+  z-index: 5000;
+  top: 80px;
+  right: 0;
+  left: 0;
+  padding: 1.5rem 3.5rem;
+  padding-left: 6rem;
+  color: black;
+  border: 2px solid #ecc1b6;
+  border-radius: 8px;
+  background-color: #faeeea;
+}
+.error-message::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  content: "❌";
+  transform: translate(30%, -50%);
+  color: #fb5858;
+  border: 10px solid #fb5858;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 11px;
+}
+
+.info-message {
+  position: fixed;
+  z-index: 5000;
+  top: 80px;
+  right: 0;
+  left: 0;
+  padding: 1.5rem 3.5rem;
+  padding-left: 6rem;
+  color: black;
+  border: 2px solid #ffd56c;
+  border-radius: 8px;
+  background-color: #fff9c4;
+}
+.info-message::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  content: "!";
+  transform: translate(30%, -50%);
+  color: #e9ba43;
+  border: 10px solid #e9ba43;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.message-wrapper {
+  position: relative;
+}
+.message-wrapper .cross {
+  position: absolute;
+  top: -8px;
+  right: 4px;
+  cursor: pointer;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.primary-tabs {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  list-style: none;
+  border-bottom: 2px solid black;
+  background: white;
+  gap: 1rem;
+  padding-top: 4px;
+}
+.primary-tabs li a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+.primary-tabs li a.is-active {
+  display: inline-block;
+  color: white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: black;
+}
+@media (min-width: 768px) {
+  .primary-tabs {
+    position: unset;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/pattern.png");
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.hide-on-mobile {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .hide-on-mobile {
+    display: block !important;
+  }
+}
+@media (min-width: 1280px) {
+  .hide-on-mobile {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-desktop {
+  display: block !important;
+}
+@media (min-width: 768px) {
+  .hide-on-tablet-n-desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 1280px) {
+  .hide-on-tablet-n-desktop {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+  display: block !important;
+}
+@media (min-width: 768px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 1280px) {
+  .hide-on-tablet {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-moblie {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .hide-on-tablet-n-moblie {
+    display: none !important;
+  }
+}
+@media (min-width: 1280px) {
+  .hide-on-tablet-n-moblie {
+    display: block !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

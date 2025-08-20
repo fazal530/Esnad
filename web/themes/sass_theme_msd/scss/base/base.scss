@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/pattern.png');
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+
+.hide-on-mobile {
+  display: none !important;
+
+  @include tablet {
+    display: block !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-desktop {
+  display: block !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+  display: block !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}
+
+.hide-on-tablet-n-moblie {
+  display: none !important;
+
+  @include tablet {
+    display: none !important;
+  }
+
+  @include desktop {
+    display: block !important;
+  }
+}

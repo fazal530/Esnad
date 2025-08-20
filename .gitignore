@@ -1,0 +1,35 @@
+# Ignore Drupal-specific files
+web/sites/default/files/
+web/sites/*/files/
+web/sites/*/settings.local.php
+
+
+# Ignore Composer dependencies
+/vendor/
+/private/
+
+# Ignore Node.js dependencies
+/node_modules/
+
+# Ignore environment and IDE-specific files
+/.env
+**/.DS_Store
+/.idea/
+/.vscode/
+
+# Ignore build artifacts
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
+
+# Ignore other unnecessary files
+web/autoload.php
+web/.htaccess
+web/web.config
+config/sync/.htaccess
+
+.DS_Store
+
+web/themes/custom/sass_theme_msd/css/style.css.map
+/web/themes/custom/sass_theme_msd/css/*.*

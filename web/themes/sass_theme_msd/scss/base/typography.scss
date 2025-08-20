@@ -1,0 +1,269 @@
+// FONT FAMILIES
+$font_tajawal: 'tajawal', sans-serif;
+// FONT FAMILIES
+
+.h1,
+h1 {
+  font-family: $font_tajawal;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+
+  @include tablet {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  @include desktop {
+    font-size: 56px;
+    line-height: 75px;
+  }
+
+}
+
+.h2,
+h2 {
+  font-family: $font_tajawal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+
+}
+
+.h3,
+h3 {
+  font-family: $font_tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.h4,
+h4 {
+  font-family: $font_tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.h5,
+h5 {
+  font-family: $font_tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+
+}
+
+.h6,
+h6 {
+  font-family: $font_tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include tablet {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+}
+
+.body1 {
+  font-family: $font_tajawal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.body2 {
+  font-family: $font_tajawal;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: $tertiary;
+
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+}
+
+// BUTTONS
+.button {
+  @extend .h6;
+  border-radius: 20px;
+
+}
+
+.program_button {
+  padding-block: 13px;
+  padding-inline: 60px;
+  border: none;
+  background-color: $white;
+  color: $black !important;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.see_button {
+  padding: 10px 50px;
+  background-color: transparent;
+  border: 1px solid $white;
+  text-decoration: none;
+  transition: background 0.5s ease;
+}
+
+.overlay {
+  background: var(--COLORS-2-G1, linear-gradient(180deg, #3D788A 0%, rgba(115, 115, 115, 0.00) 100%));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.space-line {
+  margin-block: 30px;
+  width: 100%;
+  height: 1px;
+}
+
+.link-button {
+  border: 1px solid $tertiary;
+  display: block;
+  padding: 10px 59px;
+  text-align: center;
+  
+
+  @include tablet {
+    padding: 10px 50px;
+    display: inline;
+  }
+
+  a {
+
+    font-family: $font_tajawal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    text-decoration: none;
+    color: $tertiary;
+   
+   
+  }
+
+  &:hover {
+    background-color: $primary;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+
+// .make-slick-carosel {
+//   width: 100%;
+//   max-width: 100%;
+//   overflow: hidden;
+// }
+
+// .make-slick-carosel .slick-track {
+//   display: flex !important;
+//   max-width: 100% !important;
+// }
+
+// .make-slick-carosel .slick-slide {
+//   float: none;
+//   flex: 0 0 auto;
+//   width: 100% !important;
+//   box-sizing: border-box;
+// }
+
+// .make-slick-carosel img {
+//   max-width: 100%;
+//   height: auto;
+//   display: block;
+// }
+// .college-right{
+//   position: relative;
+//   overflow: hidden;
+//   width: 100% !important;
+//   max-width: 100% !important;
+// }
