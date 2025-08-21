@@ -1,0 +1,67 @@
+.about-section {
+    @extend .container;
+    background-color: $primary;
+    padding-block: 119px;
+
+    .paragraph--type--image-with-text {
+        display: flex;
+        gap: 114px;
+        align-items: center;
+
+        .image-wrapper {
+            flex: 1;
+        }
+
+        .text-wrapper {
+            flex: 2;
+
+            .body3 {
+                color: $dark-gray;
+                margin-bottom: 23px;
+            }
+
+            .body4 {
+                color: $light-gray;
+                margin-bottom: 40px;
+            }
+
+            .body5 {
+                color: $light-gray;
+                margin-bottom: 24px;
+
+            }
+
+            .link-text {
+                align-items: center;
+                background: $tertiary;
+                display: inline-block;
+                padding: 11px;
+                border-radius: 50px;
+
+                a {
+                    @extend .body5;
+                    color: $off-white;
+                    text-decoration: none;
+
+                    &::after {
+                        content: url("../icons/arrow.svg");
+                        padding: 11px;
+                        background: white;
+                        border-radius: 50%;
+                        margin-left: 15px;
+                        transition: all 0.3s ease;
+
+                    }
+
+                    &:hover {
+                        &::after {
+                            margin-left: 30px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
