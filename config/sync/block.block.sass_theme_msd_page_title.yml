@@ -2,6 +2,8 @@ uuid: e131ef8b-743a-4d04-9618-f44d1f7f6b7b
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - sass_theme_msd
 _core:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/6\r\n"

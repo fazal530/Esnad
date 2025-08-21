@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Custom paragraph template for Hero Section with rotating text.
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="hero-section">
+        <div class="hero-video">
+          {{ content.field_video }}
+        </div>
+        <div class="hero-text">
+           {{ content.field_hero_text }}
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.text.field_style
     - field.field.paragraph.text.field_text
     - paragraphs.paragraphs_type.text
+  module:
+    - text
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text
@@ -20,7 +22,7 @@ content:
     weight: 0
     region: content
   field_text:
-    type: basic_string
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
