@@ -10,8 +10,8 @@ _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: sass_theme_msd_page_title
 theme: sass_theme_msd
-region: menubar
-weight: -8
+region: highlighted
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

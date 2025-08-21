@@ -11,7 +11,7 @@ dependencies:
 id: sass_theme_msd_search
 theme: sass_theme_msd
 region: menubar
-weight: -1
+weight: -5
 provider: null
 plugin: 'block_content:eb5a94b9-0917-4406-bbd1-ab16d7c824b1'
 settings:
