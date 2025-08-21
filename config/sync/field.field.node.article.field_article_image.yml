@@ -1,18 +1,18 @@
-uuid: 5f45b02d-627f-4ad9-b209-052459fb4978
+uuid: 8ce06053-883c-41ab-af96-20f314ff5fe0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_parent
-    - paragraphs.paragraphs_type.children
-    - paragraphs.paragraphs_type.parent
+    - field.storage.node.field_article_image
+    - node.type.article
+    - paragraphs.paragraphs_type.attachments
   module:
     - entity_reference_revisions
-id: paragraph.parent.field_parent
-field_name: field_parent
-entity_type: paragraph
-bundle: parent
-label: Parent
+id: node.article.field_article_image
+field_name: field_article_image
+entity_type: node
+bundle: article
+label: 'Article Image'
 description: ''
 required: false
 translatable: false
@@ -22,28 +22,27 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      children: children
-      parent: parent
-    negate: 1
+      attachments: attachments
+    negate: 0
     target_bundles_drag_drop:
       attachments:
-        weight: 5
-        enabled: false
-      children:
-        weight: 6
+        weight: 12
         enabled: true
+      children:
+        weight: 13
+        enabled: false
       hero_section:
         weight: 14
         enabled: false
       image_with_text:
-        weight: 8
+        weight: 15
         enabled: false
       link_button:
         weight: 16
         enabled: false
       parent:
-        weight: 7
-        enabled: true
+        weight: 17
+        enabled: false
       services:
         weight: 18
         enabled: false
@@ -57,6 +56,6 @@ settings:
         weight: 21
         enabled: false
       text:
-        weight: 8
+        weight: 22
         enabled: false
 field_type: entity_reference_revisions

@@ -11,7 +11,7 @@ _core:
 id: sass_theme_msd_site_branding
 theme: sass_theme_msd
 region: menubar
-weight: -7
+weight: -11
 provider: null
 plugin: system_branding_block
 settings:
