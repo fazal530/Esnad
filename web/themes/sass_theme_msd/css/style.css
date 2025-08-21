@@ -50,7 +50,7 @@
   line-height: 42px;
 }
 
-.body5, .about-section .paragraph--type--image-with-text .text-wrapper .link-text a {
+.body5, .about-section .paragraph--type--image-with-text .text-wrapper .link-text a, .link-button .link-text a {
   font-family: Arial;
   font-weight: 400;
   font-size: 18px;
@@ -769,8 +769,40 @@ body {
 }
 
 .link-button {
-  padding-block: 117px 70px;
   text-align: right;
+  padding-block: 20px 82px;
+}
+@media (min-width: 768px) {
+  .link-button {
+    padding-block: 20px 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .link-button {
+    padding-block: 117px 70px;
+  }
+}
+.link-button .link-text {
+  align-items: center;
+  background: #00717F;
+  display: inline-block;
+  padding: 11px;
+  border-radius: 50px;
+}
+.link-button .link-text a {
+  color: #FAFBFB;
+  text-decoration: none;
+}
+.link-button .link-text a::after {
+  content: url("../icons/arrow.svg");
+  padding: 11px;
+  background: white;
+  border-radius: 50%;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+.link-button .link-text a:hover::after {
+  margin-left: 30px;
 }
 
 .site-footer__top {
@@ -938,7 +970,7 @@ body {
   color: #CFD2D3;
   margin-bottom: 40px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .body5, .about-section .paragraph--type--image-with-text .text-wrapper .link-text a {
+.about-section .paragraph--type--image-with-text .text-wrapper .body5, .about-section .paragraph--type--image-with-text .text-wrapper .link-text a, .link-button .link-text .about-section .paragraph--type--image-with-text .text-wrapper a {
   color: #CFD2D3;
   margin-bottom: 24px;
 }

@@ -1,62 +1,110 @@
-.services-wrapper{
+.services-wrapper {
     background-color: $dark-gray;
     padding-block: 50px;
-    .services-text{
-        p{
+
+    .services-text {
+        p {
             color: $gray-light;
         }
-        .body7{
-            color:$light-gray;
+
+        .body7 {
+            color: $light-gray;
             padding-block: 24px 10px;
         }
-        p{
-            span{
+
+        p {
+            span {
                 @extend .body7;
-                color:$gray-extra-light;
+                color: $gray-extra-light;
             }
         }
-        .body8{
-            color:$light-gray;
+
+        .body8 {
+            color: $light-gray;
             padding-block: 55px 76px;
         }
     }
 
 
-    .paragraph--type--services-card-wrapper{
+    .paragraph--type--services-card-wrapper {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        @include desktop{
+
+        @include desktop {
             flex-direction: row;
         }
-       .services-card-wrapper{
-        width: 100%;
-        height: 250px;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        padding-left: 20px;
-        background-color:$light-gray;
-         border-radius: 30px;
-         @include tablet{
-            height: 263px;
-         }
-         @include desktop{
+
+        .services-card-wrapper {
+            width: 100%;
             height: 250px;
-         }
-         .services-card{
             display: flex;
-            flex-direction: column;
-            gap: 25px;
-            .body9{
-                font-weight: 700 !important;
+            justify-content: left;
+            align-items: center;
+            padding-left: 20px;
+            background-color: $light-gray;
+            border-radius: 30px;
+
+            @include tablet {
+                height: 263px;
             }
-         }
-    }
+
+            @include desktop {
+                height: 250px;
+            }
+
+            .services-card {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .body9 {
+                    font-weight: 700 !important;
+                }
+            }
+        }
     }
 }
 
 .link-button{
-padding-block: 117px 70px;
 text-align: right;
+padding-block: 20px 82px;
+@include tablet{
+    padding-block: 20px 50px;
+}
+@include desktop{
+    padding-block: 117px 70px;
+}
+
+.link-text {
+    
+    align-items: center;
+    background: $tertiary;
+    display: inline-block;
+    padding: 11px;
+    border-radius: 50px;
+
+    a {
+        @extend .body5;
+        color: $off-white;
+        text-decoration: none;
+
+        &::after {
+            content: url("../icons/arrow.svg");
+            padding: 11px;
+            background: white;
+            border-radius: 50%;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+
+        }
+
+        &:hover {
+            &::after {
+                margin-left: 30px;
+            }
+        }
+}
+
+    }
 }
