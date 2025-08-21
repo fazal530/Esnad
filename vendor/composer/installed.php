@@ -388,6 +388,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/quick_node_clone' => array(
+            'pretty_version' => '1.22.0',
+            'version' => '1.22.0.0',
+            'reference' => '8.x-1.22',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/quick_node_clone',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/recommended-project' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
