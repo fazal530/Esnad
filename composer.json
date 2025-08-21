@@ -21,6 +21,8 @@
         "drupal/core-project-message": "^11.2",
         "drupal/core-recipe-unpack": "^11.2",
         "drupal/core-recommended": "^11.2",
+        "drupal/fontawesome": "^3.0",
+        "drupal/menu_block": "^1.14",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
         "drupal/quick_node_clone": "^1.22",
