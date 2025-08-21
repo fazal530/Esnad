@@ -5,7 +5,6 @@
 }
 
 body {
-  background-image: url('../images/pattern.png');
   margin: 0;
   padding: 0;
   position: relative;
@@ -22,6 +21,13 @@ body {
 
   @include desktop {
     display: block !important;
+  }
+}
+.hide-on-desktop {
+  display: block !important;
+
+  @include desktop {
+    display: none !important;
   }
 }
 
