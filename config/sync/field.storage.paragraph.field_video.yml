@@ -1,16 +1,17 @@
-uuid: ea44da50-fd27-4006-ac37-5e766d5346b4
+uuid: 209d9326-e531-4057-8836-f580e7c9d857
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - paragraphs
-    - text
-id: paragraph.field_text
-field_name: field_text
+id: paragraph.field_video
+field_name: field_video
 entity_type: paragraph
-type: text_long
-settings: {  }
-module: text
+type: entity_reference
+settings:
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true
