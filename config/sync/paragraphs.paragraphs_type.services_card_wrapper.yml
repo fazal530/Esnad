@@ -1,0 +1,10 @@
+uuid: 45191262-361d-47e6-ab9b-fe17b8edaa31
+langcode: en
+status: true
+dependencies: {  }
+id: services_card_wrapper
+label: 'Services Card Wrapper'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

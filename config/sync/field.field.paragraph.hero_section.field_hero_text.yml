@@ -1,17 +1,17 @@
-uuid: 21606701-70bb-4743-bb6a-10fa953b404e
+uuid: 753ff379-07b3-47be-b746-133e17fdc43b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_text
-    - paragraphs.paragraphs_type.text
+    - field.storage.paragraph.field_hero_text
+    - paragraphs.paragraphs_type.hero_section
   module:
     - text
-id: paragraph.text.field_text
-field_name: field_text
+id: paragraph.hero_section.field_hero_text
+field_name: field_hero_text
 entity_type: paragraph
-bundle: text
-label: Text
+bundle: hero_section
+label: 'Hero Text'
 description: ''
 required: false
 translatable: false
