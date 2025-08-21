@@ -5,8 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_main
     - node.type.page_1
-    - paragraphs.paragraphs_type.hero_section
-    - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.children
   module:
     - entity_reference_revisions
 id: node.page_1.field_main
@@ -23,19 +22,21 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      hero_section: hero_section
-      services: services
-    negate: 0
+      children: children
+    negate: 1
     target_bundles_drag_drop:
       attachments:
         weight: 5
         enabled: false
       children:
         weight: 6
-        enabled: false
+        enabled: true
       hero_section:
         weight: 8
-        enabled: true
+        enabled: false
+      image_with_text:
+        weight: 15
+        enabled: false
       link_button:
         weight: 13
         enabled: false
@@ -44,12 +45,15 @@ settings:
         enabled: false
       services:
         weight: 15
-        enabled: true
+        enabled: false
       services_card_wrapper:
         weight: 17
         enabled: false
       services_cards:
         weight: 16
+        enabled: false
+      social_icon:
+        weight: 21
         enabled: false
       text:
         weight: 8

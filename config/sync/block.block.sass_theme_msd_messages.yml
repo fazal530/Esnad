@@ -11,7 +11,7 @@ _core:
 id: sass_theme_msd_messages
 theme: sass_theme_msd
 region: highlighted
-weight: -5
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:

@@ -1,18 +1,18 @@
-uuid: 5f45b02d-627f-4ad9-b209-052459fb4978
+uuid: 08d5c174-d3ed-4c0e-a65e-d3fcd39ef791
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_parent
-    - paragraphs.paragraphs_type.children
-    - paragraphs.paragraphs_type.parent
+    - field.storage.node.field_social_links
+    - node.type.article
+    - paragraphs.paragraphs_type.social_icon
   module:
     - entity_reference_revisions
-id: paragraph.parent.field_parent
-field_name: field_parent
-entity_type: paragraph
-bundle: parent
-label: Parent
+id: node.article.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: article
+label: 'Social Links'
 description: ''
 required: false
 translatable: false
@@ -22,28 +22,27 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      children: children
-      parent: parent
-    negate: 1
+      social_icon: social_icon
+    negate: 0
     target_bundles_drag_drop:
       attachments:
-        weight: 5
+        weight: 12
         enabled: false
       children:
-        weight: 6
-        enabled: true
+        weight: 13
+        enabled: false
       hero_section:
         weight: 14
         enabled: false
       image_with_text:
-        weight: 8
+        weight: 15
         enabled: false
       link_button:
         weight: 16
         enabled: false
       parent:
-        weight: 7
-        enabled: true
+        weight: 17
+        enabled: false
       services:
         weight: 18
         enabled: false
@@ -55,8 +54,8 @@ settings:
         enabled: false
       social_icon:
         weight: 21
-        enabled: false
+        enabled: true
       text:
-        weight: 8
+        weight: 22
         enabled: false
 field_type: entity_reference_revisions
