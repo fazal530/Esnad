@@ -11,7 +11,7 @@ _core:
 id: sass_theme_msd_help
 theme: sass_theme_msd
 region: menubar
-weight: -1
+weight: -5
 provider: null
 plugin: help_block
 settings:

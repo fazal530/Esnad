@@ -1,0 +1,25 @@
+uuid: b97e131e-d80b-43ff-bd74-474063e5964d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_icons:285bd8a1-048d-4898-b8aa-34525e85e739'
+  module:
+    - block_content
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_socialicons
+theme: sass_theme_msd
+region: footer_fifth
+weight: -11
+provider: null
+plugin: 'block_content:285bd8a1-048d-4898-b8aa-34525e85e739'
+settings:
+  id: 'block_content:285bd8a1-048d-4898-b8aa-34525e85e739'
+  label: 'Social Icons'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

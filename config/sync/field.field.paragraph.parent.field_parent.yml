@@ -23,7 +23,8 @@ settings:
   handler_settings:
     target_bundles:
       children: children
-    negate: 0
+      parent: parent
+    negate: 1
     target_bundles_drag_drop:
       attachments:
         weight: 5
@@ -31,9 +32,12 @@ settings:
       children:
         weight: 6
         enabled: true
+      image_with_text:
+        weight: 8
+        enabled: false
       parent:
         weight: 7
-        enabled: false
+        enabled: true
       text:
         weight: 8
         enabled: false

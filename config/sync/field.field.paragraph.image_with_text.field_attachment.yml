@@ -1,0 +1,35 @@
+uuid: 21ed5677-be65-47e5-8d2a-d788b816f6ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attachment
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.image_with_text
+id: paragraph.image_with_text.field_attachment
+field_name: field_attachment
+entity_type: paragraph
+bundle: image_with_text
+label: Attachment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

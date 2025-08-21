@@ -11,7 +11,7 @@ _core:
 id: sass_theme_msd_page_title
 theme: sass_theme_msd
 region: menubar
-weight: -2
+weight: -8
 provider: null
 plugin: page_title_block
 settings:
@@ -23,4 +23,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/node/6\r\n"
+    pages: '<front>'
