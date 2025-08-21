@@ -290,8 +290,6 @@
 @media (min-width: 1280px) {
   .container, .about-section, .site-footer__top, .header-section {
     padding-inline: 80px !important;
-    margin-inline: auto !important;
-    max-width: 1440px;
   }
 }
 

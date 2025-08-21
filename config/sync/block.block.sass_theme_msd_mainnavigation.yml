@@ -11,7 +11,7 @@ dependencies:
 id: sass_theme_msd_mainnavigation
 theme: sass_theme_msd
 region: menubar
-weight: -3
+weight: -7
 provider: null
 plugin: 'superfish:main'
 settings:
