@@ -1,0 +1,76 @@
+.hero-section {
+    position: relative;
+ .hero-video {
+        video {
+
+            width: 100%;
+            height:312px;
+            object-fit: cover;
+            @include tablet{
+                height:1152px;
+            }
+            @include desktop{
+                height:810px;
+            }
+        }
+
+
+    }
+.hero-text{
+
+    .text {
+      position: absolute;
+      transform: translateX(-50%);
+      opacity: 0;
+      display: none;
+      font-size: 32px;
+      font-weight: bold;
+      left: 10%;
+      bottom: 10%;
+      color: $white;
+      font-size: 25px;
+      @include tablet{
+         font-size: 43px;
+      }
+    }
+
+    .show {
+      display: block;
+      animation: dropIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    .hide {
+      display: block;
+      animation: dropOut 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    /* Drop in: from outside (front, Z positive) → inside (0) */
+    @keyframes dropIn {
+      0% {
+        opacity: 0;
+        transform:  translateZ(300px) scale(1.2);
+      }
+      100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+      }
+    }
+
+    /* Drop out: from normal → going inside (negative Z) */
+    @keyframes dropOut {
+      0% {
+        opacity: 1;
+        transform:  translateZ(0) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translateZ(-300px) scale(0.8);
+      }
+    }
+
+   }
+}
+
+
+
+ 

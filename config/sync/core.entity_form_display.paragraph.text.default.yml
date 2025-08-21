@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.text.field_style
     - field.field.paragraph.text.field_text
     - paragraphs.paragraphs_type.text
+  module:
+    - text
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text
@@ -20,8 +22,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_text:
-    type: string_textarea
-    weight: 0
+    type: text_textarea
+    weight: 2
     region: content
     settings:
       rows: 5

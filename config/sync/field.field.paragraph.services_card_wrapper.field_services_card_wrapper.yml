@@ -1,19 +1,18 @@
-uuid: b8b93495-31e2-4b09-83ae-f4c5950153a4
+uuid: f5a9f8be-e1c0-482e-ab87-32d51e35e25f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_main
-    - node.type.page_1
-    - paragraphs.paragraphs_type.hero_section
-    - paragraphs.paragraphs_type.services
+    - field.storage.paragraph.field_services_card_wrapper
+    - paragraphs.paragraphs_type.services_card_wrapper
+    - paragraphs.paragraphs_type.services_cards
   module:
     - entity_reference_revisions
-id: node.page_1.field_main
-field_name: field_main
-entity_type: node
-bundle: page_1
-label: Main
+id: paragraph.services_card_wrapper.field_services_card_wrapper
+field_name: field_services_card_wrapper
+entity_type: paragraph
+bundle: services_card_wrapper
+label: 'Services Card Wrapper'
 description: ''
 required: false
 translatable: false
@@ -23,35 +22,31 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      hero_section: hero_section
-      services: services
+      services_cards: services_cards
     negate: 0
     target_bundles_drag_drop:
       attachments:
-        weight: 5
+        weight: 9
         enabled: false
       children:
-        weight: 6
+        weight: 10
         enabled: false
       hero_section:
-        weight: 8
-        enabled: true
-      link_button:
-        weight: 13
+        weight: 11
         enabled: false
       parent:
-        weight: 7
+        weight: 12
         enabled: false
       services:
-        weight: 15
-        enabled: true
+        weight: 13
+        enabled: false
       services_card_wrapper:
-        weight: 17
+        weight: 15
         enabled: false
       services_cards:
-        weight: 16
-        enabled: false
+        weight: 14
+        enabled: true
       text:
-        weight: 8
+        weight: 16
         enabled: false
 field_type: entity_reference_revisions
