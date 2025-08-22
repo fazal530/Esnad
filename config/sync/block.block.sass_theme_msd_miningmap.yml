@@ -1,0 +1,30 @@
+uuid: 431b6f56-3ad0-44ac-8c6f-22adb65c9219
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mining_map:0ae19862-39ec-463f-9865-212fcd9f59c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_miningmap
+theme: sass_theme_msd
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:0ae19862-39ec-463f-9865-212fcd9f59c6'
+settings:
+  id: 'block_content:0ae19862-39ec-463f-9865-212fcd9f59c6'
+  label: 'Mining Map'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

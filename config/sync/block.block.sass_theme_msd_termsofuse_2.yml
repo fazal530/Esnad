@@ -2,10 +2,6 @@ uuid: 61d7b15e-af6a-43c5-80ad-5c9bf73c617c
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:c1109a52-fc05-4061-8ac3-9c383050a05e'
-  module:
-    - block_content
   theme:
     - sass_theme_msd
 id: sass_theme_msd_termsofuse_2
