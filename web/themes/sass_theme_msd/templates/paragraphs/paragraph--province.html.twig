@@ -38,18 +38,11 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
-{% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
-{% endblock paragraph %}
+
+
+<div class="province-info">
+  <div>{{ content.field_pin}}</div>
+  <h3>{{ content.field_province }}</h3>
+  <div class="province-description">{{ content.field_text }}</div>
+  <div class="province-video">{{ content.field_background_video }}</div>
+</div>
