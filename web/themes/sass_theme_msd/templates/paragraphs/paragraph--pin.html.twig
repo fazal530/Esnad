@@ -38,18 +38,12 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
-{% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
-{% endblock paragraph %}
+
+{# Extra info for tooltip or modal #}
+<div class="pin-info">
+  <p>{{ content.field_card_label }}</p>
+  <p>{{ content.field_licenses }}</p>
+  <p>{{ content.field_materials }}</p>
+  <p>{{ content.field_text }}</p>
+</div>
+

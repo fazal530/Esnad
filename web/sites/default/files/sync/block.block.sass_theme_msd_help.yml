@@ -1,6 +1,6 @@
-uuid: a6e16808-8efc-4956-bd1a-4b78a4fd6c85
+uuid: 9a67e760-f5cf-434c-a8bf-175d672795c6
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -11,7 +11,7 @@ _core:
 id: sass_theme_msd_help
 theme: sass_theme_msd
 region: menubar
-weight: 0
+weight: -9
 provider: null
 plugin: help_block
 settings:

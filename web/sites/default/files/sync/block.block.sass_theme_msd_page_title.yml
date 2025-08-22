@@ -1,15 +1,17 @@
-uuid: 3343e8fa-cc7e-46c2-a5ef-fa1852416b79
+uuid: e131ef8b-743a-4d04-9618-f44d1f7f6b7b
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - sass_theme_msd
 _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: sass_theme_msd_page_title
 theme: sass_theme_msd
-region: menubar
-weight: -5
+region: highlighted
+weight: -10
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
