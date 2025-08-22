@@ -1,0 +1,8 @@
+uuid: f1eb8008-7c60-472b-bec6-62624c643a3a
+langcode: en
+status: true
+dependencies: {  }
+id: mining_map
+label: 'Mining Map'
+revision: false
+description: null
