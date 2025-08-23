@@ -424,6 +424,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/recreate_block_content' => array(
+            'pretty_version' => '3.0.1',
+            'version' => '3.0.1.0',
+            'reference' => '3.0.1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/recreate_block_content',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/simplelogin' => array(
             'pretty_version' => '7.1.3',
             'version' => '7.1.3.0',
