@@ -1,17 +1,17 @@
-uuid: 51d22454-899d-4af4-b131-6a19a5515c13
+uuid: ae315526-6421-40d7-96e0-cc6f739ef218
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.node.field_profile_image
     - node.type.profile
   module:
     - image
-id: node.profile.field_image
-field_name: field_image
+id: node.profile.field_profile_image
+field_name: field_profile_image
 entity_type: node
 bundle: profile
-label: 'Site Image'
+label: profile-image
 description: ''
 required: false
 translatable: false
