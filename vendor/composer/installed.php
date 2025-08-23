@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b15e1720c64394ad2b63fa4e0350ebf0b1d9c044',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -160,6 +160,24 @@
             'reference' => '3.6.2',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/admin_toolbar',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/better_exposed_filters' => array(
+            'pretty_version' => '7.0.5',
+            'version' => '7.0.5.0',
+            'reference' => '7.0.5',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/better_exposed_filters',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/block_field' => array(
+            'pretty_version' => '1.0.0-rc5',
+            'version' => '1.0.0.0-RC5',
+            'reference' => '8.x-1.0-rc5',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/block_field',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -388,6 +406,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/nouislider_js' => array(
+            'pretty_version' => '15.8.1',
+            'version' => '15.8.1.0',
+            'reference' => 'b5610d5842784581e4c766cd1c3852ca0b355ed5',
+            'type' => 'drupal-library',
+            'install_path' => __DIR__ . '/../../web/libraries/nouislider',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/paragraphs' => array(
             'pretty_version' => '1.19.0',
             'version' => '1.19.0.0',
@@ -416,9 +443,9 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b15e1720c64394ad2b63fa4e0350ebf0b1d9c044',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -712,8 +739,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.1|2.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.1|2.0',
             ),
         ),
         'psr/event-dispatcher' => array(

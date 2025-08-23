@@ -1,65 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Count on View</title>
-  <style>
-    .stat { font: 600 48px/1.1 system-ui, Arial, sans-serif; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
 
-  <!-- Your counter -->
-  <span class="stat counter" data-target="2401" data-duration="1500">0</span>
-
-  <script>
-    // Format numbers with commas (e.g., 2,401)
-    const format = new Intl.NumberFormat();
-
-    // Animate a number from start -> end in "duration" ms
-    function animateValue(el, start, end, duration) {
-      const startTime = performance.now();
-      function frame(now) {
-        const progress = Math.min((now - startTime) / duration, 1);
-        // ease-out
-        const eased = 1 - Math.pow(1 - progress, 3);
-        const value = Math.round(start + (end - start) * eased);
-        el.textContent = format.format(value);
-        if (progress < 1) requestAnimationFrame(frame);
-      }
-      requestAnimationFrame(frame);
-    }
-
-    // Start when element becomes visible
-    function setupCounter(el) {
-      const end = parseInt(el.dataset.target.replace(/,/g, ''), 10) || 0;
-      const duration = parseInt(el.dataset.duration, 10) || 1200;
-      let started = false;
-
-      const start = () => {
-        if (started) return;
-        started = true;
-        animateValue(el, 0, end, duration);
-      };
-
-      if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              start();
-              io.unobserve(el);
-            }
-          });
-        }, { threshold: 0.35 });
-        io.observe(el);
-      } else {
-        // Fallback: start immediately
-        start();
-      }
-    }
-
-    // Initialize all counters on the page
-    document.querySelectorAll('.counter').forEach(setupCounter);
-  </script>
+  WHO WE ARE
+  Show row weights
+  Main
+  Toggle Actions
+  Parent
+  1
+  Toggle Actions
+  Parent Class
+  body-section
+  Parent	
+  Text
+  Toggle Actions
+  Style
+  Text
+  ESNAD is the executive and operational arm of the Ministry of Industry and Mineral Resources, and a dynamic driver for the mining sector in the Kingdom
+  
+  On the land of the Kingdom and among its wealth, the Saudi Mining Services Company (ESNAD ) took its first steps on April 27, 2020, according to Cabinet Resolution No. (575). Since its launch, ESNAD has devoted all its efforts to enhancing the investment environment and promoting the mining sector by developing pioneering services and integrated digital solutions that support investors, facilitate their businesses and projects, and ensure financial and regulatory compliance by organizing the monitoring of mining activities, which enhances confidence and encourages sustainable growth.
+  
+  It aims to achieve optimal exploitation of mineral resources by applying the latest global professional practices and advanced technologies, improving the investor experience, facilitating licensing procedures, and creating a stimulating investment environment by developing the mining investment system and implementing its executive regulations; thus ensuring transparency, sustainability, environmental protection, local community development, and investment in land and people by creating numerous job opportunities for local communities around the Kingdom.
+  
+  About text formats
+  Text format
+  
+  Full HTML
+  List additional actions
+  to
+  Parent
+  Parent
+  1
+  Toggle Actions
+  Parent Class
+  Parent	
+  Image with text
+  Toggle Actions
+  
+  Attachment
+  image
+  DSC06052-scaled.jpg
+  The maximum number of media items have been selected.
+  Text
+  ESNAD is moving forward in developing the business offered to local investors.
+  To facilitate licensing and business requirements that contribute positively to the growth of the sector, it is also committed to applying the highest standards of governance and compliance to protect the environment and manage risks, promote social development, and raise the level of worker safety, which ensures business sustainability. Thus, supporting the Kingdom’s orientations to optimally exploit its wealth and develop its mineral industries, which contributes to increasing the gross domestic product, so that this sector is a strong pillar in the national economy alongside the oil and petrochemical industries.
+  
+  About text formats
+  List additional actions
+  to
+  Parent
+  Our Values Wrapper
+  2
+  Toggle Actions
+  Our Values
+  Our Values
+  Our Value para
+  Toggle Actions
+  Our Values
+  Toggle Actions
+  
+  value icon
+  icon
+  Partnership.svg.png
+  The maximum number of media items have been selected.
+  Value Label
+  Partnership
+  value Description
+  We work on building strategic partnerships based on a shared vision and an effective collaboration approach, appreciating the value the third party adds to ESNAD and treating them as partners contributing to our success.
+  
+  About text formats
+  Our Values
+  Toggle Actions
+  
+  value icon
+  icon
+  Team.svg.png
+  The maximum number of media items have been selected.
+  Value Label
+  People
+  value Description
+  We place Team Members at the core of our focus, empowering them to innovate and achieve their goals by providing a stimulating work environment that supports continuous development and personal and professional growth.
+  
+  About text formats
+  to
+  Our Value para
+  List additional actions
+  to
+  Main
+  Published
+  Last saved 22 Aug 2025 - 20:24
+  Author admin
+  Create new revision
+  Revision log message
+  Briefly describe the changes you have made.
+  Menu settings
+  Not in menu
+  URL alias
+  No alias
+  Authoring information
+  By admin (1) on 2025-08-22
+  Promotion options
+  Not promoted
+  Published
+  Delete
 </body>
+
 </html>
