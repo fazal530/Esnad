@@ -1,6 +1,0 @@
-settings:
-  plugins:
-    ckeditor5_codeBlock:
-      languages:
-        -
-          label: 'نص عادي'
