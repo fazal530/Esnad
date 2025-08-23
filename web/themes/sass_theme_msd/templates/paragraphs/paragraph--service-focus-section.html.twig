@@ -47,17 +47,11 @@
   ]
 %}
 {% block paragraph %}
-  <div class="services-card-wrapper" {{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="services-card">
-      <div class="icon-wrapper">
-      {{ content.field_card_icon }}
+    <div class="focus-section">
+      {{ content }}
       </div>
-      <div class="body9">
-      {{ content.field_text }}
-      </div>
-     </div>
-    
     {% endblock %}
   </div>
 {% endblock paragraph %}

@@ -164,8 +164,16 @@ $font_Arial: Arial;
 .body13 {
   font-family: $font_Arial;
   font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  @include tablet{
+    font-size: 30px;
+    line-height: 42px;
+  }
+  @include desktop{
   font-size: 40px;
   line-height: 56px;
+  }
 }
 
 // Body14
@@ -179,17 +187,9 @@ $font_Arial: Arial;
 // Body15
 .body15 {
   font-family: $font_Arial;
-  font-weight: 400;
-  font-size: 14.2px;
-  line-height: 100%;
-
-  @include tablet {
-    font-size: 15.6px;
-  }
-
-  @include desktop {
-    font-size: 18px;
-  }
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 // Body16
@@ -245,6 +245,42 @@ $font_Arial: Arial;
   @include desktop {
     font-size: 12px;
     line-height: 12px;
+  }
+}
+
+//body20
+.body20{
+  font-family: $font_Arial;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+
+  @include tablet {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  @include desktop {
+    font-size: 55px;
+    line-height: 72px;
+  }
+}
+
+// Body21
+.body21 {
+  font-family: $font_Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 27px;
   }
 }
 .body24 {

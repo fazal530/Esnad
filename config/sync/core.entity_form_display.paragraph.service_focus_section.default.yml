@@ -1,25 +1,18 @@
-uuid: 770d8e9d-3241-4a68-8d57-d8b02797e60e
+uuid: 7f774a78-6670-4686-bd46-68ca2468af8b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.services.field_service_design
-    - field.field.paragraph.services.field_services
-    - paragraphs.paragraphs_type.services
+    - field.field.paragraph.service_focus_section.field_service_focus_section
+    - paragraphs.paragraphs_type.service_focus_section
   module:
     - paragraphs
-id: paragraph.services.default
+id: paragraph.service_focus_section.default
 targetEntityType: paragraph
-bundle: services
+bundle: service_focus_section
 mode: default
 content:
-  field_service_design:
-    type: options_select
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_services:
+  field_service_focus_section:
     type: paragraphs
     weight: 0
     region: content
