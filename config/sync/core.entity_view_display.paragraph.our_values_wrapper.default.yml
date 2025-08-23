@@ -1,0 +1,33 @@
+uuid: 7a754cb6-aa1a-4ce1-8e68-f2ac553f5a2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_values_wrapper.field_card_label
+    - field.field.paragraph.our_values_wrapper.field_our_value_para
+    - paragraphs.paragraphs_type.our_values_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.our_values_wrapper.default
+targetEntityType: paragraph
+bundle: our_values_wrapper
+mode: default
+content:
+  field_card_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_our_value_para:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

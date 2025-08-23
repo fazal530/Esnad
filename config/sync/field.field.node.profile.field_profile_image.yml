@@ -1,29 +1,20 @@
-uuid: 610e1d75-9940-42a0-98c5-73485c0d84b6
+uuid: ae315526-6421-40d7-96e0-cc6f739ef218
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.article
+    - field.storage.node.field_profile_image
+    - node.type.profile
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
-_core:
-  default_config_hash: j0riO_-77ZFWNLtj0iJ31HnohiNjdn8HUL86RueCF-M
-id: node.article.field_image
-field_name: field_image
+id: node.profile.field_profile_image
+field_name: field_profile_image
 entity_type: node
-bundle: article
-label: 'Site Image'
+bundle: profile
+label: profile-image
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

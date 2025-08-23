@@ -2,9 +2,5 @@ settings:
   plugins:
     ckeditor5_codeBlock:
       languages:
-        0:
+        -
           label: 'نص عادي'
-        6:
-          label: HTML
-        9:
-          label: PHP

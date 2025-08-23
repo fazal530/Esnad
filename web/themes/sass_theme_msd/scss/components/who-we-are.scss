@@ -1,0 +1,34 @@
+.body-section {
+    background-color: red;
+
+    p {
+        @extend .body24;
+        color: $light-gray ;
+    }
+
+    .main-wrapper {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        padding-top: 30px;
+        @include tablet {
+            gap: 200px !important;
+            flex-direction: row;
+        }
+
+
+        .left {
+            p {
+                @extend .body15;
+                color: $light-gray ;
+            }
+        }
+
+        .right {
+            p {
+                @extend .body15;
+                color: $light-gray ;
+            }
+        }
+    }
+}

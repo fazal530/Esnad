@@ -1,0 +1,19 @@
+uuid: f0bc44dc-4da2-44ea-813c-71e14b0097b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.statistic_item
+id: paragraph.statistic_item.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: statistic_item
+label: Number
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

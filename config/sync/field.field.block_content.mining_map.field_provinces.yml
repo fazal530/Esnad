@@ -1,18 +1,18 @@
-uuid: 08d5c174-d3ed-4c0e-a65e-d3fcd39ef791
+uuid: bfb80201-1cc5-4fd6-b6b3-4ad10321a55f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_social_links
-    - node.type.article
-    - paragraphs.paragraphs_type.social_icon
+    - block_content.type.mining_map
+    - field.storage.block_content.field_provinces
+    - paragraphs.paragraphs_type.province
   module:
     - entity_reference_revisions
-id: node.article.field_social_links
-field_name: field_social_links
-entity_type: node
-bundle: article
-label: 'Social Links'
+id: block_content.mining_map.field_provinces
+field_name: field_provinces
+entity_type: block_content
+bundle: mining_map
+label: Provinces
 description: ''
 required: false
 translatable: false
@@ -22,40 +22,46 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      social_icon: social_icon
+      province: province
     negate: 0
     target_bundles_drag_drop:
       attachments:
-        weight: 12
-        enabled: false
-      children:
-        weight: 13
-        enabled: false
-      hero_section:
         weight: 14
         enabled: false
-      image_with_text:
+      children:
         weight: 15
         enabled: false
-      link_button:
+      hero_section:
         weight: 16
         enabled: false
-      parent:
+      image_with_text:
         weight: 17
         enabled: false
-      services:
+      link_button:
         weight: 18
         enabled: false
-      services_card_wrapper:
-        weight: 20
-        enabled: false
-      services_cards:
+      parent:
         weight: 19
         enabled: false
-      social_icon:
+      pin:
+        weight: 20
+        enabled: false
+      province:
         weight: 21
         enabled: true
-      text:
+      services:
         weight: 22
+        enabled: false
+      services_card_wrapper:
+        weight: 24
+        enabled: false
+      services_cards:
+        weight: 23
+        enabled: false
+      social_icon:
+        weight: 25
+        enabled: false
+      text:
+        weight: 26
         enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: 63b6e472-79b1-49fb-b3ed-88fb7d76e248
+langcode: en
+status: true
+dependencies: {  }
+id: statistic_wrapper
+label: 'Statistic Wrapper'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
