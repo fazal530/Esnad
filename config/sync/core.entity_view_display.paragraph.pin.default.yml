@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.pin.field_card_label
+    - field.field.paragraph.pin.field_area2
     - field.field.paragraph.pin.field_licenses
     - field.field.paragraph.pin.field_materials
     - field.field.paragraph.pin.field_text
@@ -15,13 +15,13 @@ targetEntityType: paragraph
 bundle: pin
 mode: default
 content:
-  field_card_label:
+  field_area2:
     type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
   field_licenses:
     type: string
