@@ -1,0 +1,10 @@
+uuid: 4fa16851-2f9e-43fc-ab2e-dffdb2ff0d53
+langcode: en
+status: true
+dependencies: {  }
+id: services_cards
+label: 'Services Cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

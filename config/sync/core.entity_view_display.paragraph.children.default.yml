@@ -1,0 +1,24 @@
+uuid: a3568c4b-4bcd-4294-adce-fe1701270a69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.children.field_children
+    - paragraphs.paragraphs_type.children
+  module:
+    - entity_reference_revisions
+id: paragraph.children.default
+targetEntityType: paragraph
+bundle: children
+mode: default
+content:
+  field_children:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

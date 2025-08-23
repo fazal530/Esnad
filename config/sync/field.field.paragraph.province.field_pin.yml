@@ -1,0 +1,67 @@
+uuid: 6a5486ac-f5f2-4e01-9306-69cc7faf9dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pin
+    - paragraphs.paragraphs_type.pin
+    - paragraphs.paragraphs_type.province
+  module:
+    - entity_reference_revisions
+id: paragraph.province.field_pin
+field_name: field_pin
+entity_type: paragraph
+bundle: province
+label: Pin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pin: pin
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 14
+        enabled: false
+      children:
+        weight: 15
+        enabled: false
+      hero_section:
+        weight: 16
+        enabled: false
+      image_with_text:
+        weight: 17
+        enabled: false
+      link_button:
+        weight: 18
+        enabled: false
+      parent:
+        weight: 19
+        enabled: false
+      pin:
+        weight: 20
+        enabled: true
+      province:
+        weight: 21
+        enabled: false
+      services:
+        weight: 22
+        enabled: false
+      services_card_wrapper:
+        weight: 24
+        enabled: false
+      services_cards:
+        weight: 23
+        enabled: false
+      social_icon:
+        weight: 25
+        enabled: false
+      text:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

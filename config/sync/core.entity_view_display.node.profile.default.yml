@@ -1,0 +1,42 @@
+uuid: 68438141-fb5f-43b2-bae6-612fa096e20d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.profile.field_designation
+    - field.field.node.profile.field_profile_image
+    - node.type.profile
+  module:
+    - image
+    - user
+id: node.profile.default
+targetEntityType: node
+bundle: profile
+mode: default
+content:
+  field_designation:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_profile_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

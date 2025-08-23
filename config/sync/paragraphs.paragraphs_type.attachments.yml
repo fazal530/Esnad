@@ -1,0 +1,10 @@
+uuid: c94fb51a-b2a4-42a1-a421-576b3949e4ad
+langcode: en
+status: true
+dependencies: {  }
+id: attachments
+label: Attachments
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

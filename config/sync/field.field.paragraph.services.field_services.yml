@@ -1,0 +1,59 @@
+uuid: 3144f2fb-05c9-43b7-924f-5ead2cef4387
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_services
+    - paragraphs.paragraphs_type.link_button
+    - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.services_card_wrapper
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.services.field_services
+field_name: field_services
+entity_type: paragraph
+bundle: services
+label: Services
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      link_button: link_button
+      services_card_wrapper: services_card_wrapper
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 7
+        enabled: false
+      children:
+        weight: 8
+        enabled: false
+      hero_section:
+        weight: 9
+        enabled: false
+      link_button:
+        weight: 13
+        enabled: true
+      parent:
+        weight: 10
+        enabled: false
+      services:
+        weight: 11
+        enabled: false
+      services_card_wrapper:
+        weight: 17
+        enabled: true
+      services_cards:
+        weight: 16
+        enabled: false
+      text:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

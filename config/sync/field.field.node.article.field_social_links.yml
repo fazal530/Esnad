@@ -1,0 +1,61 @@
+uuid: 08d5c174-d3ed-4c0e-a65e-d3fcd39ef791
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_links
+    - node.type.article
+    - paragraphs.paragraphs_type.social_icon
+  module:
+    - entity_reference_revisions
+id: node.article.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: article
+label: 'Social Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_icon: social_icon
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 12
+        enabled: false
+      children:
+        weight: 13
+        enabled: false
+      hero_section:
+        weight: 14
+        enabled: false
+      image_with_text:
+        weight: 15
+        enabled: false
+      link_button:
+        weight: 16
+        enabled: false
+      parent:
+        weight: 17
+        enabled: false
+      services:
+        weight: 18
+        enabled: false
+      services_card_wrapper:
+        weight: 20
+        enabled: false
+      services_cards:
+        weight: 19
+        enabled: false
+      social_icon:
+        weight: 21
+        enabled: true
+      text:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

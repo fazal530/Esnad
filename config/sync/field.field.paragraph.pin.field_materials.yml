@@ -1,0 +1,19 @@
+uuid: 965ae1dc-4fe6-4dc1-97f1-b4ee82fb061b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_materials
+    - paragraphs.paragraphs_type.pin
+id: paragraph.pin.field_materials
+field_name: field_materials
+entity_type: paragraph
+bundle: pin
+label: 'Materials '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

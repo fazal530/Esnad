@@ -1,0 +1,43 @@
+uuid: 268f72a2-03a3-44d3-9bab-59113a25f87a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_icons
+    - field.storage.block_content.field_ref_icon_para
+    - paragraphs.paragraphs_type.social_icon
+  module:
+    - entity_reference_revisions
+id: block_content.social_icons.field_ref_icon_para
+field_name: field_ref_icon_para
+entity_type: block_content
+bundle: social_icons
+label: 'Ref icon para'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_icon: social_icon
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 6
+        enabled: false
+      children:
+        weight: 7
+        enabled: false
+      parent:
+        weight: 8
+        enabled: false
+      social_icon:
+        weight: 9
+        enabled: true
+      text:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

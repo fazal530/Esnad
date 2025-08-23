@@ -1,0 +1,62 @@
+uuid: 5f45b02d-627f-4ad9-b209-052459fb4978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parent
+    - paragraphs.paragraphs_type.children
+    - paragraphs.paragraphs_type.parent
+  module:
+    - entity_reference_revisions
+id: paragraph.parent.field_parent
+field_name: field_parent
+entity_type: paragraph
+bundle: parent
+label: Parent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      children: children
+      parent: parent
+    negate: 1
+    target_bundles_drag_drop:
+      attachments:
+        weight: 5
+        enabled: false
+      children:
+        weight: 6
+        enabled: true
+      hero_section:
+        weight: 14
+        enabled: false
+      image_with_text:
+        weight: 8
+        enabled: false
+      link_button:
+        weight: 16
+        enabled: false
+      parent:
+        weight: 7
+        enabled: true
+      services:
+        weight: 18
+        enabled: false
+      services_card_wrapper:
+        weight: 20
+        enabled: false
+      services_cards:
+        weight: 19
+        enabled: false
+      social_icon:
+        weight: 21
+        enabled: false
+      text:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions
