@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.profile.field_designation
-    - field.field.node.profile.field_image
+    - field.field.node.profile.field_profile_image
     - image.style.thumbnail
     - node.type.profile
   module:
@@ -31,9 +31,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_image:
+  field_profile_image:
     type: image_image
-    weight: 5
+    weight: 122
     region: content
     settings:
       progress_indicator: throbber

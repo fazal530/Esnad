@@ -5,28 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.profile.field_designation
-    - field.field.node.profile.field_image
-    - image.style.medium
+    - field.field.node.profile.field_profile_image
     - node.type.profile
   module:
-    - image
     - user
 id: node.profile.teaser
 targetEntityType: node
 bundle: profile
 mode: teaser
 content:
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: medium
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: -1
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -34,4 +21,5 @@ content:
     region: content
 hidden:
   field_designation: true
+  field_profile_image: true
   langcode: true
