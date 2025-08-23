@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.our_values.field_attachment
-    - field.field.paragraph.our_values.field_card_label
     - field.field.paragraph.our_values.field_hero_text
     - paragraphs.paragraphs_type.our_values
   module:
@@ -22,14 +21,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_card_label:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
     region: content
   field_hero_text:
     type: text_default
