@@ -47,9 +47,11 @@
   ]
 %}
 {% block paragraph %}
-  <div class="services-wrapper container" {{ attributes.addClass(classes) }}>
+<div class="    {{content.field_service_design.0 }} " {{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content }}
+   <div class="services-wrapper container">
+      {{ content.field_services }}
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

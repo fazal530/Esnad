@@ -1,6 +1,7 @@
+
+.home-service{
 .services-wrapper {
-    background-color: $dark-gray;
-    padding-block: 50px;
+    background-color: $primary;
 
     .services-text {
         p {
@@ -9,7 +10,7 @@
 
         .body7 {
             color: $light-gray;
-            padding-block: 24px 10px;
+           
         }
 
         p {
@@ -21,7 +22,13 @@
 
         .body8 {
             color: $light-gray;
-            padding-block: 55px 76px;
+            padding-block: 34px 21px;
+            @include tablet{
+                 padding-block: 40px 21px;
+            }
+            @include desktop{
+                padding-block: 55px 76px;
+            }
         }
     }
 
@@ -42,8 +49,11 @@
             justify-content: left;
             align-items: center;
             padding-left: 20px;
-            background-color: $light-gray;
+            background-color: $gray-light;
             border-radius: 30px;
+            &:hover{
+                background-color: $light-gray ;
+            }
 
             @include tablet {
                 height: 263px;
@@ -60,10 +70,12 @@
 
                 .body9 {
                     font-weight: 700 !important;
+                    color: $secondary;
                 }
             }
         }
     }
+}
 }
 
 .link-button{

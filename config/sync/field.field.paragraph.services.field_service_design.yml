@@ -1,0 +1,21 @@
+uuid: 47decf77-0ae1-40d1-8a5b-93c201b1913a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_design
+    - paragraphs.paragraphs_type.services
+  module:
+    - options
+id: paragraph.services.field_service_design
+field_name: field_service_design
+entity_type: paragraph
+bundle: services
+label: 'Service design'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -51,7 +51,9 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {% set content = content|without('field_parent_class') %}
+
       {{ content }}
+    
     {% endblock %}
   </div>
 {% endblock paragraph %}
