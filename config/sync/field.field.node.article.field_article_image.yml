@@ -1,13 +1,11 @@
-uuid: 8ce06053-883c-41ab-af96-20f314ff5fe0
+uuid: f7137e7b-d663-4240-bf7c-1d38f9381166
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_article_image
+    - media.type.image
     - node.type.article
-    - paragraphs.paragraphs_type.attachments
-  module:
-    - entity_reference_revisions
 id: node.article.field_article_image
 field_name: field_article_image
 entity_type: node
@@ -19,43 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      attachments: attachments
-    negate: 0
-    target_bundles_drag_drop:
-      attachments:
-        weight: 12
-        enabled: true
-      children:
-        weight: 13
-        enabled: false
-      hero_section:
-        weight: 14
-        enabled: false
-      image_with_text:
-        weight: 15
-        enabled: false
-      link_button:
-        weight: 16
-        enabled: false
-      parent:
-        weight: 17
-        enabled: false
-      services:
-        weight: 18
-        enabled: false
-      services_card_wrapper:
-        weight: 20
-        enabled: false
-      services_cards:
-        weight: 19
-        enabled: false
-      social_icon:
-        weight: 21
-        enabled: false
-      text:
-        weight: 22
-        enabled: false
-field_type: entity_reference_revisions
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

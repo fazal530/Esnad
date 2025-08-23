@@ -247,3 +247,21 @@ $font_Arial: Arial;
     line-height: 12px;
   }
 }
+.body24 {
+  font-family: $font_IBM_plex;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+
+  @include tablet {
+    font-size: 30.4px;
+    line-height: 42.56px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 55.99px;
+  }
+}
+
+

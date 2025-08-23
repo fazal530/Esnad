@@ -1,0 +1,70 @@
+uuid: 4a7c1e47-60eb-478d-9810-883fef15bfe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_our_value_para
+    - paragraphs.paragraphs_type.our_values
+    - paragraphs.paragraphs_type.our_values_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.our_values_wrapper.field_our_value_para
+field_name: field_our_value_para
+entity_type: paragraph
+bundle: our_values_wrapper
+label: 'Our Value para'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      our_values: our_values
+    negate: 0
+    target_bundles_drag_drop:
+      all_blocks:
+        weight: 15
+        enabled: false
+      attachments:
+        weight: 16
+        enabled: false
+      children:
+        weight: 17
+        enabled: false
+      hero_section:
+        weight: 18
+        enabled: false
+      image_with_text:
+        weight: 19
+        enabled: false
+      link_button:
+        weight: 20
+        enabled: false
+      our_values:
+        weight: 21
+        enabled: true
+      our_values_wrapper:
+        weight: 22
+        enabled: false
+      parent:
+        weight: 23
+        enabled: false
+      services:
+        weight: 24
+        enabled: false
+      services_card_wrapper:
+        weight: 26
+        enabled: false
+      services_cards:
+        weight: 25
+        enabled: false
+      social_icon:
+        weight: 27
+        enabled: false
+      text:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

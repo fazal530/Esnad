@@ -1,0 +1,26 @@
+uuid: 12d3ba50-e023-4a44-b33e-a275557de77b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.all_blocks.field_all_blocks_ref
+    - paragraphs.paragraphs_type.all_blocks
+  module:
+    - block_field
+id: paragraph.all_blocks.default
+targetEntityType: paragraph
+bundle: all_blocks
+mode: default
+content:
+  field_all_blocks_ref:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

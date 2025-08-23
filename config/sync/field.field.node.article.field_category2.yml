@@ -1,0 +1,29 @@
+uuid: 4e0393c3-25f1-402f-afbd-fff40da5c5e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category2
+    - node.type.article
+    - taxonomy.vocabulary.bolg_category
+id: node.article.field_category2
+field_name: field_category2
+entity_type: node
+bundle: article
+label: 'News/Blogs Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bolg_category: bolg_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
