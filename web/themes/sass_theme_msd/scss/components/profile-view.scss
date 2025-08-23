@@ -1,0 +1,73 @@
+.profile-outerwrapper{
+    background-color: $primary;
+    @extend .container;
+    header{
+        @extend .body3;
+        color: $dark-gray;
+        padding-bottom: 38px;
+        @include tablet{
+            padding-bottom: 49px;  
+        }
+        @include desktop {
+            padding-bottom: 72px;
+        }
+
+    }
+    .profile-wrapper{
+       .views-row{
+        grid-column: span 4;
+        @include tablet {
+            grid-column: auto;
+        }
+       }
+        .profile{
+            .image{
+                height: 201px;
+                width: 100%;
+
+                @include tablet{
+                    width: 116.39px;
+                    height: 75.42px;
+                }
+                @include desktop {
+                    width: 308px;
+                    height: 201px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    @include tablet{
+                        object-fit: cover;
+                    }
+                }
+                margin-bottom: 25px;
+                @include tablet{
+                    margin-bottom: 28px;
+                }
+                @include desktop{
+                    margin-bottom: 38px;
+                }
+               
+            }
+            .name{
+                color: $off-white;
+                @extend .body25;
+                margin-bottom: 7px;
+                @include tablet{
+                    margin-bottom: 12px;   
+                }
+                @include desktop {
+                    margin-bottom: 16px;
+                }
+            }
+            .designation{
+                @extend .body26;
+                color: $light-gray;
+            }
+        }
+    }
+
+}
+
+
