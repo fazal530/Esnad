@@ -12,6 +12,7 @@ global:
     js/menu.js: {}
     js/custom.js: {} 
     js/counter.js: {}
+    js/animated-text.js: {}
   dependencies:
     - core/drupal
     - core/jquery
