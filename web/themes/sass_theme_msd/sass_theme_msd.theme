@@ -11,3 +11,34 @@
 function sass_theme_msd_theme($existing, $type, $theme, $path) {
   return [];
 }
+
+/**
+ * Preprocess for province paragraphs.
+ *
+ * Each "Province" paragraph can reference many "Pin" paragraphs.
+ * Here we attach a simple index number to each referenced Pin so
+ * Twig templates can display them as 0, 1, 2... for each province.
+ */
+function sass_theme_msd_preprocess_paragraph__province(&$variables) {
+  // Load all referenced pins
+  if (!empty($variables['paragraph']->field_pin->referencedEntities())) {
+    $pins = $variables['paragraph']->field_pin->referencedEntities();
+    foreach ($pins as $delta => $pin) {
+      // Attach an index variable per pin paragraph
+      $pin->pin_index = $delta;
+    }
+  }
+}
+
+/**
+ * Preprocess for pin paragraphs.
+ *
+ * Each Pin paragraph may have an index (set above in Province preprocess).
+ * We expose that index as a Twig variable so templates can use {{ pin_index }}.
+ */
+function sass_theme_msd_preprocess_paragraph__pin(&$variables) {
+  // If province preprocess already attached index, use it
+  if (isset($variables['paragraph']->pin_index)) {
+    $variables['pin_index'] = $variables['paragraph']->pin_index;
+  }
+}

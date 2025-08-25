@@ -39,11 +39,11 @@
  */
 #}
 
-{# Extra info for tooltip or modal #}
-<div class="pin-info">
+<div class="pin-wrapper" data-mining-map-circle-id={{pin_index}}>
+  <p>{{ content.field_text }}</p>
+  <div>
   <p>{{ content.field_card_label }}</p>
   <p>{{ content.field_licenses }}</p>
   <p>{{ content.field_materials }}</p>
-  <p>{{ content.field_text }}</p>
+  </div>
 </div>
-
