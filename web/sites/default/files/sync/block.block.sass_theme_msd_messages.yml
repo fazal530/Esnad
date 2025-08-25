@@ -1,4 +1,4 @@
-uuid: 69a3db90-af66-40b0-a624-4d66d49876db
+uuid: 48a74f92-f30c-46c9-bc52-8e68d1e5b9a7
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: sass_theme_msd_messages
 theme: sass_theme_msd
 region: highlighted
-weight: -5
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:
