@@ -3,7 +3,8 @@
     @extend .container;
   
     @include desktop{
-        padding-bottom: 178px;
+        padding-bottom: 257px;
+
     }
     .ceo-message {
         @extend .body11;

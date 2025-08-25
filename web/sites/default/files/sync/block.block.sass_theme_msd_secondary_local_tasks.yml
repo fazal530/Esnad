@@ -1,4 +1,4 @@
-uuid: 8c51e189-df3c-48e5-ade2-e567c8d2802e
+uuid: 73e214c0-addd-4238-a9a8-31b8309edb73
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: sass_theme_msd_secondary_local_tasks
 theme: sass_theme_msd
 region: highlighted
-weight: -2
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

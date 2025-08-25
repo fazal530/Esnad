@@ -14,10 +14,16 @@
 
     }
     .profile-wrapper{
+        padding-bottom: 30%;
        .views-row{
-        grid-column: span 4;
-        @include tablet {
-            grid-column: auto;
+        grid-column: span 5;
+
+        @include tablet{
+            grid-column: span 2;
+        }
+        @include desktop{
+            grid-column: span 3;
+
         }
        }
         .profile{
@@ -26,24 +32,26 @@
                 width: 100%;
 
                 @include tablet{
-                    width: 116.39px;
-                    height: 75.42px;
+                    height: 20rem;
                 }
                 @include desktop {
-                    width: 308px;
                     height: 201px;
                 }
                 img{
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
+                    object-fit: cover;
                     @include tablet{
-                        object-fit: cover;
+                        border-radius: 64px;
+                    }
+                    @include desktop {
+                        border-radius: unset !important;
                     }
                 }
                 margin-bottom: 25px;
                 @include tablet{
                     margin-bottom: 28px;
+
                 }
                 @include desktop{
                     margin-bottom: 38px;
