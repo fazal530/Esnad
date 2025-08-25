@@ -17,6 +17,12 @@ settings:
     -
       value: service_page
       label: service-page
+    -
+      value: about_section
+      label: about-section
+    -
+      value: counter_section
+      label: counter-section
   allowed_values_function: ''
 module: options
 locked: false

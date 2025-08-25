@@ -1645,7 +1645,7 @@ html, body {
 }
 
 .body-section {
-  background-color: red;
+  background-color: #303336;
 }
 .body-section .heading {
   color: #CFD2D3;
@@ -1663,6 +1663,7 @@ html, body {
   }
 }
 .body-section .main-wrapper .left-description p {
+<<<<<<< HEAD
   color: #CFD2D3;
 }
 .body-section .main-wrapper .right-description p {
@@ -1686,6 +1687,31 @@ html, body {
 .besiness-insight .business-insight_body .detail .heading {
   color: #CFD2D3;
 }
+=======
+  color: #CFD2D3;
+}
+.body-section .main-wrapper .right-description p {
+  color: #CFD2D3;
+}
+
+.besiness-insight .business-insight_body {
+  display: flex;
+  gap: 60px;
+}
+.besiness-insight .business-insight_body .image_wrapper {
+  width: 100%;
+  height: 100%;
+}
+.besiness-insight .business-insight_body .image_wrapper img {
+  width: 640.13px;
+  height: 426.83px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.besiness-insight .business-insight_body .detail .heading {
+  color: #CFD2D3;
+}
+>>>>>>> main
 .besiness-insight .business-insight_body .detail .description {
   color: #CFD2D3;
 }

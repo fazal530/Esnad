@@ -2,6 +2,10 @@ uuid: b97e131e-d80b-43ff-bd74-474063e5964d
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:social_icons:285bd8a1-048d-4898-b8aa-34525e85e739'
+  module:
+    - block_content
   theme:
     - sass_theme_msd
 id: sass_theme_msd_socialicons

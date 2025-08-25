@@ -1,0 +1,10 @@
+uuid: 1c89dfff-ff6d-48da-9e88-64e830687c52
+langcode: en
+status: true
+dependencies: {  }
+id: business_insight
+label: 'Business Insight'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

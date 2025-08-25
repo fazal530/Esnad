@@ -1,0 +1,19 @@
+uuid: 902db329-f7f0-46c5-be7b-8b6b3fa07eb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.business_insight
+id: paragraph.business_insight.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: business_insight
+label: 'Business Insight Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

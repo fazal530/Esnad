@@ -1,0 +1,19 @@
+uuid: 0da72250-4fc4-41ea-bbc2-947f7f000081
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.heading_with_colu
+id: paragraph.heading_with_colu.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: heading_with_colu
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

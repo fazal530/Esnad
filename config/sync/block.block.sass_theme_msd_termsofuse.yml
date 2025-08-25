@@ -2,6 +2,10 @@ uuid: 3bf4552d-eebf-4f74-99ca-09609e496f76
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:c1109a52-fc05-4061-8ac3-9c383050a05e'
+  module:
+    - block_content
   theme:
     - sass_theme_msd
 id: sass_theme_msd_termsofuse

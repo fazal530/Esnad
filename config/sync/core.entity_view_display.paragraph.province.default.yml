@@ -19,7 +19,7 @@ mode: default
 content:
   field_background_video:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -28,7 +28,7 @@ content:
     region: content
   field_pin:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -37,7 +37,7 @@ content:
     region: content
   field_province:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 4
