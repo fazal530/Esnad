@@ -1,0 +1,24 @@
+uuid: 4d761009-d2ea-48ec-97a8-294e041c4cb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_focus_section.field_service_focus_section
+    - paragraphs.paragraphs_type.service_focus_section
+  module:
+    - entity_reference_revisions
+id: paragraph.service_focus_section.default
+targetEntityType: paragraph
+bundle: service_focus_section
+mode: default
+content:
+  field_service_focus_section:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

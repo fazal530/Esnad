@@ -52,119 +52,118 @@
 #}
 <div id="loader">
 	<div class="spinner"></div>
-</div>
-
-<div id="page-wrapper">
-
+  </div>
+  
+  <div id="page-wrapper">
 	<div id="page">
-
-		{% if page.menubar %}
+  
+	  {% if page.menubar %}
 		<div class="menubar">{{ page.menubar }}</div>
-		{% endif %}
-
-
-
-		<header id="header" class="header" role="banner">
-			<div class="section layout-container clearfix">
-				<div class="header-section">
-					<div class="header_wrapper">
-						<div class="logo-with-menu">
-							<div class="flex">
-								{{ drupal_entity('block', 'sass_theme_msd_site_branding', check_access=false) }}
-								{{ drupal_entity('block', 'sass_theme_msd_mainnavigation', check_access=false) }}
-
-							</div>
-						</div>
-						<div class="search-with-languageswitcher">
-							<div class="flex-2">
-								{{ drupal_entity('block', 'sass_theme_msd_search', check_access=false) }}
-								{{ drupal_entity('block', 'sass_theme_msd_languageswitcher', check_access=false) }}
-							</div>
-						</div>
-
-					</div>
+	  {% endif %}
+  
+	  <header id="header" class="header" role="banner">
+		<div class="section layout-container clearfix">
+		  <div class="header-section">
+			<div class="header_wrapper">
+			  <div class="logo-with-menu">
+				<div class="flex">
+				  {{ drupal_entity('block', 'sass_theme_msd_site_branding', check_access=false) }}
+				  {{ drupal_entity('block', 'sass_theme_msd_mainnavigation', check_access=false) }}
 				</div>
+			  </div>
+			  <div class="search-with-languageswitcher">
+				<div class="flex-2">
+				  {{ drupal_entity('block', 'sass_theme_msd_search', check_access=false) }}
+				  {{ drupal_entity('block', 'sass_theme_msd_languageswitcher', check_access=false) }}
+				</div>
+			  </div>
 			</div>
-		</header>
-
-
-
-		{% if page.highlighted %}
+		  </div>
+		</div>
+	  </header>
+  
+	  {% if page.highlighted %}
 		<div class="highlighted">
-			<aside class="layout-container section clearfix" role="complementary">
-				{{ page.highlighted }}
-			</aside>
+		  <aside class="layout-container section clearfix" role="complementary">
+			{{ page.highlighted }}
+		  </aside>
 		</div>
-		{% endif %}
-		{% if page.featured_top %}
+	  {% endif %}
+  
+	  {% if page.featured_top %}
 		<div class="featured-top">
-			<aside class="featured-top__inner section layout-container clearfix" role="complementary">
-				{{ page.featured_top }}
-			</aside>
+		  <aside class="featured-top__inner section layout-container clearfix" role="complementary">
+			{{ page.featured_top }}
+		  </aside>
 		</div>
-		{% endif %}
-
-
-
-		{{ page.breadcrumb }}
-		<div id="main-wrapper" class="page-layout-main-wrapper layout-container clearfix">
-			<div id="main"
-				class="layout-main clearfix {% if page.sidebar_first %}has-sidebar-first{% endif %} {% if page.sidebar_second %}has-sidebar-second{% endif %}">
-				{% if page.sidebar_first %}
-				<div id="sidebar-first" class="column sidebar">
-					<aside class="section" role="complementary">
-						{{ page.sidebar_first }}
-					</aside>
-				</div>
-				{% endif %}
-				<main id="content" class="column main-content" role="main">
-					<section class="section">
-						<a id="main-content" tabindex="-1"></a>
-						{{ page.content }}
-					</section>
-				</main>
-				{% if page.sidebar_second %}
-				<div id="sidebar-second" class="column sidebar">
-					<aside class="section" role="complementary">
-						{{ page.sidebar_second }}
-					</aside>
-				</div>
-				{% endif %}
+	  {% endif %}
+  
+	  {{ page.breadcrumb }}
+  
+	  <div id="main-wrapper" class="page-layout-main-wrapper layout-container clearfix">
+		<div id="main"
+		  class="layout-main clearfix 
+		  {% if page.sidebar_first %}has-sidebar-first{% endif %} 
+		  {% if page.sidebar_second %}has-sidebar-second{% endif %}">
+  
+		  {% if page.sidebar_first %}
+			<div id="sidebar-first" class="column sidebar">
+			  <aside class="section" role="complementary">
+				{{ page.sidebar_first }}
+			  </aside>
 			</div>
+		  {% endif %}
+  
+		  <main id="content" class="column main-content" role="main">
+			<section class="section">
+			  <a id="main-content" tabindex="-1"></a>
+			  {{ page.content }}
+			</section>
+		  </main>
+  
+		  {% if page.sidebar_second %}
+			<div id="sidebar-second" class="column sidebar">
+			  <aside class="section" role="complementary">
+				{{ page.sidebar_second }}
+			  </aside>
+			</div>
+		  {% endif %}
+  
 		</div>
-
-		<footer class="site-footer">
-			<div class="layout-container">
-				{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-				<div class="site-footer__top clearfix">
-					<div class="upper-footer">
-						<div class="footer-logo hide-on-tablet-n-moblie">
-							{{ page.footer_first }}
-						</div>
-						<div class="footer-about-menu hide-on-tablet-n-moblie">
-							{{ page.footer_second }}
-						</div>
-						{{ page.footer_third }}
-						<div class="footer-fourth hide-on-tablet-n-moblie">
-							{{ page.footer_fourth }}
-						</div>
-						<div class="social-icon">
-							{% if page.footer_fifth %}
-
-							{{ page.footer_fifth }}
-						</div>
-					</div>
-					<div class="footer-terms hide-on-desktop">
-						{{ page.footer_sixth}}
-					</div>
-					{{ page.footer_seventh }}
+	  </div>
+  
+	  <footer class="site-footer">
+		<div class="layout-container">
+		  {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth or page.footer_sixth or page.footer_seventh %}
+			<div class="site-footer__top clearfix">
+			  <div class="upper-footer">
+				<div class="footer-logo hide-on-tablet-n-moblie">
+				  {{ page.footer_first }}
 				</div>
+				<div class="footer-about-menu hide-on-tablet-n-moblie">
+				  {{ page.footer_second }}
+				</div>
+				{{ page.footer_third }}
+				<div class="footer-fourth hide-on-tablet-n-moblie">
+				  {{ page.footer_fourth }}
+				</div>
+				{% if page.footer_fifth %}
+				  <div class="social-icon">
+					{{ page.footer_fifth }}
+				  </div>
 				{% endif %}
-
+			  </div>
+  
+			  <div class="footer-terms hide-on-desktop">
+				{{ page.footer_sixth }}
+			  </div>
+  
+			  {{ page.footer_seventh }}
 			</div>
-			{% endif %}
-
+		  {% endif %}
+		</div>
+	  </footer>
+  
 	</div>
-	</footer>
-</div>
-</div>
+  </div>
+  

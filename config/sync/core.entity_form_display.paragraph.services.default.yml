@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.services.field_service_design
     - field.field.paragraph.services.field_services
     - paragraphs.paragraphs_type.services
   module:
@@ -12,6 +13,12 @@ targetEntityType: paragraph
 bundle: services
 mode: default
 content:
+  field_service_design:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_services:
     type: paragraphs
     weight: 0

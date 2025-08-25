@@ -1,0 +1,9 @@
+uuid: 29844587-bddd-4857-b043-450de948f118
+langcode: en
+status: true
+dependencies: {  }
+name: 'Bolg Category'
+vid: bolg_category
+description: null
+weight: 0
+new_revision: false

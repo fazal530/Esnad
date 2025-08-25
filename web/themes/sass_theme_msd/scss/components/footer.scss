@@ -12,9 +12,6 @@
             flex-direction: row;
         }
 
-        .log_icons {}
-
-
         .menu-child {
             #block-sass-theme-msd-mainnavigation-2 {
                 h3 {
@@ -135,10 +132,12 @@
                                         height: 20px;
                                         width: 20px;
                                         color: $white;
+
                                         @include tablet {
                                             height: 25px;
                                             width: 25px;
                                         }
+
                                         @include desktop {
                                             height: 30px;
                                             width: 30px;

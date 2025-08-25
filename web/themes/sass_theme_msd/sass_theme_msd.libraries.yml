@@ -1,34 +1,3 @@
-# # Main theme library.
-# slick:
-#   js:
-#     libs/slick.min.js: {}
-#     https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js: {}
-
-#   css:
-#     component:
-#       libs/slick-theme.css: {}
-#       libs/slick.css: {}
-# global:
-#   js:
-#     js/menu.js: {}
-#   dependencies:
-#     - core/drupal
-#     - core/jquery
-#   css:
-#     base:
-#       css/style.css: {}
-
-
-#       custom:
-#   js:
-#     js/custom.js: {}
-#   css:
-#     theme:
-#       css/custom.css: {}
-
-
-
-# Main theme library.
 slick:
   js:
     libs/slick.min.js: {}
@@ -41,7 +10,9 @@ slick:
 global:
   js:
     js/menu.js: {}
-    js/custom.js: {}       # Both JS files go here
+    js/custom.js: {} 
+    js/counter.js: {}
+    js/animated-text.js: {}
   dependencies:
     - core/drupal
     - core/jquery

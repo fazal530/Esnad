@@ -1,0 +1,64 @@
+uuid: 122293f9-db38-4500-b8bd-e5eb5471871a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_focus_section
+    - paragraphs.paragraphs_type.image_with_text
+    - paragraphs.paragraphs_type.service_focus_section
+  module:
+    - entity_reference_revisions
+id: paragraph.service_focus_section.field_service_focus_section
+field_name: field_service_focus_section
+entity_type: paragraph
+bundle: service_focus_section
+label: 'Service Focus Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_with_text: image_with_text
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 13
+        enabled: false
+      children:
+        weight: 14
+        enabled: false
+      hero_section:
+        weight: 15
+        enabled: false
+      image_with_text:
+        weight: 16
+        enabled: true
+      link_button:
+        weight: 17
+        enabled: false
+      parent:
+        weight: 18
+        enabled: false
+      service_focus_section:
+        weight: 22
+        enabled: false
+      services:
+        weight: 19
+        enabled: false
+      services_card_wrapper:
+        weight: 21
+        enabled: false
+      services_cards:
+        weight: 20
+        enabled: false
+      social_icon:
+        weight: 23
+        enabled: false
+      text:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

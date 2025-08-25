@@ -22,8 +22,8 @@ content:
       autoplay: true
       loop: true
       multiple_file_display_type: tags
-      muted: false
-      playsinline: false
+      muted: true
+      playsinline: true
       width: null
       height: null
     third_party_settings: {  }

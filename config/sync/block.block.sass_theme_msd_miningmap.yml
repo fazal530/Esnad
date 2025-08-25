@@ -12,7 +12,7 @@ dependencies:
 id: sass_theme_msd_miningmap
 theme: sass_theme_msd
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:0ae19862-39ec-463f-9865-212fcd9f59c6'
 settings:

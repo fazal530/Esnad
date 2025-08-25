@@ -50,9 +50,11 @@
   <div class="services-card-wrapper" {{ attributes.addClass(classes) }}>
     {% block content %}
       <div class="services-card">
+      <div class="icon-wrapper">
       {{ content.field_card_icon }}
+      </div>
       <div class="body9">
-      {{ content.field_card_label }}
+      {{ content.field_text }}
       </div>
      </div>
     

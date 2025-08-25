@@ -1,0 +1,73 @@
+uuid: 43a8c1cc-b6f0-45f6-a6b1-b9ef82d2352b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_statistic_item
+    - paragraphs.paragraphs_type.statistic_item
+    - paragraphs.paragraphs_type.statistic_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.statistic_wrapper.field_statistic_item
+field_name: field_statistic_item
+entity_type: paragraph
+bundle: statistic_wrapper
+label: 'Statistic item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      statistic_item: statistic_item
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 16
+        enabled: false
+      children:
+        weight: 17
+        enabled: false
+      hero_section:
+        weight: 18
+        enabled: false
+      image_with_text:
+        weight: 19
+        enabled: false
+      link_button:
+        weight: 20
+        enabled: false
+      parent:
+        weight: 21
+        enabled: false
+      pin:
+        weight: 22
+        enabled: false
+      province:
+        weight: 23
+        enabled: false
+      services:
+        weight: 24
+        enabled: false
+      services_card_wrapper:
+        weight: 26
+        enabled: false
+      services_cards:
+        weight: 25
+        enabled: false
+      social_icon:
+        weight: 27
+        enabled: false
+      statistic_item:
+        weight: 28
+        enabled: true
+      statistic_wrapper:
+        weight: 29
+        enabled: false
+      text:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

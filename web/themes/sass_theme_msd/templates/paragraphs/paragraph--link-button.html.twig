@@ -49,7 +49,9 @@
 {% block paragraph %}
   <div class="link-button" {{ attributes.addClass(classes) }}>
     {% block content %}
+    <div class="link-text">
       {{ content }}
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

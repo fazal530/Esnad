@@ -1,0 +1,24 @@
+uuid: 7b2c8c1e-cf1d-4a62-bbcd-0f5f1cb4fecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.services_cards
+  module:
+    - text
+id: paragraph.services_cards.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: services_cards
+label: 'Card Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 5dfb7459-0a6d-4c49-b139-03ae483de946
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.all_blocks.field_all_blocks_ref
+    - paragraphs.paragraphs_type.all_blocks
+  module:
+    - block_field
+id: paragraph.all_blocks.default
+targetEntityType: paragraph
+bundle: all_blocks
+mode: default
+content:
+  field_all_blocks_ref:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

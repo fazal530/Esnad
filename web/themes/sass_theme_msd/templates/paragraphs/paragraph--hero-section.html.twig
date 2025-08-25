@@ -12,17 +12,26 @@
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
+
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="hero-section">
-        <div class="hero-video">
-          {{ content.field_video }}
-        </div>
-        <div class="hero-text">
-           {{ content.field_hero_text }}
+
+      {% if paragraph.field_video.entity is not empty %}
+        {% set media_type = paragraph.field_video.entity.bundle() %}
+      {% endif %}
+
+      <div class="{% if media_type == 'image' %}services-wrapper{% else %}hero-wrapper{% endif %}">
+        <div class="hero-section">
+          <div class="{% if media_type == 'image' %}hero-image{% else %}hero-video{% endif %}">
+            {{ content.field_video }}
+          </div>
+          <div class="hero-text">
+            {{ content.field_hero_text }}
+          </div>
         </div>
       </div>
+
     {% endblock %}
   </div>
 {% endblock paragraph %}
