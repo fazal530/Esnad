@@ -271,7 +271,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 0
       exposed_form:
         type: basic
         options:
@@ -379,6 +379,41 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_designation'
+        - 'config:field.storage.node.field_profile_image'
+  block_2:
+    id: block_2
+    display_title: Block
+    display_plugin: block
+    position: 1
+    display_options:
+      title: 'Board Memebers2'
+      defaults:
+        title: false
+        header: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<p>Executive Management</p>\r\n<p class=\"body11\">Leadership expertise that contributes to transforming the\r\nEarth’s wealth into sustainable economic value.\r\n</p>"
+            format: full_html
+          tokenize: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1

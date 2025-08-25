@@ -1,0 +1,39 @@
+uuid: 154812b8-554d-4d27-b2bb-cd12b2c0c64b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading_with_colu.field_hero_text
+    - field.field.paragraph.heading_with_colu.field_style
+    - field.field.paragraph.heading_with_colu.field_text_
+    - paragraphs.paragraphs_type.heading_with_colu
+  module:
+    - text
+id: paragraph.heading_with_colu.default
+targetEntityType: paragraph
+bundle: heading_with_colu
+mode: default
+content:
+  field_hero_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_style:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

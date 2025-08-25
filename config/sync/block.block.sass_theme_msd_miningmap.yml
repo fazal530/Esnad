@@ -1,6 +1,6 @@
 uuid: 431b6f56-3ad0-44ac-8c6f-22adb65c9219
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:mining_map:0ae19862-39ec-463f-9865-212fcd9f59c6'

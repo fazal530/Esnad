@@ -4,10 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.parent.field_parent
-    - field.field.paragraph.parent.field_parent_class
+    - field.field.paragraph.parent.field_service_design
     - paragraphs.paragraphs_type.parent
   module:
     - entity_reference_revisions
+    - options
 id: paragraph.parent.default
 targetEntityType: paragraph
 bundle: parent
@@ -22,11 +23,10 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_parent_class:
-    type: string
+  field_service_design:
+    type: list_default
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content

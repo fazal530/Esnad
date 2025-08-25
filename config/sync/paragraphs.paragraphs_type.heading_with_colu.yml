@@ -1,0 +1,10 @@
+uuid: c50641f2-d345-4400-826b-b53926749df4
+langcode: en
+status: true
+dependencies: {  }
+id: heading_with_colu
+label: 'Heading with Two Columns'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

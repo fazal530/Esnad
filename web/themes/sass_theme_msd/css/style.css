@@ -50,7 +50,7 @@
   line-height: 42px;
 }
 
-.body5, .about-section .paragraph--type--image-with-text .text-wrapper .link-text a, .link-button .link-text a {
+.body5, .about-section .text-wrapper .link-text a, .link-button .link-text a {
   font-family: Arial;
   font-weight: 400;
   font-size: 18px;
@@ -1282,42 +1282,40 @@ html, body {
 .about-section {
   background-color: #303336;
   padding-block: 119px;
-}
-.about-section .paragraph--type--image-with-text {
   display: flex;
   gap: 114px;
   align-items: center;
 }
-.about-section .paragraph--type--image-with-text .image-wrapper {
+.about-section .image-wrapper {
   flex: 1;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper {
+.about-section .text-wrapper {
   flex: 2;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .body3, .about-section .paragraph--type--image-with-text .text-wrapper .profile-outerwrapper header, .profile-outerwrapper .about-section .paragraph--type--image-with-text .text-wrapper header, .about-section .paragraph--type--image-with-text .text-wrapper .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li a, .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li .about-section .paragraph--type--image-with-text .text-wrapper a {
+.about-section .text-wrapper .body3, .about-section .text-wrapper .profile-outerwrapper header, .profile-outerwrapper .about-section .text-wrapper header, .about-section .text-wrapper .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li a, .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li .about-section .text-wrapper a {
   color: #959B9D;
   margin-bottom: 23px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .body4 {
+.about-section .text-wrapper .body4 {
   color: #CFD2D3;
   margin-bottom: 40px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .body5, .about-section .paragraph--type--image-with-text .text-wrapper .link-text a, .link-button .link-text .about-section .paragraph--type--image-with-text .text-wrapper a {
+.about-section .text-wrapper .body5, .about-section .text-wrapper .link-text a, .link-button .link-text .about-section .text-wrapper a {
   color: #CFD2D3;
   margin-bottom: 24px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text {
+.about-section .text-wrapper .link-text {
   align-items: center;
   background: #00717F;
   display: inline-block;
   padding: 11px;
   border-radius: 50px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text a {
+.about-section .text-wrapper .link-text a {
   color: #FAFBFB;
   text-decoration: none;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text a::after {
+.about-section .text-wrapper .link-text a::after {
   content: url("../icons/arrow.svg");
   padding: 11px;
   background: white;
@@ -1325,49 +1323,47 @@ html, body {
   margin-left: 15px;
   transition: all 0.3s ease;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text a:hover::after {
+.about-section .text-wrapper .link-text a:hover::after {
   margin-left: 30px;
 }
 
 .about-section {
   background-color: #303336;
   padding-block: 119px;
-}
-.about-section .paragraph--type--image-with-text {
   display: flex;
   gap: 114px;
   align-items: center;
 }
-.about-section .paragraph--type--image-with-text .image-wrapper {
+.about-section .image-wrapper {
   flex: 1;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper {
+.about-section .text-wrapper {
   flex: 2;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .body3, .about-section .paragraph--type--image-with-text .text-wrapper .profile-outerwrapper header, .profile-outerwrapper .about-section .paragraph--type--image-with-text .text-wrapper header, .about-section .paragraph--type--image-with-text .text-wrapper .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li a, .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li .about-section .paragraph--type--image-with-text .text-wrapper a {
+.about-section .text-wrapper .body3, .about-section .text-wrapper .profile-outerwrapper header, .profile-outerwrapper .about-section .text-wrapper header, .about-section .text-wrapper .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li a, .header-section .header_wrapper .flex-2 .language-switcher-language-url .links li .about-section .text-wrapper a {
   color: #959B9D;
   margin-bottom: 23px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .body4 {
+.about-section .text-wrapper .body4 {
   color: #CFD2D3;
   margin-bottom: 40px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .body5, .link-button .link-text .about-section .paragraph--type--image-with-text .text-wrapper a, .about-section .paragraph--type--image-with-text .text-wrapper .link-text a {
+.about-section .text-wrapper .body5, .link-button .link-text .about-section .text-wrapper a, .about-section .text-wrapper .link-text a {
   color: #CFD2D3;
   margin-bottom: 24px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text {
+.about-section .text-wrapper .link-text {
   align-items: center;
   background: #00717F;
   display: inline-block;
   padding: 11px;
   border-radius: 50px;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text a {
+.about-section .text-wrapper .link-text a {
   color: #FAFBFB;
   text-decoration: none;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text a::after {
+.about-section .text-wrapper .link-text a::after {
   content: url("../icons/arrow.svg");
   padding: 11px;
   background: white;
@@ -1375,7 +1371,7 @@ html, body {
   margin-left: 15px;
   transition: all 0.3s ease;
 }
-.about-section .paragraph--type--image-with-text .text-wrapper .link-text a:hover::after {
+.about-section .text-wrapper .link-text a:hover::after {
   margin-left: 30px;
 }
 

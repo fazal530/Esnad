@@ -22,4 +22,6 @@ settings:
   selection_settings:
     plugin_ids:
       'views_block:articles-block_1': 'views_block:articles-block_1'
+      'views_block:board_memebers-block_1': 'views_block:board_memebers-block_1'
+      'views_block:board_memebers-block_2': 'views_block:board_memebers-block_2'
 field_type: block_field
