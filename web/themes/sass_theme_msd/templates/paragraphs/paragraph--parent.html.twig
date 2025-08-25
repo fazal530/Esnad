@@ -38,19 +38,20 @@
  * @ingroup themeable
  */
 #}
-{% set value = paragraph.field_parent_class.value %}
+{% set value = paragraph.field_service_design.0.value %}
 {% set classes = [
   'paragraph',
   'paragraph--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   not paragraph.isPublished() ? 'paragraph--unpublished',
-  value
+  value|clean_class
 ] %}
+
 
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {% set content = content|without('field_parent_class') %}
+      {% set content = content|without('field_service_design') %}
 
       {{ content }}
     

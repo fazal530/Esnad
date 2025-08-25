@@ -1,4 +1,4 @@
-uuid: 5d64fd7b-af8e-4f65-82c3-5a80335e8c05
+uuid: c45828d6-9743-47c2-b38d-709d1e145ae0
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: sass_theme_msd_primary_admin_actions
 theme: sass_theme_msd
 region: highlighted
-weight: -5
+weight: -9
 provider: null
 plugin: local_actions_block
 settings:

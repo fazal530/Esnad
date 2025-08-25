@@ -32,7 +32,6 @@ settings:
       - '|'
       - heading
       - codeBlock
-      - '|'
       - sourceEditing
   plugins:
     ckeditor5_codeBlock:
