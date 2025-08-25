@@ -1,0 +1,41 @@
+uuid: 4889ffd4-8532-4412-8775-959f42894727
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.business_insight.field_ceo_image
+    - field.field.paragraph.business_insight.field_style
+    - field.field.paragraph.business_insight.field_text_
+    - paragraphs.paragraphs_type.business_insight
+  module:
+    - text
+id: paragraph.business_insight.default
+targetEntityType: paragraph
+bundle: business_insight
+mode: default
+content:
+  field_ceo_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_style:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

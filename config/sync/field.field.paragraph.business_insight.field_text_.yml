@@ -1,0 +1,24 @@
+uuid: c589e3e0-2ef5-4918-a71b-32ea084bdd25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.business_insight
+  module:
+    - text
+id: paragraph.business_insight.field_text_
+field_name: field_text_
+entity_type: paragraph
+bundle: business_insight
+label: 'Business Insight Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

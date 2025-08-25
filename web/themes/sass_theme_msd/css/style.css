@@ -186,7 +186,7 @@
   line-height: 14px;
 }
 
-.body15, .body-section .main-wrapper .right p, .body-section .main-wrapper .left p {
+.body15, .body-section .main-wrapper .right-description p, .body-section .main-wrapper .left-description p {
   font-family: Arial;
   font-weight: 700;
   font-size: 18px;
@@ -288,20 +288,20 @@
   }
 }
 
-.body24, .body-section p {
+.body24, .body-section .heading {
   font-family: "IBM_plex", Arial;
   font-size: 25px;
   font-weight: 700;
   line-height: 35px;
 }
 @media (min-width: 768px) {
-  .body24, .body-section p {
+  .body24, .body-section .heading {
     font-size: 30.4px;
     line-height: 42.56px;
   }
 }
 @media (min-width: 1280px) {
-  .body24, .body-section p {
+  .body24, .body-section .heading {
     font-size: 40px;
     line-height: 55.99px;
   }
@@ -327,43 +327,81 @@
   line-height: 40px;
 }
 
-.body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name {
+.body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name, .besiness-insight .business-insight_body .detail .heading {
   font-family: Arial;
   font-size: 9.4px;
   font-weight: 400;
   line-height: 12.5px;
 }
 @media (min-width: 768px) {
-  .body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name {
+  .body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name, .besiness-insight .business-insight_body .detail .heading {
     font-size: 11.4px;
     line-height: 15.19px;
   }
 }
 @media (min-width: 1280px) {
-  .body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name {
+  .body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name, .besiness-insight .business-insight_body .detail .heading {
     font-size: 15px;
     line-height: 19.97px;
   }
 }
 
-.body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation {
+.body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation, .besiness-insight .business-insight_body .detail .description {
   font-family: Arial;
   font-size: 8.2px;
   font-weight: 400;
   line-height: 12.37px;
 }
 @media (min-width: 768px) {
-  .body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation {
+  .body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation, .besiness-insight .business-insight_body .detail .description {
     font-size: 9.6px;
     font-weight: 400;
     line-height: 14.39px;
   }
 }
 @media (min-width: 1280px) {
-  .body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation {
+  .body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation, .besiness-insight .business-insight_body .detail .description {
     font-size: 12px;
     font-weight: 400;
     line-height: 17.98px;
+  }
+}
+
+.body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name, .besiness-insight .business-insight_body .detail .heading {
+  font-family: Arial;
+  font-size: 20.7px;
+  font-weight: 700;
+  line-height: 31.12px;
+}
+@media (min-width: 768px) {
+  .body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name, .besiness-insight .business-insight_body .detail .heading {
+    font-size: 24.8px;
+    line-height: 37.19px;
+  }
+}
+@media (min-width: 1280px) {
+  .body25, .paragraph--type--ceo .ceo-section-wrapper .left-section .ceo-name, .profile-outerwrapper .profile-wrapper .profile .name, .besiness-insight .business-insight_body .detail .heading {
+    font-size: 32px;
+    line-height: 47.98px;
+  }
+}
+
+.body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation, .besiness-insight .business-insight_body .detail .description {
+  font-family: Arial;
+  font-size: 14.2px;
+  font-weight: 400;
+  line-height: 22.17px;
+}
+@media (min-width: 768px) {
+  .body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation, .besiness-insight .business-insight_body .detail .description {
+    font-size: 15.6px;
+    line-height: 24.26px;
+  }
+}
+@media (min-width: 1280px) {
+  .body26, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .profile-outerwrapper .profile-wrapper .profile .designation, .besiness-insight .business-insight_body .detail .description {
+    font-size: 18px;
+    line-height: 27.98px;
   }
 }
 
@@ -1032,7 +1070,7 @@ html, body {
   align-items: center;
   margin-left: 10px;
 }
-.service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body15, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body-section .main-wrapper .right p, .body-section .main-wrapper .right .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body-section .main-wrapper .left p, .body-section .main-wrapper .left .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p {
+.service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body15, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body-section .main-wrapper .right-description p, .body-section .main-wrapper .right-description .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body-section .main-wrapper .left-description p, .body-section .main-wrapper .left-description .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p {
   color: #fff;
   padding-block: 13px 19px;
 }
@@ -1607,9 +1645,9 @@ html, body {
 }
 
 .body-section {
-  background-color: red;
+  background-color: #303336;
 }
-.body-section p {
+.body-section .heading {
   color: #CFD2D3;
 }
 .body-section .main-wrapper {
@@ -1624,10 +1662,31 @@ html, body {
     flex-direction: row;
   }
 }
-.body-section .main-wrapper .left p {
+.body-section .main-wrapper .left-description p {
   color: #CFD2D3;
 }
-.body-section .main-wrapper .right p {
+.body-section .main-wrapper .right-description p {
+  color: #CFD2D3;
+}
+
+.besiness-insight .business-insight_body {
+  display: flex;
+  gap: 60px;
+}
+.besiness-insight .business-insight_body .image_wrapper {
+  width: 100%;
+  height: 100%;
+}
+.besiness-insight .business-insight_body .image_wrapper img {
+  width: 640.13px;
+  height: 426.83px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.besiness-insight .business-insight_body .detail .heading {
+  color: #CFD2D3;
+}
+.besiness-insight .business-insight_body .detail .description {
   color: #CFD2D3;
 }
 
@@ -1706,12 +1765,20 @@ html, body {
     padding-bottom: 72px;
   }
 }
+.profile-outerwrapper .profile-wrapper {
+  padding-bottom: 30%;
+}
 .profile-outerwrapper .profile-wrapper .views-row {
-  grid-column: span 4;
+  grid-column: span 5;
 }
 @media (min-width: 768px) {
   .profile-outerwrapper .profile-wrapper .views-row {
-    grid-column: auto;
+    grid-column: span 2;
+  }
+}
+@media (min-width: 1280px) {
+  .profile-outerwrapper .profile-wrapper .views-row {
+    grid-column: span 3;
   }
 }
 .profile-outerwrapper .profile-wrapper .profile .image {
@@ -1721,24 +1788,27 @@ html, body {
 }
 @media (min-width: 768px) {
   .profile-outerwrapper .profile-wrapper .profile .image {
-    width: 116.39px;
-    height: 75.42px;
+    height: 20rem;
   }
 }
 @media (min-width: 1280px) {
   .profile-outerwrapper .profile-wrapper .profile .image {
-    width: 308px;
     height: 201px;
   }
 }
 .profile-outerwrapper .profile-wrapper .profile .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .profile-outerwrapper .profile-wrapper .profile .image img {
-    object-fit: cover;
+    border-radius: 64px;
+  }
+}
+@media (min-width: 1280px) {
+  .profile-outerwrapper .profile-wrapper .profile .image img {
+    border-radius: unset !important;
   }
 }
 @media (min-width: 768px) {
@@ -1774,7 +1844,7 @@ html, body {
 }
 @media (min-width: 1280px) {
   .paragraph--type--ceo {
-    padding-bottom: 178px;
+    padding-bottom: 257px;
   }
 }
 .paragraph--type--ceo .ceo-message {

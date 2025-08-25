@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.parent.field_parent
-    - field.field.paragraph.parent.field_parent_class
+    - field.field.paragraph.parent.field_service_design
     - paragraphs.paragraphs_type.parent
   module:
     - paragraphs
@@ -31,13 +31,11 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_parent_class:
-    type: string_textfield
+  field_service_design:
+    type: options_select
     weight: 0
     region: content
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

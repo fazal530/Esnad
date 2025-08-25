@@ -1,6 +1,6 @@
 uuid: 3513939f-b061-4ac5-baa0-fa09a3a5ef63
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.board_memebers
