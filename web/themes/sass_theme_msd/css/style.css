@@ -186,7 +186,7 @@
   line-height: 14px;
 }
 
-.body15, .body-section .main-wrapper .right-description p, .body-section .main-wrapper .left-description p {
+.body15, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p {
   font-family: Arial;
   font-weight: 700;
   font-size: 18px;
@@ -288,20 +288,20 @@
   }
 }
 
-.body24, .body-section .heading {
+.body24, .paragraph--type--heading-with-colu .main_wrapper .body-section .heading {
   font-family: "IBM_plex", Arial;
   font-size: 25px;
   font-weight: 700;
   line-height: 35px;
 }
 @media (min-width: 768px) {
-  .body24, .body-section .heading {
+  .body24, .paragraph--type--heading-with-colu .main_wrapper .body-section .heading {
     font-size: 30.4px;
     line-height: 42.56px;
   }
 }
 @media (min-width: 1280px) {
-  .body24, .body-section .heading {
+  .body24, .paragraph--type--heading-with-colu .main_wrapper .body-section .heading {
     font-size: 40px;
     line-height: 55.99px;
   }
@@ -435,17 +435,17 @@
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: 700;
 }
-.container, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
+.container, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
   padding-inline: 24px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
+  .container, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 44px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
+  .container, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 80px !important;
   }
 }
@@ -1070,7 +1070,7 @@ html, body {
   align-items: center;
   margin-left: 10px;
 }
-.service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body15, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body-section .main-wrapper .right-description p, .body-section .main-wrapper .right-description .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body-section .main-wrapper .left-description p, .body-section .main-wrapper .left-description .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p {
+.service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .body15, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card p {
   color: #fff;
   padding-block: 13px 19px;
 }
@@ -1644,32 +1644,37 @@ html, body {
   text-align: center;
 }
 
-.body-section {
+.paragraph--type--heading-with-colu .main_wrapper {
   background-color: #303336;
 }
-.body-section .heading {
+.paragraph--type--heading-with-colu .main_wrapper .body-section {
+  padding-block: 125px;
+}
+.paragraph--type--heading-with-colu .main_wrapper .body-section .heading {
   color: #CFD2D3;
 }
-.body-section .main-wrapper {
+.paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper {
   display: flex;
   gap: 30px;
   flex-direction: column;
   padding-top: 30px;
 }
 @media (min-width: 768px) {
-  .body-section .main-wrapper {
+  .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper {
     gap: 200px !important;
     flex-direction: row;
   }
 }
-.body-section .main-wrapper .left-description p {
-<<<<<<< HEAD
+.paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p {
   color: #CFD2D3;
 }
-.body-section .main-wrapper .right-description p {
+.paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p {
   color: #CFD2D3;
 }
 
+.besiness-insight {
+  background-color: #303336;
+}
 .besiness-insight .business-insight_body {
   display: flex;
   gap: 60px;
@@ -1687,31 +1692,6 @@ html, body {
 .besiness-insight .business-insight_body .detail .heading {
   color: #CFD2D3;
 }
-=======
-  color: #CFD2D3;
-}
-.body-section .main-wrapper .right-description p {
-  color: #CFD2D3;
-}
-
-.besiness-insight .business-insight_body {
-  display: flex;
-  gap: 60px;
-}
-.besiness-insight .business-insight_body .image_wrapper {
-  width: 100%;
-  height: 100%;
-}
-.besiness-insight .business-insight_body .image_wrapper img {
-  width: 640.13px;
-  height: 426.83px;
-  object-fit: cover;
-  border-radius: 30px;
-}
-.besiness-insight .business-insight_body .detail .heading {
-  color: #CFD2D3;
-}
->>>>>>> main
 .besiness-insight .business-insight_body .detail .description {
   color: #CFD2D3;
 }
