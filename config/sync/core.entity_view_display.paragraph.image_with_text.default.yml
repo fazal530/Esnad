@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image_with_text.field_attachment
+    - field.field.paragraph.image_with_text.field_style_
     - field.field.paragraph.image_with_text.field_text_
     - paragraphs.paragraphs_type.image_with_text
   module:
+    - options
     - text
 id: paragraph.image_with_text.default
 targetEntityType: paragraph
@@ -21,6 +23,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_style_:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_text_:
     type: text_default
