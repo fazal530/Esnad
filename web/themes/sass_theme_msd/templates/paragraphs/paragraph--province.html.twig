@@ -38,18 +38,17 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
-{% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
+
+
+{% set province_slug = content.field_province[0]['#markup']|lower|replace({' ': '-'}) %}
+
+<div class="province-info"
+     data-mining-map-content="{{ province_slug }}">
+  <div class="province-background-video">{{ content.field_background_video }}</div>
+  <h3 class="province-title visually-hidden">{{ content.field_province }}</h3>
+  <div class="province-text">{{ content.field_text }}</div>
+
+  <div class="pins-wrapper"">
+    {{ content.field_pin }}
   </div>
-{% endblock paragraph %}
+</div>
