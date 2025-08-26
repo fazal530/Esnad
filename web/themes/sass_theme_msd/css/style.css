@@ -435,17 +435,17 @@
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: 700;
 }
-.container, .make-slider .slider-2, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
+.container, .mining-map, .make-slider .slider-2, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
   padding-inline: 24px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container, .make-slider .slider-2, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
+  .container, .mining-map, .make-slider .slider-2, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 44px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container, .make-slider .slider-2, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
+  .container, .mining-map, .make-slider .slider-2, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 80px !important;
   }
 }
@@ -2169,6 +2169,210 @@ html, body {
 .make-slider .slick-next::before {
   content: ">";
   font-size: 14px;
+}
+
+/* Hide all province content blocks by default */
+[data-mining-map-region-active] {
+  stroke: #fff;
+}
+
+[data-mining-map-content] {
+  display: none;
+}
+
+[data-mining-map-region].custom-hover:hover {
+  fill: #8A8D90;
+  cursor: pointer;
+}
+
+.miningMap [data-mining-map-region] {
+  stroke: transparent;
+  transition: opacity 0.4s, stroke 0.4s;
+}
+
+.pin-wrapper {
+  display: none;
+}
+
+/* Show only the active province */
+[data-mining-map-content].is-active {
+  display: block;
+}
+
+/* Hide all province texts by default */
+[data-mining-map-content] .province-text {
+  display: none;
+}
+
+/* Show only the active province's text */
+[data-mining-map-content].is-active .province-text {
+  display: block;
+}
+
+/* Active tab styling */
+.miningMap__tab.active {
+  background-color: #004b8d;
+  /* dark blue example */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Optional: default tab styling */
+.miningMap__tab {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.miningMap__tab:hover {
+  background-color: #e0e0e0;
+}
+
+.mining-map {
+  padding-block: 34px;
+  background: rgba(0, 0, 0, 0.85);
+}
+.mining-map .miningMap__heading {
+  width: 72%;
+}
+.mining-map .miningMap__heading .miningMap__label {
+  color: #959B9D;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.98px;
+  /* 157% */
+  letter-spacing: 1.119px;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+}
+.mining-map .miningMap__heading .miningMap__title {
+  color: #CFD2D3;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55.99px;
+  /* 139.975% */
+}
+.mining-map .miningMap__content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .mining-map .miningMap__content {
+    flex-direction: row-reverse;
+  }
+}
+.mining-map .miningMap__content .miningMap__tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1%;
+  width: 100%;
+}
+.mining-map .miningMap__content .miningMap__tabs .miningMap__tab {
+  background-color: transparent;
+  color: #CFD2D3;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.98px;
+  /* 149.875% */
+  text-transform: uppercase;
+  border: 0;
+}
+.mining-map .miningMap__content .miningMap__tabs .miningMap__tab.active {
+  color: #FFB81C;
+}
+.mining-map .miningMap__content .miningMap__details .province-info .pins-wrapper .pin-wrapper .heading {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background: rgba(204, 255, 221, 0.1333333333);
+  border-radius: 50px;
+  margin-top: 100px;
+  padding-inline: 20px;
+}
+.mining-map .miningMap__content .miningMap__details .province-info .pins-wrapper .pin-wrapper .heading .granite-complexes {
+  color: #FFB81C;
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  /* 100% */
+}
+.mining-map .miningMap__content .miningMap__details .province-info .pins-wrapper .pin-wrapper .sub-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  column-gap: 50px;
+  margin-top: 56px;
+}
+.mining-map .miningMap__content .miningMap__details .province-info .pins-wrapper .pin-wrapper .sub-details .item {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  background: rgba(204, 255, 221, 0.1333333333);
+  padding: 40px;
+  border-radius: 40px;
+}
+.mining-map .miningMap__content .miningMap__details .province-info .pins-wrapper .pin-wrapper .sub-details .item div {
+  font-size: 20px;
+  color: #ffb81c;
+  font-weight: 500;
+}
+.mining-map .miningMap__content .miningMap__details .province-info .province-text {
+  height: 200px;
+  background: rgba(204, 255, 221, 0.1333333333);
+  border-radius: 50px;
+  margin-top: 100px;
+  padding-inline: 20px;
+  position: relative;
+}
+.mining-map .miningMap__content .miningMap__details .province-info .province-text .granite-complexes {
+  color: #FFB81C;
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mining-map .miningMap__content .miningMap__details .map-description {
+  color: #FAFBFB;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.98px;
+  /* 149.875% */
+  padding-left: 25px;
+  padding-top: 25px;
+  opacity: 0.7;
+}
+.mining-map .miningMap__map {
+  margin-top: calc(32px + 1.25vw);
+}
+.mining-map .miningMap__map svg {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
