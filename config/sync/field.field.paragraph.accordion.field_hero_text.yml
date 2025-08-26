@@ -1,0 +1,24 @@
+uuid: c44ad573-3ae0-4669-bb53-8d482cc596d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text
+id: paragraph.accordion.field_hero_text
+field_name: field_hero_text
+entity_type: paragraph
+bundle: accordion
+label: Accordion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

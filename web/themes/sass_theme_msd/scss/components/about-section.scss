@@ -10,6 +10,7 @@
 
         .image-wrapper {
             flex: 1;
+            @extend .hide-on-mobile;
         }
 
         .text-wrapper {

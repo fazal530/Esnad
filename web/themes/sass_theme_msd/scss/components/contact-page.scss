@@ -1,0 +1,347 @@
+    #block-sass-theme-msd-map,
+    #block-map {
+        .map-wrapper {
+            background-color: $primary;
+            iframe {
+                width: 100%;
+                height: 100vh;
+                filter: grayscale(100%) invert(92%) contrast(83%);
+            }
+        }
+
+        .info-main-wrapper {
+            @extend .container;
+
+            .info-block {
+                width: 28%;
+                background-color: $primary;
+                padding: 2.4rem;
+                border-radius: 20px;
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+
+                .info-title {
+                    @extend .body32;
+                    padding-bottom: calc(8.576px + 1.07vw);
+                    border-bottom: .1rem solid rgba(250, 251, 251, .2);
+                    color: $light-gray;
+                }
+
+                .info-email {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 30px;
+                    border-radius: 8px;
+                    background: rgba(65, 69, 74, 0.32);
+                    backdrop-filter: blur(10px);
+                    padding-inline: 5px;
+                    padding-block: 12px;
+
+                    .email-labal {
+                        width: 40%;
+                        @extend .body6;
+                        color: $light-gray;
+                        font-weight: 400 !important;
+                    }
+
+                    .email-address {
+                        @extend .body6;
+                        color: $light-gray;
+                        font-weight: 400 !important;
+
+                    }
+                }
+
+                .info-address {
+                    display: flex;
+                    align-items: center;
+                    border-radius: 8px;
+                    background: rgba(65, 69, 74, 0.32);
+                    backdrop-filter: blur(10px);
+                    margin-block: 10px;
+                    padding-inline: 5px;
+                    padding-block: 12px;
+
+                    .address-title {
+                        width: 40%;
+                        @extend .body6;
+                        color: $light-gray;
+                        font-weight: 400 !important;
+                    }
+
+                    .address-details {
+                        p {
+                            @extend .body6;
+                            color: $light-gray;
+                            font-weight: 400 !important;
+                        }
+                    }
+                }
+
+                .contact-us {
+                    align-items: center;
+                    display: inline-block;
+                    padding: 11px;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    a {
+                        @extend .body5;
+                        color: $off-white;
+                        text-decoration: none;
+
+                        &::after {
+                            content: url("../icons/arrow-white.svg");
+                            padding-block: 8px;
+                            padding-inline: 12px;
+                            background: $tertiary;
+                            border-radius: 50%;
+                            margin-left: 15px;
+                            transition: all 0.3s ease;
+
+                        }
+
+                        &:hover {
+                            color: $tertiary;
+
+                        }
+
+
+                    }
+
+
+                }
+            }
+        }
+    }
+
+
+    .contact-main-wrapper {
+        background-color: $half-black;
+    
+        .contact-wrapper {
+            @extend .container;
+            display: flex;
+            justify-content: space-between;
+            padding-block: 42px;
+            flex-direction: column;
+    
+            @include desktop {
+                flex-direction: row;
+                align-items: center;
+            }
+    
+            .heading-with-title {
+                width: 100%;
+    
+                @include desktop {
+                    width: 41%;
+                }
+    
+                .heading {
+                    @extend .body3;
+                    color: $white;
+                    padding-bottom: 10px;
+                }
+    
+                .title {
+                    @extend .body31;
+                    font-weight: 400;
+                    color: $light-gray;
+                    span{
+                    @extend .body31;
+                    color: $white;
+                    }
+                }
+            }
+    
+            .webfrom {
+                width: 100%;
+    
+                @include desktop {
+                    width: 59%;
+                }
+    
+                #block-webform {
+    
+                    .webform-submission-form {
+    
+                        .webform-main_wrapper {
+                            .webform_wrapper {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+    
+                                .info {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 10px;
+    
+                                    .js-form-item {
+                                        width: 100%;
+                                        border-bottom: .1rem solid #cfd2d3;
+    
+                                        @include desktop {
+                                            width: 32%;
+                                        }
+    
+                                        input {
+                                            background-color: transparent;
+                                            border: unset;
+                                            @extend .body26;
+                                            color: $light-gray !important;
+                                            padding-block: 16px 24px;
+    
+                                            &::placeholder {
+                                                color: $light-gray !important;
+                                            }
+                                        }
+    
+                                        .select2-container {
+                                            .selection {
+                                                .select2-selection {
+                                                    background-color: transparent;
+                                                    border: unset;
+                                                    padding-block: 16px 24px;
+    
+                                                    .select2-selection__rendered {
+                                                        padding: 0;
+                                                        @extend .body26;
+                                                        color: $light-gray !important;
+    
+                                                        .select2-selection__clear {
+                                                            display: none
+                                                        }
+    
+                                                        .select2-selection__placeholder {
+                                                            @extend .body26;
+                                                            color: $light-gray !important;
+                                                        }
+    
+                                                    }
+    
+                                                    .select2-selection__arrow {
+                                                        background-color: $tertiary;
+                                                        border-radius: 50%;
+                                                        height: 26px !important;
+                                                        width: 26px !important;
+    
+                                                        b {
+                                                            margin-left: -6px;
+                                                            margin-top: -3px;
+                                                            border-width: 8px 6px 0 6px;
+                                                            border-color: $white transparent transparent transparent;
+    
+    
+                                                        }
+                                                    }
+                                                }
+                                            }
+    
+    
+                                        }
+                                    }
+                                }
+    
+                                .message {
+                                    margin-top: calc(19.4304px + 1.428vw);
+    
+                                    .js-form-type-textfield {
+                                        input {
+                                            background-color: transparent;
+                                            border: unset;
+                                            @extend .body26;
+                                            color: $light-gray !important;
+                                            border-bottom: .1rem solid #cfd2d3;
+                                            width: 100%;
+                                            padding-block: 16px 24px;
+    
+                                            &::placeholder {
+                                                color: $light-gray !important;
+                                            }
+                                        }
+                                    }
+    
+                                }
+    
+                                .link {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    margin-top: 10px;
+    
+                                    @include desktop {
+                                        justify-content: flex-end;
+                                    }
+    
+                                    .form-actions {
+                                        align-items: center;
+                                        background: $tertiary;
+                                        display: inline-block;
+                                        padding: 11px;
+                                        border-radius: 50px;
+    
+                                        input {
+    
+                                            @extend .body5;
+                                            color: $off-white;
+                                            text-decoration: none;
+                                            background-color: transparent;
+                                            border: unset;
+    
+                                            &::placeholder {
+                                                color: $light-gray !important;
+                                            }
+                                        }
+    
+                                        &::after {
+                                            content: url("../icons/arrow.svg");
+                                            padding-inline: 12px;
+                                            padding-block: 9px;
+                                            background: $white;
+                                            border-radius: 50%;
+                                            margin-left: 15px;
+                                            transition: all 0.3s ease;
+                                        }
+    
+                                        &:hover {
+                                            &::after {
+                                                margin-left: 30px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .select2-container--open {
+        .select2-dropdown--below {
+            padding: 20px;
+            border-radius: 30px;
+            margin-top: 30px;
+    
+            .select2-results {
+                ul {
+                    background-color: transparent !important;
+    
+                    li {
+                        @extend .body26;
+                        color: $primary !important;
+                    }
+    
+                    .select2-results__option--highlighted {
+                        background-color: transparent;
+                    }
+    
+                }
+            }
+        }
+    }

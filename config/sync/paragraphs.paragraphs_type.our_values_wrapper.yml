@@ -1,9 +1,9 @@
-uuid: 1c89dfff-ff6d-48da-9e88-64e830687c52
+uuid: 3880768f-025c-40ca-8591-80412c68c9d7
 langcode: en
 status: true
 dependencies: {  }
-id: business_insight
-label: 'Business Insight'
+id: our_values_wrapper
+label: 'Our Values Wrapper'
 icon_uuid: null
 icon_default: null
 description: ''

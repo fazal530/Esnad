@@ -1,0 +1,10 @@
+uuid: d392b826-1d66-4cb6-9f20-725bb76b0ba9
+langcode: en
+status: true
+dependencies: {  }
+id: our_values
+label: 'Our Values'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

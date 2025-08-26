@@ -1,0 +1,42 @@
+uuid: 62af80a4-379e-421e-85eb-95de2308777d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_values_wrapper.field_main_wrapper
+    - field.field.paragraph.our_values_wrapper.field_materials
+    - field.field.paragraph.our_values_wrapper.field_our_value_para
+    - paragraphs.paragraphs_type.our_values_wrapper
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.our_values_wrapper.default
+targetEntityType: paragraph
+bundle: our_values_wrapper
+mode: default
+content:
+  field_main_wrapper:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_materials:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_our_value_para:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

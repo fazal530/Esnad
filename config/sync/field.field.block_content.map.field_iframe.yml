@@ -1,0 +1,24 @@
+uuid: e3a74882-e043-4557-a725-a9f3a267ab69
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.storage.block_content.field_iframe
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.map.field_iframe
+field_name: field_iframe
+entity_type: block_content
+bundle: map
+label: iframe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

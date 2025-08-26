@@ -49,19 +49,9 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="besiness-insight">
-    <div class="business-insight_body">
-      <div class="image_wrapper">
-        {{ content.field_ceo_image }}
-      </div>
-      <div class="detail">
-        <div class="heading">
-          {{ content.field_style}}
-        </div>
-        <div class="description">
-          {{ content.field_text_ }}
-        </div>
-      </div>
+  <div class="accordion-main-wrapper">
+    <div class="accordion-wrapper">
+      {{ content.field_hero_text }}
     </div>
   </div>
   {% endblock %}
