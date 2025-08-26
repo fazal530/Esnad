@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '8f448bc97b0f658de6e79228f6ed97667af96861',
+        'reference' => '6a87b8443344068be43ea35c754e76b72ec3c258',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -178,6 +178,15 @@
             'reference' => '8.x-1.0-rc5',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../web/modules/contrib/block_field',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/ckeditor_accordion' => array(
+            'pretty_version' => '2.3.0',
+            'version' => '2.3.0.0',
+            'reference' => '2.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ckeditor_accordion',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -445,7 +454,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '8f448bc97b0f658de6e79228f6ed97667af96861',
+            'reference' => '6a87b8443344068be43ea35c754e76b72ec3c258',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -739,8 +748,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.1|2.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.1|2.0',
             ),
         ),
         'psr/event-dispatcher' => array(

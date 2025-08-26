@@ -16,7 +16,7 @@ display:
         message:
           label: الرسالة
         name:
-          label: المستخدم
+          label: مستخدم
           separator: ', '
         link:
           label: عمليات

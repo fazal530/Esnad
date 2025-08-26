@@ -14,6 +14,15 @@ settings:
     -
       value: about_section
       label: about-section
+    -
+      value: besiness_insight
+      label: besiness-insight
+    -
+      value: leaders
+      label: leaders
+    -
+      value: make_yourself
+      label: make_yourself
   allowed_values_function: ''
 module: options
 locked: false

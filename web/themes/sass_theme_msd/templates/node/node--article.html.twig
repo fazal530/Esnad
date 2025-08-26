@@ -1,38 +1,42 @@
 <div class="article-node">
 
-    <div class="banner-image">
-        {{ content.field_article_image }}
+  <div class="banner-image">
+    {{ content.field_article_image }}
+  </div>
+
+  <div class="article-main-body">
+    <div class="articleHeading__details">
+      <div class="articleHeading__tags">
+        {% if content.field_category.0 is not empty %}
+        <div class="articleHeading__tag">
+          <div class="tag">
+            <p class="tag__label">{{ content.field_category }}</p>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      <div class="articleHeading__date icon-clock">{{ content.created|date("d M Y") }}
+      </div>
     </div>
 
-    <div class="article-main-body">
-        
-        
-        <div class="articleHeading__details">
-            <div class="articleHeading__tags">
-                {% if content.field_category.0 is not empty %}
-                <div class="articleHeading__tag">
-                  <div class="tag">
-                    <p class="tag__label">{{ content.field_category }}</p>
-                  </div>
-                </div>
-              {% endif %}
-            </div>
-            <div class="articleHeading__date icon-clock">{{ content.created|date("d M Y") }}
-            </div>
-        </div>
-
-
-        <div class="article-label">
-        <h1>{{ label }}</h1>
-        </div>
-
-
-        <div class="article-body">
-            {{ content.field_body }}
-        </div>
-
-
+    <div class="article-label">
+      <h1>{{ label }}</h1>
     </div>
+
+    <div class="main-wrapper">
+      <div class="social_link">
+        {{ drupal_entity('block', 'sass_theme_msd_socialicons', check_access=false) }}
+        <div class="share">
+          <hr>
+          <p>share</p>
+        </div>
+      </div>
+      <div class="article-body">
+        {{ content.field_body }}
+      </div>
+    </div>
+
+  </div>
 
 
 </div>

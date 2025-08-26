@@ -1,18 +1,18 @@
-uuid: c589e3e0-2ef5-4918-a71b-32ea084bdd25
+uuid: ca5ae7fb-4e1a-4341-873a-6a594fac3e98
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_text_
     - filter.format.full_html
-    - paragraphs.paragraphs_type.business_insight
+    - paragraphs.paragraphs_type.contacts_us
   module:
     - text
-id: paragraph.business_insight.field_text_
+id: paragraph.contacts_us.field_text_
 field_name: field_text_
 entity_type: paragraph
-bundle: business_insight
-label: 'Business Insight Description'
+bundle: contacts_us
+label: 'Contents Us Title'
 description: ''
 required: false
 translatable: false

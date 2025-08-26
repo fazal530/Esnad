@@ -1,0 +1,33 @@
+uuid: fda21df9-556c-489a-9c94-f8098bb8c98c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.objectives.field_materials
+    - field.field.paragraph.objectives.field_service_ref
+    - paragraphs.paragraphs_type.objectives
+  module:
+    - entity_reference_revisions
+id: paragraph.objectives.default
+targetEntityType: paragraph
+bundle: objectives
+mode: default
+content:
+  field_materials:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_service_ref:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

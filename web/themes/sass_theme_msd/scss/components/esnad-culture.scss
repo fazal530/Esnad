@@ -1,0 +1,165 @@
+.make-yourself {
+    background-color: $primary;
+    @extend .container;
+    display: flex;
+    gap: 60px;
+    padding-block: 135px;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 426.83px;
+            object-fit: cover;
+            border-radius: 30px;
+
+            @include desktop {
+                width: 640.13px;
+            }
+        }
+    }
+
+    .text-wrapper {
+        h1 {
+            @extend .body25;
+            color: $light-gray;
+            padding-bottom: 30px;
+
+        }
+
+        p {
+            @extend .body26;
+            color: $light-gray;
+        }
+    }
+}
+
+.culture-value {
+    @extend .container;
+    background-color: $primary;
+    padding-block: 50px;
+
+    .our-value_heading {
+        @extend .body27;
+        color: $gray-light;
+    }
+
+    .value_wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .paragraph--type--our-values {
+            background-color: $half-black;
+            padding: 60px 35px;
+            border-radius: 30px;
+            width: 100%;
+
+            @include tablet {
+                flex: 1 1 30%;
+            }
+
+            @include desktop {
+                flex: 1 1 32%;
+            }
+
+            .our-value_body {
+                .icon-text {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 28px;
+                    flex-direction: column;
+                    gap: 35px;
+
+                    .icon {
+                        height: 48.98px;
+
+                        @include tablet {
+                            height: 54.39px;
+                        }
+
+                        @include desktop {
+                            height: 63.98px;
+                        }
+                    }
+
+                    .text {
+                        @extend .body30;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.body-wrapper {
+    background-color: $half-black;
+
+    .main-body {
+        padding-block: 105px;
+        @extend .container;
+
+        .body {
+            text-align: center;
+
+            h3 {
+                @extend .body13;
+                color: $white;
+            }
+
+            p {
+                @extend .body26;
+                color: $white;
+                padding-block: 11px 30px;
+
+            }
+        }
+
+        .link-btn-wrapper {
+            display: flex;
+            justify-content: flex-end;
+
+            @include desktop {
+                justify-content: center;
+            }
+
+            .link-btn {
+                background: $tertiary;
+                padding: 11px;
+                border-radius: 50px;
+
+                a {
+                    @extend .body5;
+                    color: $off-white;
+                    text-decoration: none;
+
+                    &::after {
+                        content: url("../icons/arrow.svg");
+                        padding: 11px;
+                        background: white;
+                        border-radius: 50%;
+                        margin-left: 15px;
+                        transition: all 0.3s ease;
+
+                    }
+
+                    &:hover {
+                        &::after {
+                            margin-left: 30px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
