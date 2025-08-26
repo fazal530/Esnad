@@ -32,65 +32,7 @@
 {{ attach_library('sass_theme_msd/mining_map') }}
 
 
-<style>
-  /* Hide all province content blocks by default */
-  [data-mining-map-region-active] {
-    stroke: #fff;
-  }
-  [data-mining-map-content] {
-    display: none;
-  }
-  [data-mining-map-region].custom-hover:hover
-    {
-        fill: #8A8D90;
-        cursor: pointer;
-    }
 
-  .miningMap [data-mining-map-region] {
-    stroke: transparent;
-    transition: opacity .4s, stroke .4s;
-  }
-  .pin-wrapper { display: none; }
-
-  /* Show only the active province */
-  [data-mining-map-content].is-active {
-    display: block;
-
-  }
-
-    /* Hide all province texts by default */
-  [data-mining-map-content] .province-text {
-    display: none;
-  }
-
-  /* Show only the active province's text */
-  [data-mining-map-content].is-active .province-text {
-    display: block;
-  }
-
-  /* Active tab styling */
-  .miningMap__tab.active {
-    background-color: #004b8d; /* dark blue example */
-    color: #fff;
-    font-weight: bold;
-  }
-
-  /* Optional: default tab styling */
-  .miningMap__tab {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
-  }
-
-  .miningMap__tab:hover {
-    background-color: #e0e0e0;
-  }
-
-</style>
 
 <div{{ attributes }}>
   {{ title_prefix }}

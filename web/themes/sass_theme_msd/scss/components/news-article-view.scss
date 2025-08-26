@@ -388,3 +388,198 @@
 
     }
 }
+
+
+
+#block-sass-theme-msd-views-block-articles-block-3 {
+    @include tablet {
+        padding-right: 80px !important;
+    }
+
+    background-color: $primary;
+    @extend .container;
+    padding-block: 75px;
+
+
+    header {
+        p {
+            color: $off-white;
+        }
+
+        .body13.bold {
+            font-weight: 700;
+        }
+    }
+
+    .articlex3 {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 40px;
+            column-gap: 40px;
+        }
+
+        .news_view {
+            .image_wrapper {
+                border-radius: 20px;
+                overflow: hidden;
+                display: inline-block;
+                width: 100%;
+                height: 269px;
+
+                @include tablet {
+                    height: 269px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 269px;
+                    object-fit: cover;
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .date {
+                @extend .body14;
+                color: $white;
+                padding-block: 16px
+            }
+
+            .title {
+                @extend .body10;
+                padding-bottom: 12px;
+
+                a {
+                    text-decoration: none;
+                    color: $off-white;
+
+                }
+            }
+
+            .link {
+                @extend .body10;
+
+                a {
+                    text-decoration: none;
+                    color: $light-gray;
+                    display: flex;
+                    gap: 40px;
+                    align-items: center;
+
+                    &::after {
+                        content: url("../icons/arrow-white.svg");
+                        padding-inline: 10px;
+                        background: $tertiary;
+                        border-radius: 50%;
+                        padding-block: 3px;
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .bef-exposed-form {
+        .bef-link--selected {
+            color: $white !important;
+        }
+
+        .js-form-item {
+            .bef-links {
+                ul {
+                    margin-bottom: 50px;
+                    display: flex;
+                    gap: 25px;
+                    padding-block: 12px;
+                    padding: 12px;
+
+                    li {
+                        list-style: none;
+                        flex-basis: 33%;
+                        display: flex;
+                        justify-content: center;
+
+                        a.bef-link--selected {
+                            background: #007174;
+                        }
+
+                        a {
+                            padding-block: 20px;
+                            border-radius: 40px;
+                            text-decoration: none;
+                            width: 100%;
+                            text-align: center;
+                            @extend .body17;
+                            color: $white;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .pager {
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            padding-top: 100px;
+
+            .pager__item--last {
+                display: none;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 6px 12px;
+                    background: #00717F;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+    }
+
+    .views-exposed-form {
+        position: relative;
+        .form-item-combine {
+            width: 42%;
+            
+
+            input {
+                background-color: transparent;
+                padding: 20px;
+                width: 100%;
+                color: white;
+                &::placeholder{
+                    color: #cfd2d3;
+                }
+                border: 0;
+                border-bottom: .1rem solid rgba(250, 251, 251, .2);
+                
+            }
+        }
+        .js-form-item-field-category-target-id-1{
+            position: absolute;
+            right: 0;
+            top: 20px;
+            display: flex;
+            gap: 40px;
+            label {
+                color: $light-gray;
+            }
+        }
+        .form-item-field-category-target-id{
+            margin-top: 50px;
+    }
+}}

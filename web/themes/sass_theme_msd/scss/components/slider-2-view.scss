@@ -1,0 +1,108 @@
+.make-slider {
+    background-color: $secondary;
+
+    .slider-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        @extend .container;
+        padding-block: 37px 57px;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            gap: 37px;
+        }
+
+        .slider-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .date {}
+
+            .title {
+                @extend .body7;
+                color: $light-gray;
+            }
+
+            .body {
+                color: $off-white;
+                padding-top: 19px;
+            }
+
+            .link {
+                padding-top: 48px;
+
+                a {
+                    color: $light-gray;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 27px;
+
+                    &::after {
+                        content: url(../icons/arrow-white.svg);
+                        background: #00717F;
+                        border-radius: 50%;
+                        fill: #fff;
+                        display: flex;
+                        align-items: center;
+                        padding: 6px 10px;
+                    }
+
+                }
+            }
+        }
+
+        .slider-right {
+            flex: 1;
+
+            img {
+                max-width: 100%;
+                max-height: 404px;
+                border-radius: 30px;
+            }
+
+            .image_wrapper {}
+        }
+    }
+
+    .slick-prev {
+        left: 43%;
+        top: 85%;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background: #303336;
+        z-index: 99999;
+        &:hover{
+            background-color: #00717F;;
+        }
+
+        &::before {
+            content: '<';
+            font-size: 14px;
+
+        }
+    }
+
+    .slick-next {
+        right: 51%;
+        top: 85%;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background: #303336;
+        z-index: 99999;
+        &:hover{
+            background-color: #00717F;;
+        }
+
+        &::before {
+            content: '>';
+            font-size: 14px;
+        }
+    }
+
+}

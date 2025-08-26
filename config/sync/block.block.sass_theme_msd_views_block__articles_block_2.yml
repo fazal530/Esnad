@@ -1,0 +1,24 @@
+uuid: 78389f74-4fc3-4e6c-b69a-bae266028661
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - views
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_views_block__articles_block_2
+theme: sass_theme_msd
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:articles-block_2'
+settings:
+  id: 'views_block:articles-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility: {  }
