@@ -32,6 +32,27 @@
         });
       });
 
+      once('mySlickReinit', '[dir="ltr"] .make-slider', context).forEach((el) => {
+        const $carousel = $(el);
+
+        // If it's already initialized, destroy before re-init
+        if ($carousel.hasClass('slick-initialized')) {
+          $carousel.slick('unslick');
+        }
+
+        $carousel.slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true, // <-- important: disable infinite to keep alignment
+          autoplay: true,
+          fade: true,
+          speed: 500,
+          rtl: false,
+          centerMode: false // makes extra slides appear on the right
+        });
+      });
+
       // Re-initialize Slick on the specific element containing the slider.
       once('mySlickReinit', '[dir="rtl"] .make-carosel', context).forEach((el) => {
         const $carousel = $(el);
