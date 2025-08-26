@@ -3,13 +3,14 @@
     background-color: $primary;
     padding-block: 119px;
 
-    .paragraph--type--image-with-text {
+
         display: flex;
         gap: 114px;
         align-items: center;
 
         .image-wrapper {
             flex: 1;
+            @extend .hide-on-mobile;
         }
 
         .text-wrapper {
@@ -64,4 +65,3 @@
             }
         }
     }
-}

@@ -1,0 +1,27 @@
+uuid: 1c0ac8c1-349f-4aa7-9cf3-844e076a18c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_main_wrapper
+field_name: field_main_wrapper
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: culture_value
+      label: culture-value
+    -
+      value: who_we_are_value
+      label: who_we_are_value
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

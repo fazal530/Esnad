@@ -4,7 +4,6 @@ $font_Roboto: 'Roboto', Arial;
 $font_Arial: Arial;
 // FONT FAMILIES
 
-// Body1
 .body1 {
   font-family: $font_Arial;
   font-weight: 700;
@@ -12,7 +11,6 @@ $font_Arial: Arial;
   line-height: 16px;
 }
 
-// Body2
 .body2 {
   font-family: $font_Roboto;
   font-weight: 600;
@@ -25,7 +23,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body3
 .body3 {
   font-family: $font_Arial;
   font-weight: 700;
@@ -43,7 +40,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body4
 .body4 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -51,7 +47,6 @@ $font_Arial: Arial;
   line-height: 42px;
 }
 
-// Body5
 .body5 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -59,7 +54,6 @@ $font_Arial: Arial;
   line-height: 32px;
 }
 
-// Body6
 .body6 {
   font-family: $font_Arial;
   font-weight: 700;
@@ -77,7 +71,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body7
 .body7 {
   font-family: $font_Arial;
   font-weight: 700;
@@ -90,7 +83,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body8
 .body8 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -98,7 +90,6 @@ $font_Arial: Arial;
   line-height: 32px;
 }
 
-// Body9
 .body9 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -116,7 +107,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body10
 .body10 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -134,7 +124,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body11
 .body11 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -152,7 +141,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body12
 .body12 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -160,7 +148,7 @@ $font_Arial: Arial;
   line-height: 40px;
 }
 
-// Body13
+
 .body13 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -178,7 +166,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body14
 .body14 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -186,7 +173,6 @@ $font_Arial: Arial;
   line-height: 14px;
 }
 
-// Body15
 .body15 {
   font-family: $font_Arial;
   font-weight: 700;
@@ -194,7 +180,7 @@ $font_Arial: Arial;
   line-height: 23px;
 }
 
-// Body16
+
 .body16 {
   font-family: $font_IBM_plex;
   font-weight: 400;
@@ -202,7 +188,6 @@ $font_Arial: Arial;
   line-height: 18px;
 }
 
-// Body17
 .body17 {
   font-family: $font_IBM_plex;
   font-weight: 400;
@@ -214,7 +199,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body18
 .body18 {
   font-family: $font_IBM_plex;
   font-weight: 400;
@@ -232,7 +216,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body19
 .body19 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -250,7 +233,6 @@ $font_Arial: Arial;
   }
 }
 
-//body20
 .body20 {
   font-family: $font_Arial;
   font-weight: 700;
@@ -268,7 +250,6 @@ $font_Arial: Arial;
   }
 }
 
-// Body21
 .body21 {
   font-family: $font_Arial;
   font-weight: 400;
@@ -396,4 +377,80 @@ $font_Arial: Arial;
     font-size: 18px;
     line-height: 27.98px;
   }
+}
+
+.body27 {
+  font-family: $font_Arial;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 62.86px;
+}
+
+.body28 {
+  font-family: $font_Arial;
+  font-size: 29.2px;
+  font-weight: 400;
+  line-height: 33.15px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 40.79px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 54.38px;
+  }
+}
+
+.body29 {
+  font-family: $font_Arial;
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 22px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.body30 {
+  font-family: $font_Arial;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.body31 {
+  font-family: $font_Arial;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.body32 {
+  font-family: $font_Arial;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.body33 {
+  font-family: $font_Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62.86px;
+  letter-spacing: 1.12px;
 }

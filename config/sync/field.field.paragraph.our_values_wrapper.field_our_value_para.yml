@@ -1,0 +1,91 @@
+uuid: 24d05c6d-ddb4-4166-b80a-cab620a05ded
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_our_value_para
+    - paragraphs.paragraphs_type.our_values
+    - paragraphs.paragraphs_type.our_values_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.our_values_wrapper.field_our_value_para
+field_name: field_our_value_para
+entity_type: paragraph
+bundle: our_values_wrapper
+label: 'Our Value para'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      our_values: our_values
+    negate: 0
+    target_bundles_drag_drop:
+      all_blocks:
+        weight: 22
+        enabled: false
+      attachments:
+        weight: 23
+        enabled: false
+      ceo:
+        weight: 24
+        enabled: false
+      children:
+        weight: 25
+        enabled: false
+      heading_with_colu:
+        weight: 26
+        enabled: false
+      hero_section:
+        weight: 27
+        enabled: false
+      image_with_text:
+        weight: 28
+        enabled: false
+      link_button:
+        weight: 29
+        enabled: false
+      our_values:
+        weight: 30
+        enabled: true
+      our_values_wrapper:
+        weight: 31
+        enabled: false
+      parent:
+        weight: 32
+        enabled: false
+      pin:
+        weight: 33
+        enabled: false
+      province:
+        weight: 34
+        enabled: false
+      service_focus_section:
+        weight: 38
+        enabled: false
+      services:
+        weight: 35
+        enabled: false
+      services_card_wrapper:
+        weight: 37
+        enabled: false
+      services_cards:
+        weight: 36
+        enabled: false
+      social_icon:
+        weight: 39
+        enabled: false
+      statistic_item:
+        weight: 40
+        enabled: false
+      statistic_wrapper:
+        weight: 41
+        enabled: false
+      text:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

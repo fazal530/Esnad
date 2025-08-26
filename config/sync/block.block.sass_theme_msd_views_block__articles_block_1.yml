@@ -1,0 +1,32 @@
+uuid: 0cbee6e2-a558-4ff1-a835-1d2aed17332a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles
+  module:
+    - node
+    - views
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_views_block__articles_block_1
+theme: sass_theme_msd
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:articles-block_1'
+settings:
+  id: 'views_block:articles-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

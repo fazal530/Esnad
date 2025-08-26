@@ -1,0 +1,33 @@
+uuid: 14c6647a-6196-4b02-ba06-08793c948d73
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_style_
+field_name: field_style_
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: about_section
+      label: about-section
+    -
+      value: besiness_insight
+      label: besiness-insight
+    -
+      value: leaders
+      label: leaders
+    -
+      value: make_yourself
+      label: make_yourself
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

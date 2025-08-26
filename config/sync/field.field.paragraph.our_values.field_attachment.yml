@@ -1,16 +1,16 @@
-uuid: 5cb239f3-2073-446c-8615-beb4932d6ea5
+uuid: c3eb1eab-b038-4478-8107-670e34f06d32
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_ceo_image
+    - field.storage.paragraph.field_attachment
     - media.type.image
-    - paragraphs.paragraphs_type.business_insight
-id: paragraph.business_insight.field_ceo_image
-field_name: field_ceo_image
+    - paragraphs.paragraphs_type.our_values
+id: paragraph.our_values.field_attachment
+field_name: field_attachment
 entity_type: paragraph
-bundle: business_insight
-label: 'Business Insight Image'
+bundle: our_values
+label: 'Value Icon'
 description: ''
 required: false
 translatable: false
@@ -25,5 +25,5 @@ settings:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: image
 field_type: entity_reference

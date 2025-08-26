@@ -1,0 +1,21 @@
+uuid: 8e4915ba-7d21-4d40-afd6-85f3ae8a4d3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_wrapper
+    - paragraphs.paragraphs_type.our_values_wrapper
+  module:
+    - options
+id: paragraph.our_values_wrapper.field_main_wrapper
+field_name: field_main_wrapper
+entity_type: paragraph
+bundle: our_values_wrapper
+label: 'Main Wrapper'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

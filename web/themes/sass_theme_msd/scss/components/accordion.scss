@@ -1,0 +1,87 @@
+.accordion-main-wrapper {
+    background-color: $primary;
+
+    .accordion-wrapper {
+        padding-block: 80px 50px;
+        @extend .container;
+
+        h1 {
+            @extend .body33;
+            color: $gray-light;
+            padding-block: 70px;
+        }
+
+        .ckeditor-accordion-container {
+            border-bottom: .1rem solid rgba(250, 251, 251, .2);
+            padding-block: 20px;
+
+            dl {
+                border: 0 !important;
+                margin-block: 10px;
+
+                dt {
+                    a {
+                        text-decoration: none;
+                        background-color: transparent !important;
+                        padding: 0 !important;
+                        @extend .body32;
+
+                        .ckeditor-accordion-toggle {
+                            &::after {
+                                transform: rotate(180deg) !important;
+                                right: 7px !important;
+                                background: #00717f!important;
+                                -webkit-transition: ease-out;
+                                 transition: ease-out;
+                            }
+
+                            &::before {
+                                transform: rotate(90deg) !important;
+                                background: #00717f !important;
+                            }
+
+                            right: 12px !important;
+                            left: auto !important;
+
+                        }
+                    }
+                }
+
+                dd {
+                    display: block !important;
+                    height: fit-content !important;
+                    padding: 0 !important;
+
+                    p {
+                        color: $dark-gray;
+                        font-size: calc(8.8608px + .356vw);
+                        font-weight: 400;
+                        line-height: 1.5714285714;
+                        margin-top: 12px;
+                    }
+                }
+
+                dd.active {
+                    display: none !important;
+                }
+
+                dt.active {
+                    a {
+                        .ckeditor-accordion-toggle {
+                            &::after {
+                                background-color: $white !important;
+                            }
+
+                            &::before {
+                                display: none !important;
+                            }
+
+                            right: 12px !important;
+                            left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

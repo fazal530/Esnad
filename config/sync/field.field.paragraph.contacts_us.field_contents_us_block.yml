@@ -1,0 +1,25 @@
+uuid: 4a82f042-61f3-4423-a5a1-a098ce47971a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contents_us_block
+    - paragraphs.paragraphs_type.contacts_us
+  module:
+    - block_field
+id: paragraph.contacts_us.field_contents_us_block
+field_name: field_contents_us_block
+entity_type: paragraph
+bundle: contacts_us
+label: 'Contents us Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      webform_block: webform_block
+field_type: block_field

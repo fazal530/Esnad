@@ -1,0 +1,45 @@
+uuid: 4b6b817c-fe94-4932-bfe5-9e169abddb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contacts_us.field_area2
+    - field.field.paragraph.contacts_us.field_contents_us_block
+    - field.field.paragraph.contacts_us.field_text_
+    - paragraphs.paragraphs_type.contacts_us
+  module:
+    - block_field
+    - text
+id: paragraph.contacts_us.default
+targetEntityType: paragraph
+bundle: contacts_us
+mode: default
+content:
+  field_area2:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contents_us_block:
+    type: block_field_default
+    weight: 2
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+  field_text_:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -6,5 +6,7 @@ settings:
           label: 'نص عادي'
         6:
           label: HTML
+        8:
+          label: JavaScript
         9:
           label: PHP

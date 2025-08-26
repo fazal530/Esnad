@@ -83,6 +83,11 @@
                 }
             }
         }
+     a.is-active{
+        background-color: transparent !important;
+        color:$orange !important;
+    }
+
 
         .flex-2 {
             display: flex;
