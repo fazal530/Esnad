@@ -50,7 +50,7 @@
   line-height: 42px;
 }
 
-.body5, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions input, #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us a,
+.body5, .paragraph--type--news-letter .left-section .field_link_button a, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions input, #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us a,
 #block-map .info-main-wrapper .info-block .contact-us a, .body-wrapper .main-body .link-btn-wrapper .link-btn a, .paragraph--type--traning-oppurtunity .oppurtunity-wrapper .oppurtunity-text p, .leaders .text-wrapper .link-text a, .about-section .text-wrapper .link-text a, .link-button .link-text a {
   font-family: Arial;
   font-weight: 400;
@@ -540,19 +540,19 @@
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: 700;
 }
-.container, .video-main-wrapper, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
+.container, .video-main-wrapper, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
 #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
   padding-inline: 24px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container, .video-main-wrapper, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
+  .container, .video-main-wrapper, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
   #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 44px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container, .video-main-wrapper, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
+  .container, .video-main-wrapper, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
   #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 80px !important;
   }
@@ -1414,7 +1414,7 @@ html, body {
   color: #CFD2D3;
   margin-bottom: 40px;
 }
-.about-section .text-wrapper .body5, .about-section .text-wrapper .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions .about-section .text-wrapper input, .about-section .text-wrapper #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us a, #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us .about-section .text-wrapper a,
+.about-section .text-wrapper .body5, .about-section .text-wrapper .paragraph--type--news-letter .left-section .field_link_button a, .paragraph--type--news-letter .left-section .field_link_button .about-section .text-wrapper a, .about-section .text-wrapper .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions .about-section .text-wrapper input, .about-section .text-wrapper #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us a, #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us .about-section .text-wrapper a,
 .about-section .text-wrapper #block-map .info-main-wrapper .info-block .contact-us a,
 #block-map .info-main-wrapper .info-block .contact-us .about-section .text-wrapper a, .about-section .text-wrapper .body-wrapper .main-body .link-btn-wrapper .link-btn a, .body-wrapper .main-body .link-btn-wrapper .link-btn .about-section .text-wrapper a, .about-section .text-wrapper .paragraph--type--traning-oppurtunity .oppurtunity-wrapper .oppurtunity-text p, .paragraph--type--traning-oppurtunity .oppurtunity-wrapper .oppurtunity-text .about-section .text-wrapper p, .about-section .text-wrapper .link-text a, .link-button .link-text .about-section .text-wrapper a {
   color: #CFD2D3;
@@ -1464,7 +1464,7 @@ html, body {
   color: #CFD2D3;
   margin-bottom: 40px;
 }
-.about-section .text-wrapper .body5, .about-section .text-wrapper .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions .about-section .text-wrapper input, .about-section .text-wrapper #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us a, #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us .about-section .text-wrapper a,
+.about-section .text-wrapper .body5, .about-section .text-wrapper .paragraph--type--news-letter .left-section .field_link_button a, .paragraph--type--news-letter .left-section .field_link_button .about-section .text-wrapper a, .about-section .text-wrapper .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .link .form-actions .about-section .text-wrapper input, .about-section .text-wrapper #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us a, #block-sass-theme-msd-map .info-main-wrapper .info-block .contact-us .about-section .text-wrapper a,
 .about-section .text-wrapper #block-map .info-main-wrapper .info-block .contact-us a,
 #block-map .info-main-wrapper .info-block .contact-us .about-section .text-wrapper a, .about-section .text-wrapper .body-wrapper .main-body .link-btn-wrapper .link-btn a, .body-wrapper .main-body .link-btn-wrapper .link-btn .about-section .text-wrapper a, .about-section .text-wrapper .paragraph--type--traning-oppurtunity .oppurtunity-wrapper .oppurtunity-text p, .paragraph--type--traning-oppurtunity .oppurtunity-wrapper .oppurtunity-text .about-section .text-wrapper p, .link-button .link-text .about-section .text-wrapper a, .about-section .text-wrapper .link-text a {
   color: #CFD2D3;
@@ -3494,6 +3494,92 @@ html, body {
 }
 .accordion-main-wrapper .accordion-wrapper .ckeditor-accordion-container dl dt.active a .ckeditor-accordion-toggle::before {
   display: none !important;
+}
+
+.paragraph--type--news-letter {
+  padding-inline-start: calc(28.576px + 3.57vw);
+  padding-block: calc(68.576px + 3.57vw);
+  background-color: #303336;
+  display: flex;
+}
+.paragraph--type--news-letter .left-section {
+  width: 50%;
+}
+.paragraph--type--news-letter .left-section .field_text {
+  color: #cfd2d3;
+}
+.paragraph--type--news-letter .left-section .field_text h2 {
+  margin-top: calc(8.576px + 1.07vw);
+}
+.paragraph--type--news-letter .left-section .field_text p {
+  margin-top: calc(5.7152px + 0.714vw);
+}
+.paragraph--type--news-letter .left-section .field_link_button {
+  margin-top: calc(19.4304px + 1.428vw);
+  align-items: center;
+  background: #00717F;
+  display: inline-block;
+  padding: 11px;
+  border-radius: 50px;
+}
+.paragraph--type--news-letter .left-section .field_link_button a {
+  color: #FAFBFB;
+  text-decoration: none;
+}
+.paragraph--type--news-letter .left-section .field_link_button a::after {
+  content: url("../icons/arrow.svg");
+  padding: 11px;
+  background: white;
+  border-radius: 50%;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+.paragraph--type--news-letter .left-section .field_link_button a:hover::after {
+  margin-left: 30px;
+}
+.paragraph--type--news-letter .right-section {
+  width: 50%;
+}
+.paragraph--type--news-letter .right-section .file-attachment {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+}
+.paragraph--type--news-letter .right-section .file-attachment .file-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.paragraph--type--news-letter .right-section .file-attachment .file-wrapper .file-image {
+  width: 147px;
+  height: 214px;
+}
+.paragraph--type--news-letter .right-section .file-attachment .file-wrapper .file-image img {
+  width: 100%;
+  height: 100%;
+}
+.paragraph--type--news-letter .right-section .file-attachment .file-wrapper .file-pdf {
+  display: flex;
+  gap: 12px;
+}
+.paragraph--type--news-letter .right-section .file-attachment .file-wrapper .file-pdf a {
+  text-decoration: none;
+  color: #CFD2D3;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.paragraph--type--news-letter .right-section .file-attachment .file-wrapper .file-pdf::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  /* set size */
+  height: 20px;
+  background: #303336 url("../icons/arrow-white.svg") no-repeat center;
+  background-size: 12px 12px;
+  border-radius: 50%;
+  transform: rotate(90deg);
 }
 
 .video-main-wrapper {

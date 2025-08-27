@@ -1,0 +1,10 @@
+uuid: 7c26b5dd-ff67-4655-8e35-988c07a9e7a4
+langcode: en
+status: true
+dependencies: {  }
+id: news_letter
+label: 'News Letter'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
