@@ -1,0 +1,21 @@
+uuid: 75c12a99-abbe-47b7-8c4c-112190e7b232
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_two_columns_wrapper
+    - paragraphs.paragraphs_type.heading_with_colu
+  module:
+    - options
+id: paragraph.heading_with_colu.field_two_columns_wrapper
+field_name: field_two_columns_wrapper
+entity_type: paragraph
+bundle: heading_with_colu
+label: 'Two Columns wrapper'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

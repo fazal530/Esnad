@@ -16,6 +16,8 @@ global:
     js/custom.js: {} 
     js/counter.js: {}
     js/animated-text.js: {}
+    js/video.js: {}
+
   dependencies:
     - core/drupal
     - core/jquery
@@ -30,10 +32,6 @@ scroll_animation:
   dependencies:
     - core/drupal
 
-
-
-
-   
 mining_map:
   js:
     js/mining-map.js: {}
@@ -41,3 +39,7 @@ mining_map:
   dependencies:
     - core/drupal
     - core/jquery
+
+
+
+

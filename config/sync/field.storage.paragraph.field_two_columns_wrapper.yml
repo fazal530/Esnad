@@ -1,0 +1,27 @@
+uuid: 350709eb-0903-4e24-94c9-063323fb68d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_two_columns_wrapper
+field_name: field_two_columns_wrapper
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: main_wrapper
+      label: main-wrapper
+    -
+      value: main_wrapper2
+      label: main-wrapper2
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
