@@ -73,6 +73,14 @@
             p{
                 @extend .body13;
                 color: $light-gray;
+                span{
+                    @extend .body26;
+                    color: $light-gray;
+                }
+            }
+            h2{
+                @extend .body7;
+                color: $light-gray;
             }
         }
     }
