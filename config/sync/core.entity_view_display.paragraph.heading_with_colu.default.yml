@@ -6,8 +6,10 @@ dependencies:
     - field.field.paragraph.heading_with_colu.field_hero_text
     - field.field.paragraph.heading_with_colu.field_style
     - field.field.paragraph.heading_with_colu.field_text_
+    - field.field.paragraph.heading_with_colu.field_two_columns_wrapper
     - paragraphs.paragraphs_type.heading_with_colu
   module:
+    - options
     - text
 id: paragraph.heading_with_colu.default
 targetEntityType: paragraph
@@ -35,5 +37,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_two_columns_wrapper:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }
