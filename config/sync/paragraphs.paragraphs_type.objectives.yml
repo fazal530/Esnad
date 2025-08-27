@@ -1,0 +1,10 @@
+uuid: d5289335-cd55-4d77-93d7-45b9e20b7552
+langcode: en
+status: true
+dependencies: {  }
+id: objectives
+label: Objectives
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

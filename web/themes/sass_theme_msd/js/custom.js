@@ -32,6 +32,27 @@
         });
       });
 
+      once('mySlickReinit', '[dir="ltr"] .make-slider', context).forEach((el) => {
+        const $carousel = $(el);
+
+        // If it's already initialized, destroy before re-init
+        if ($carousel.hasClass('slick-initialized')) {
+          $carousel.slick('unslick');
+        }
+
+        $carousel.slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          infinite: true, // <-- important: disable infinite to keep alignment
+          autoplay: true,
+          fade: true,
+          speed: 500,
+          rtl: false,
+          centerMode: false // makes extra slides appear on the right
+        });
+      });
+
       // Re-initialize Slick on the specific element containing the slider.
       once('mySlickReinit', '[dir="rtl"] .make-carosel', context).forEach((el) => {
         const $carousel = $(el);
@@ -136,3 +157,48 @@
 })(jQuery, Drupal);
 
 
+
+
+
+
+
+
+
+    const texts = ["text1", "text2", "text3"];
+    let current = 0;
+
+    function showText() {
+      const el = document.getElementById(texts[current]);
+
+      // Reset previous state
+      el.classList.remove("hide", "show");
+      el.style.display = "block";
+
+      // Trigger reflow (to restart animation)
+      void el.offsetWidth;
+
+      // Drop in
+      el.classList.add("show");
+
+      // Drop out after visible duration
+      setTimeout(() => {
+        el.classList.remove("show");
+        el.classList.add("hide");
+
+        // After drop out finishes, clean up and show next
+        setTimeout(() => {
+          el.classList.remove("hide");
+          el.style.display = "none";
+
+          // Move to next text
+          current = (current + 1) % texts.length;
+          showText();
+        }, 800); // dropOut duration
+      }, 3000); // visible duration (change to your liking)
+    }
+
+    // Start
+    showText();
+ 
+
+    

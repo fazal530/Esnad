@@ -38,18 +38,12 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
-{% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      {{ content }}
-    {% endblock %}
+
+<div class="pin-wrapper" data-mining-map-circle-id={{pin_index}}>
+  <div class="heading">{{ content.field_text }}</div>
+  <div class="sub-details">
+  <div class="item">{{ content.field_area2 }}</div>
+  <div class="item">{{ content.field_licenses }}</div>
+  <div class="item">{{ content.field_materials }}</div>
   </div>
-{% endblock paragraph %}
+</div>

@@ -32,8 +32,8 @@ settings:
       - '|'
       - heading
       - codeBlock
-      - '|'
       - sourceEditing
+      - Accordion
   plugins:
     ckeditor5_codeBlock:
       languages:

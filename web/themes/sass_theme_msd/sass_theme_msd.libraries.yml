@@ -33,3 +33,11 @@ scroll_animation:
 
 
 
+   
+mining_map:
+  js:
+    js/mining-map.js: {}
+    js/original-mining-map.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

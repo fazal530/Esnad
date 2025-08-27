@@ -1,0 +1,24 @@
+uuid: ca5ae7fb-4e1a-4341-873a-6a594fac3e98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.contacts_us
+  module:
+    - text
+id: paragraph.contacts_us.field_text_
+field_name: field_text_
+entity_type: paragraph
+bundle: contacts_us
+label: 'Contents Us Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,26 @@
+<form {{ attributes }}>
+    <div class="webform-main_wrapper">
+        <div class="webform_wrapper">
+            <div class="info">
+                {{ element.elements.name }}
+                {{ element.elements.email }}
+                {{element.elements.type_of_inquiry}}
+            </div>
+            <div class="message">
+                {{ element.elements.description }}
+            </div>
+            <div class="link">
+            {{ element.elements.actions }}
+        </div>
+        </div>
+
+    </div>
+
+
+
+    <div>
+        {{ element.form_token }}
+        {{ element.form_build_id }}
+        {{ element.form_id }}
+    </div>
+</form>

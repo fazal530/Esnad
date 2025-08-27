@@ -1,0 +1,19 @@
+uuid: c14704c0-eaf4-4c5a-941c-efcb5c7d18e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_materials
+    - paragraphs.paragraphs_type.our_values_wrapper
+id: paragraph.our_values_wrapper.field_materials
+field_name: field_materials
+entity_type: paragraph
+bundle: our_values_wrapper
+label: 'Our Value Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

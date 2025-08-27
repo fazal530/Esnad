@@ -17,7 +17,7 @@ mode: default
 content:
   field_area2:
     type: string_textfield
-    weight: 4
+    weight: 0
     region: content
     settings:
       size: 60
@@ -25,7 +25,7 @@ content:
     third_party_settings: {  }
   field_licenses:
     type: string_textfield
-    weight: 2
+    weight: 1
     region: content
     settings:
       size: 60
@@ -33,7 +33,7 @@ content:
     third_party_settings: {  }
   field_materials:
     type: string_textfield
-    weight: 3
+    weight: 2
     region: content
     settings:
       size: 60
@@ -41,7 +41,7 @@ content:
     third_party_settings: {  }
   field_text:
     type: text_textarea
-    weight: 2
+    weight: 3
     region: content
     settings:
       rows: 5

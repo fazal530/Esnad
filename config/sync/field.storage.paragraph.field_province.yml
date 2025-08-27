@@ -12,11 +12,20 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: riyadh
-      label: Riyadh
+      value: riyadh_province
+      label: 'Riyadh Province'
     -
-      value: tabuk
-      label: tabuk
+      value: tabuk_province
+      label: 'Tabuk Province'
+    -
+      value: najran_province
+      label: 'Najran Province'
+    -
+      value: eastern_province
+      label: 'Eastern Province'
+    -
+      value: makkah_province
+      label: 'Makkah Province'
   allowed_values_function: ''
 module: options
 locked: false

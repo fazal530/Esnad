@@ -1,0 +1,29 @@
+uuid: c3eb1eab-b038-4478-8107-670e34f06d32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attachment
+    - media.type.image
+    - paragraphs.paragraphs_type.our_values
+id: paragraph.our_values.field_attachment
+field_name: field_attachment
+entity_type: paragraph
+bundle: our_values
+label: 'Value Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference
