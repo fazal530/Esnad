@@ -69,15 +69,26 @@
     }
 
     .slick-prev {
-        left: 43%;
-        top: 85%;
+        left: 56%;
+        top: 91%;
         width: 40px;
         height: 40px;
         border-radius: 20px;
         background: #303336;
         z-index: 99999;
-        &:hover{
-            background-color: #00717F;;
+
+        @include tablet {
+            left: 38%;
+        }
+
+        @include desktop {
+            left: 40%;
+            top: 85%;
+        }
+
+        &:hover {
+            background-color: #00717F;
+            ;
         }
 
         &::before {
@@ -88,15 +99,26 @@
     }
 
     .slick-next {
-        right: 51%;
-        top: 85%;
+        left: 68%;
+        top: 91%;
         width: 40px;
         height: 40px;
         border-radius: 20px;
         background: #303336;
         z-index: 99999;
-        &:hover{
-            background-color: #00717F;;
+
+        @include tablet {
+            left: 45%;
+        }
+
+        @include desktop {
+            left: 44%;
+            top: 85%;
+        }
+
+        &:hover {
+            background-color: #00717F;
+            ;
         }
 
         &::before {

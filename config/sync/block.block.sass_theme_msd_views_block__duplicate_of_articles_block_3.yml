@@ -1,0 +1,24 @@
+uuid: d94d49ed-7f8b-4eeb-8c55-705f2c66948c
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.duplicate_of_articles
+  module:
+    - views
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_views_block__duplicate_of_articles_block_3
+theme: sass_theme_msd
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:duplicate_of_articles-block_3'
+settings:
+  id: 'views_block:duplicate_of_articles-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility: {  }

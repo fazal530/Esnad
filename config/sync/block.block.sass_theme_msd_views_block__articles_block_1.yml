@@ -1,6 +1,6 @@
 uuid: 0cbee6e2-a558-4ff1-a835-1d2aed17332a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.articles

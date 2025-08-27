@@ -23,7 +23,10 @@ settings:
     plugin_ids:
       'block_content:5528c68a-8f2f-4e73-a366-b769a017a94f': 'block_content:5528c68a-8f2f-4e73-a366-b769a017a94f'
       'block_content:0ae19862-39ec-463f-9865-212fcd9f59c6': 'block_content:0ae19862-39ec-463f-9865-212fcd9f59c6'
+      'views_block:duplicate_of_articles-block_3': 'views_block:duplicate_of_articles-block_3'
       'views_block:articles-block_1': 'views_block:articles-block_1'
+      'views_block:articles-block_3': 'views_block:articles-block_3'
+      'views_block:articles-block_2': 'views_block:articles-block_2'
       'views_block:board_memebers-block_1': 'views_block:board_memebers-block_1'
       'views_block:board_memebers-block_2': 'views_block:board_memebers-block_2'
       webform_block: webform_block
