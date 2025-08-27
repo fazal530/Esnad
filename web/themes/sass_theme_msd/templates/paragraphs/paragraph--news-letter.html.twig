@@ -38,34 +38,61 @@
 * @ingroup themeable
 */
 #}
-{% set value = paragraph.field_two_columns_wrapper.0.value %}
 {%
 set classes = [
 'paragraph',
 'paragraph--type--' ~ paragraph.bundle|clean_class,
 view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-not paragraph.isPublished() ? 'paragraph--unpublished',
-value
+not paragraph.isPublished() ? 'paragraph--unpublished'
 ]
 %}
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="main_wrapper">
-    <div class="body-section">
-      <div class="heading">
-        {{ content.field_style }}
-      </div>
-      <div class="main-wrapper">
-        <div class="left-description">
-          {{ content.field_text_ }}
-        </div>
-        <div class="right-description">
-          {{ content.field_hero_text}}
-        </div>
-      </div>
+  <div class="left-section">
+    <div class="field_text">
+      {{content.field_text}}
+    </div>
+    <div class="field_link_button">
+      {{content.field_link_button}}
     </div>
   </div>
+  <div class="right-section">
+    <div class="file-attachment">
+      {% for item in paragraph.field_attachment %}
+      {% set media = item.entity %}
+      {% set bundle = media.bundle() %}
+
+      {% set file = null %}
+      {% if bundle == 'image' and media.field_media_image.entity %}
+      {% set file = media.field_media_image.entity %}
+      {% elseif bundle == 'document' and media.field_media_document.entity %}
+      {% set file = media.field_media_document.entity %}
+      {% elseif bundle == 'video' and media.field_media_video_file is defined and media.field_media_video_file.entity %}
+      {% set file = media.field_media_video_file.entity %}
+      {% endif %}
+
+      {% if file %}
+    <div class="file-wrapper">
+      <div class="file-image">
+        {{content.field_image}}
+      </div>
+      <div class="file-pdf">
+        <a href="{{ file_url(file.uri.value) }}" download>{{ 'Download pdf' }}
+
+        </a>
+
+      </div>
+    </div>
+      
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+
+
+
   {% endblock %}
   </div>
   {% endblock paragraph %}

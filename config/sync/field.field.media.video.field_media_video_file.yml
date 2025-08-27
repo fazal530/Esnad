@@ -31,6 +31,6 @@ settings:
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'mp4 webm'
-  max_filesize: '50 MB'
+  max_filesize: '400 MB'
   description_field: false
 field_type: file
