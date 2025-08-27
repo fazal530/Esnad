@@ -1,0 +1,10 @@
+uuid: 4334ef86-f152-4c9b-aeec-fd83bcf97b1e
+langcode: en
+status: true
+dependencies: {  }
+id: animation_on_scroll
+label: animation-on-scroll
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: ac0800d7-c3dd-4640-a3af-9fec01235a16
+langcode: en
+status: true
+dependencies: {  }
+id: traning_oppurtunity
+label: 'Traning Oppurtunity'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

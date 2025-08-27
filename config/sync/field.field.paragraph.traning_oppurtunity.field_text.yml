@@ -1,0 +1,24 @@
+uuid: ffc2f3f0-8baf-436d-a139-a92cf7b59579
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.traning_oppurtunity
+  module:
+    - text
+id: paragraph.traning_oppurtunity.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: traning_oppurtunity
+label: description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long
