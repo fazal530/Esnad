@@ -1,0 +1,110 @@
+.paragraph--type--news-letter {
+    padding-inline-start: calc(28.576px + 3.57vw);
+    padding-block: calc(68.576px + 3.57vw);
+    background-color: $primary;
+    display: flex;
+    @extend .container;
+
+    .left-section {
+        width: 50%;
+
+        .field_text {
+            color: #cfd2d3;
+
+            h2 {
+                margin-top: calc(8.576px + 1.07vw);
+            }
+
+            p {
+                margin-top: calc(5.7152px + .714vw);
+               
+            }
+        }
+
+        .field_link_button {
+            margin-top: calc(19.4304px + 1.428vw);
+            align-items: center;
+            background: $tertiary;
+            display: inline-block;
+            padding: 11px;
+            border-radius: 50px;
+
+            a {
+                @extend .body5;
+                color: $off-white;
+                text-decoration: none;
+
+                &::after {
+                    content: url("../icons/arrow.svg");
+                    padding: 11px;
+                    background: white;
+                    border-radius: 50%;
+                    margin-left: 15px;
+                    transition: all 0.3s ease;
+
+                }
+
+                &:hover {
+                    &::after {
+                        margin-left: 30px;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .right-section {
+        width: 50%;
+
+        .file-attachment {
+            display: flex;
+            justify-content: flex-end;
+            gap: 50px;
+
+            .file-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 28px;
+
+                .file-image {
+                    width: 147px;
+                    height: 214px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .file-pdf {
+                    display: flex;
+                    gap: 12px;
+
+                    a {
+                        text-decoration: none;
+                        color: $light-gray;
+                        display: flex;
+                        gap: 40px;
+                        align-items: center;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        width: 20px;
+                        /* set size */
+                        height: 20px;
+                        background: $primary url("../icons/arrow-white.svg") no-repeat center;
+                        background-size: 12px 12px;
+                        border-radius: 50%;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+
+    }
+}
