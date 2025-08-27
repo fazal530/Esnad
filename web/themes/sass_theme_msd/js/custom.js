@@ -200,5 +200,3 @@
     // Start
     showText();
  
-
-    

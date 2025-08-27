@@ -1,0 +1,65 @@
+.video-main-wrapper {
+    @extend .container;
+    padding-block: 50px;
+    background-color: $primary;
+
+    .video-section-wrapper {
+        position: relative;
+
+        .video {
+            video {
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                object-fit: cover;
+            }
+        }
+
+        .thumbnail {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 2;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 30px;
+            }
+
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 3;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+
+.main_wrapper2{
+    .main-wrapper{
+        display:block !important;
+        padding-top: 60px !important;
+    }
+    .right-description{
+        p{
+            font-weight: 400 !important;
+            line-height: 32px !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

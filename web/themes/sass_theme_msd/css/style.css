@@ -540,19 +540,19 @@
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: 700;
 }
-.container, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
+.container, .video-main-wrapper, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
 #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
   padding-inline: 24px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
+  .container, .video-main-wrapper, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
   #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 44px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
+  .container, .video-main-wrapper, .paragraph--type--news-letter, .accordion-main-wrapper .accordion-wrapper, .contact-main-wrapper .contact-wrapper, #block-sass-theme-msd-map .info-main-wrapper,
   #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-articles-block-3, #block-views-block-articles-block-1, .about-section, .site-footer__top, .header-section {
     padding-inline: 80px !important;
   }
@@ -3580,6 +3580,49 @@ html, body {
   background-size: 12px 12px;
   border-radius: 50%;
   transform: rotate(90deg);
+}
+
+.video-main-wrapper {
+  padding-block: 50px;
+  background-color: #303336;
+}
+.video-main-wrapper .video-section-wrapper {
+  position: relative;
+}
+.video-main-wrapper .video-section-wrapper .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.video-main-wrapper .video-section-wrapper .thumbnail {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+.video-main-wrapper .video-section-wrapper .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.video-main-wrapper .video-section-wrapper .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.main_wrapper2 .main-wrapper {
+  display: block !important;
+  padding-top: 60px !important;
+}
+.main_wrapper2 .right-description p {
+  font-weight: 400 !important;
+  line-height: 32px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
