@@ -1,11 +1,14 @@
 slick:
-  js:
-    libs/slick.min.js: {}
-    https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js: {}
+ 
   css:
     component:
       libs/slick-theme.css: {}
       libs/slick.css: {}
+      https://unpkg.com/aos@next/dist/aos.css: {}
+  js:
+    libs/slick.min.js: {}
+    https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js: {}
+    js/aos-init.js: {}
 
 global:
   js:
@@ -19,6 +22,17 @@ global:
   css:
     base:
       css/style.css: {}
+
+
+scroll_animation:
+  js:
+    js/scroll_split.js: {}
+  dependencies:
+    - core/drupal
+
+
+
+
    
 mining_map:
   js:

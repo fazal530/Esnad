@@ -1,0 +1,21 @@
+uuid: 8ebe8045-4ccf-4dd6-9035-f338c81000c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_select_list
+    - paragraphs.paragraphs_type.animation_on_scroll
+  module:
+    - options
+id: paragraph.animation_on_scroll.field_select_list
+field_name: field_select_list
+entity_type: paragraph
+bundle: animation_on_scroll
+label: 'Select list'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

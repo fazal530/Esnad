@@ -1,0 +1,14 @@
+{
+  "name": "@drupal-shimmy/animate.css",
+  "description": "animate.css Drupal shim",
+  "keywords": ["shim", "plugin", "animate.css"],
+  "homepage": "https://github.com/animate-css/animate.css",
+  "bugs": {
+    "url": "https://github.com/animate-css/animate.css/issues"
+  },
+  "license" : "(GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/animate-css/animate.css.git"
+	}
+}

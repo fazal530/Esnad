@@ -1,0 +1,19 @@
+uuid: 15e562ff-1ca4-4ca8-aed8-1d08b5fc0cc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ceo_caption
+    - paragraphs.paragraphs_type.animation_on_scroll
+id: paragraph.animation_on_scroll.field_ceo_caption
+field_name: field_ceo_caption
+entity_type: paragraph
+bundle: animation_on_scroll
+label: 'Heading Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

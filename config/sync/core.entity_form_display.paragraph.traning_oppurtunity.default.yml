@@ -1,0 +1,34 @@
+uuid: 830af032-a580-4dd2-abe4-419af013f8f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.traning_oppurtunity.field_media
+    - field.field.paragraph.traning_oppurtunity.field_text
+    - paragraphs.paragraphs_type.traning_oppurtunity
+  module:
+    - media_library
+    - text
+id: paragraph.traning_oppurtunity.default
+targetEntityType: paragraph
+bundle: traning_oppurtunity
+mode: default
+content:
+  field_media:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

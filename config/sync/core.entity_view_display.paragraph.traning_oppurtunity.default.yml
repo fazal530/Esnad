@@ -1,0 +1,32 @@
+uuid: 141d98a4-3cd0-4965-b480-203285fb5e7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.traning_oppurtunity.field_media
+    - field.field.paragraph.traning_oppurtunity.field_text
+    - paragraphs.paragraphs_type.traning_oppurtunity
+  module:
+    - text
+id: paragraph.traning_oppurtunity.default
+targetEntityType: paragraph
+bundle: traning_oppurtunity
+mode: default
+content:
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
