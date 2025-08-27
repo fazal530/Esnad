@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '9f7b132f361afbf8bc11aa735ff5ff510cb21690',
+        'reference' => '5aac447fc28c2cff30f779e72265cdd9c68b6983',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -481,11 +481,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-<<<<<<< HEAD
-            'reference' => '9f7b132f361afbf8bc11aa735ff5ff510cb21690',
-=======
-            'reference' => '2299396563d3a47ac2580a660dcee39704a26532',
->>>>>>> main
+            'reference' => '5aac447fc28c2cff30f779e72265cdd9c68b6983',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -779,8 +775,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.1|2.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.1|2.0',
             ),
         ),
         'psr/event-dispatcher' => array(
