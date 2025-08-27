@@ -1,0 +1,22 @@
+uuid: 7462feca-cece-41f7-a7d5-2a3e373b143d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_text
+    - paragraphs.paragraphs_type.animation_on_scroll
+  module:
+    - text
+id: paragraph.animation_on_scroll.field_hero_text
+field_name: field_hero_text
+entity_type: paragraph
+bundle: animation_on_scroll
+label: 'Para Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

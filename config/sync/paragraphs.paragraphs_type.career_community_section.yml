@@ -1,0 +1,10 @@
+uuid: 8c5dfd4c-ac8e-48a0-a733-d62c2185e086
+langcode: en
+status: true
+dependencies: {  }
+id: career_community_section
+label: 'Career Community Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

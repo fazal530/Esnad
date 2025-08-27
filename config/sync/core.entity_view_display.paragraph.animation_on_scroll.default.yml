@@ -1,0 +1,50 @@
+uuid: 02390339-6f18-4f37-86c7-ad52b2b71d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.animation_on_scroll.field_ceo_caption
+    - field.field.paragraph.animation_on_scroll.field_hero_text
+    - field.field.paragraph.animation_on_scroll.field_media
+    - field.field.paragraph.animation_on_scroll.field_select_list
+    - paragraphs.paragraphs_type.animation_on_scroll
+  module:
+    - options
+    - text
+id: paragraph.animation_on_scroll.default
+targetEntityType: paragraph
+bundle: animation_on_scroll
+mode: default
+content:
+  field_ceo_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_select_list:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

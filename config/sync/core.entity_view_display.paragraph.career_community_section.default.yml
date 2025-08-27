@@ -1,0 +1,24 @@
+uuid: 86d3384f-1745-42b8-9e45-a61ea21ae65d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.career_community_section.field_career_community_section
+    - paragraphs.paragraphs_type.career_community_section
+  module:
+    - entity_reference_revisions
+id: paragraph.career_community_section.default
+targetEntityType: paragraph
+bundle: career_community_section
+mode: default
+content:
+  field_career_community_section:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

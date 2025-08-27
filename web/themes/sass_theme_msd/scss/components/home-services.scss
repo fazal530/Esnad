@@ -68,7 +68,8 @@
                 flex-direction: column;
                 gap: 25px;
 
-                .body9 {
+                h2 {
+                    @extend .body9;
                     font-weight: 700 !important;
                     color: $secondary;
                 }

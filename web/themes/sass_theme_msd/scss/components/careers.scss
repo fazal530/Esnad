@@ -1,0 +1,143 @@
+.paragraph--type--career-community-section {
+    background-color: $primary;
+    padding-block: 93px;
+    @extend .container;
+
+    @include tablet {
+        padding-block: 112px 196px;
+    }
+
+    @include desktop {
+        padding-block: 143px 206px;
+    }
+
+
+    .services-text {
+
+        h2 {
+            @extend .body24;
+            color: $light-gray;
+        }
+
+        p {
+            @extend .body16;
+            color: $light-gray;
+            padding-block: 54px 57px;
+            line-height: 29px;
+        }
+    }
+
+    .paragraph--type--attachments {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .paragraph--type--attachments img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 40px;
+
+        @include tablet {
+            height: 152px;
+        }
+
+        @include desktop {
+            height: 269px;
+        }
+    }
+}
+
+
+
+
+.paragraph--type--traning-oppurtunity {
+    background-color: $primary;
+
+    .oppurtunity-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+
+        @include desktop {
+            gap: 190px;
+            flex-direction: row-reverse;
+        }
+
+        .oppurtunity-text {
+            flex: 1;
+
+
+            p {
+                span {
+                    color: $gray-light;
+                    @extend .body14;
+                }
+            }
+
+            h2 {
+                @extend .body4;
+                color: $white;
+                padding-block: 22px 31px;
+            }
+
+            p {
+                @extend .body5;
+                color: $light-gray;
+                padding-bottom: 33px;
+            }
+
+            footer {
+                padding-bottom: 100px ;
+                a {
+                    button {
+                        padding: 14px 55.566px 14.97px 40px;
+                        background-color: $tertiary;
+                        border-radius: 50px;
+                        color: $off-white;
+                        border: none;
+                        @extend .body6;
+                    }
+                }
+
+            }
+
+        }
+
+        .oppurtunity-image {
+            flex: 2;
+
+            @include desktop {
+                
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                position: sticky;
+                top: 20vh;
+                inset-inline: 0 0;
+                justify-content: end;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 540px;
+                object-fit: cover;
+                border-radius: 20px;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+uuid: 29bba364-3759-42c3-9117-cf1bfee0e522
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_career_community_section
+    - paragraphs.paragraphs_type.attachments
+    - paragraphs.paragraphs_type.career_community_section
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.career_community_section.field_career_community_section
+field_name: field_career_community_section
+entity_type: paragraph
+bundle: career_community_section
+label: 'Career Community Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      attachments: attachments
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      all_blocks:
+        weight: 20
+        enabled: false
+      attachments:
+        weight: 21
+        enabled: true
+      career_community_section:
+        weight: 22
+        enabled: false
+      ceo:
+        weight: 23
+        enabled: false
+      children:
+        weight: 24
+        enabled: false
+      hero_section:
+        weight: 25
+        enabled: false
+      image_with_text:
+        weight: 26
+        enabled: false
+      link_button:
+        weight: 27
+        enabled: false
+      parent:
+        weight: 28
+        enabled: false
+      pin:
+        weight: 29
+        enabled: false
+      province:
+        weight: 30
+        enabled: false
+      service_focus_section:
+        weight: 34
+        enabled: false
+      services:
+        weight: 31
+        enabled: false
+      services_card_wrapper:
+        weight: 33
+        enabled: false
+      services_cards:
+        weight: 32
+        enabled: false
+      social_icon:
+        weight: 35
+        enabled: false
+      statistic_item:
+        weight: 36
+        enabled: false
+      statistic_wrapper:
+        weight: 37
+        enabled: false
+      text:
+        weight: 38
+        enabled: true
+field_type: entity_reference_revisions

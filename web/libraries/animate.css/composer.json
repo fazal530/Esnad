@@ -1,0 +1,16 @@
+{
+  "name": "drupal-shimmy/animate.css",
+  "description": "animate.css Drupal shim",
+  "type": "drupal-library",
+  "keywords": ["shim", "plugin", "animate.css"],
+  "homepage": "https://github.com/animate-css/animate.css",
+  "license": [
+    "GPL-2.0-or-later",
+    "LGPL-2.1-or-later",
+    "MPL-1.1"
+  ],
+  "support": {
+    "issues": "https://github.com/animate-css/animate.css/issues",
+    "source": "https://github.com/animate-css/animate.css/tree/master"
+  }
+}
