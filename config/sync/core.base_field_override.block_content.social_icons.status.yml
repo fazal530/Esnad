@@ -1,0 +1,22 @@
+uuid: 6361a41f-6d51-4001-99ae-e57dfee12120
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_icons
+id: block_content.social_icons.status
+field_name: status
+entity_type: block_content
+bundle: social_icons
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

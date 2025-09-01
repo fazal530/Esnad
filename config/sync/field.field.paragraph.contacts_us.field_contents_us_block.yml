@@ -14,7 +14,7 @@ bundle: contacts_us
 label: 'Contents us Block'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

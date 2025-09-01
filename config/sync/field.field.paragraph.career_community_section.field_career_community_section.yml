@@ -16,7 +16,7 @@ bundle: career_community_section
 label: 'Career Community Section'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

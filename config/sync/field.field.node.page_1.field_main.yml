@@ -12,10 +12,10 @@ id: node.page_1.field_main
 field_name: field_main
 entity_type: node
 bundle: page_1
-label: Main
+label: Contents
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -25,12 +25,33 @@ settings:
       children: children
     negate: 1
     target_bundles_drag_drop:
+      accordion:
+        weight: 31
+        enabled: false
+      all_blocks:
+        weight: 32
+        enabled: false
+      animation_on_scroll:
+        weight: 33
+        enabled: false
       attachments:
         weight: 5
+        enabled: false
+      career_community_section:
+        weight: 35
+        enabled: false
+      ceo:
+        weight: 36
         enabled: false
       children:
         weight: 6
         enabled: true
+      contacts_us:
+        weight: 38
+        enabled: false
+      heading_with_colu:
+        weight: 39
+        enabled: false
       hero_section:
         weight: 8
         enabled: false
@@ -40,8 +61,29 @@ settings:
       link_button:
         weight: 13
         enabled: false
+      news_letter:
+        weight: 43
+        enabled: false
+      objectives:
+        weight: 44
+        enabled: false
+      our_values:
+        weight: 45
+        enabled: false
+      our_values_wrapper:
+        weight: 46
+        enabled: false
       parent:
         weight: 7
+        enabled: false
+      pin:
+        weight: 48
+        enabled: false
+      province:
+        weight: 49
+        enabled: false
+      service_focus_section:
+        weight: 53
         enabled: false
       services:
         weight: 15
@@ -55,7 +97,22 @@ settings:
       social_icon:
         weight: 21
         enabled: false
+      statistic_item:
+        weight: 55
+        enabled: false
+      statistic_wrapper:
+        weight: 56
+        enabled: false
       text:
         weight: 8
+        enabled: false
+      text_with_button:
+        weight: 58
+        enabled: false
+      traning_oppurtunity:
+        weight: 59
+        enabled: false
+      video_section:
+        weight: 60
         enabled: false
 field_type: entity_reference_revisions

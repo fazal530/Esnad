@@ -1,0 +1,18 @@
+uuid: 1ce998c4-3548-4cdc-a342-c3c41b49f2aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.traning_oppurtunity
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.traning_oppurtunity
+target_entity_type_id: paragraph
+target_bundle: traning_oppurtunity
+default_langcode: site_default
+language_alterable: true
