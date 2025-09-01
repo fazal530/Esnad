@@ -11,6 +11,10 @@
             display: flex;
             flex-direction: row;
             gap: 37px;
+
+            [dir="rtl"] & {
+                flex-direction: row-reverse;
+            }
         }
 
         .slider-left {
@@ -58,13 +62,18 @@
         .slider-right {
             flex: 1;
 
-            img {
-                max-width: 100%;
-                max-height: 404px;
-                border-radius: 30px;
-            }
+            .image_wrapper {
+                width: 100%;
+                height: 404px;
 
-            .image_wrapper {}
+                img {
+                    width: 100%;
+                    height: 404px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                }
+
+            }
         }
     }
 
@@ -77,13 +86,25 @@
         background: #303336;
         z-index: 99999;
 
+        [dir="rtl"] & {
+            right: 56%;
+        }
+
         @include tablet {
             left: 38%;
+
+            [dir="rtl"] & {
+                right: 38%;
+            }
         }
 
         @include desktop {
             left: 40%;
             top: 85%;
+
+            [dir="rtl"] & {
+                right: 40%;
+            }
         }
 
         &:hover {
@@ -94,6 +115,9 @@
         &::before {
             content: '<';
             font-size: 14px;
+            [dir="rtl"] & {
+                content: '>' !important;
+            }
 
         }
     }
@@ -107,23 +131,44 @@
         background: #303336;
         z-index: 99999;
 
+        [dir="rtl"] & {
+            right: 68%;
+            left: unset !important;
+        }
+
         @include tablet {
             left: 45%;
+
+            [dir="rtl"] & {
+                left: 53% !important;
+            }
         }
 
         @include desktop {
             left: 44%;
             top: 85%;
+
+            [dir="rtl"] & {
+                right: 44%;
+            }
         }
 
         &:hover {
             background-color: #00717F;
-            ;
         }
 
         &::before {
             content: '>';
             font-size: 14px;
+            [dir="rtl"] & {
+                content: '<' !important;
+            }
+        }
+    }
+
+    .slick-track {
+        .slick-slide {
+            float: left !important;
         }
     }
 

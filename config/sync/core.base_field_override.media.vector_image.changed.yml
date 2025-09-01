@@ -1,0 +1,18 @@
+uuid: abe498a8-799f-46fc-9a7c-36191aedbec2
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.vector_image
+id: media.vector_image.changed
+field_name: changed
+entity_type: media
+bundle: vector_image
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

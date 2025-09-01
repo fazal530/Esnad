@@ -1,0 +1,18 @@
+uuid: a990b5f9-c92b-4f87-b3ae-63d941123058
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.animation_on_scroll
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.animation_on_scroll
+target_entity_type_id: paragraph
+target_bundle: animation_on_scroll
+default_langcode: site_default
+language_alterable: true

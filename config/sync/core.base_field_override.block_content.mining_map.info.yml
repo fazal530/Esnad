@@ -1,0 +1,18 @@
+uuid: e1dd94ca-3e61-4e40-bdde-a14acf8b09ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mining_map
+id: block_content.mining_map.info
+field_name: info
+entity_type: block_content
+bundle: mining_map
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

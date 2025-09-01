@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<p>أعضاء مجلس الإدارة</p>'
+            format: full_html
+  block_2:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<p>الإدارة التنفيذية</p><p class="body11">خبرات قيادية تساهم في تحويل ثروات الأرض إلى قيمة اقتصادية مستدامة.</p>'
+            format: full_html

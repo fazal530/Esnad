@@ -15,7 +15,7 @@ bundle: text_with_button
 label: 'Pioneers Of Mining'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -5,7 +5,13 @@
     padding-block: 75px;
 
     @include tablet {
-        padding-right: 0 !important;
+        [dir="ltr"] & {
+            padding-right: 0 !important;
+        }
+
+        [dir="rtl"] & {
+            padding-left: 0 !important;
+        }
     }
 
     header {
@@ -103,6 +109,15 @@
                         @include desktop {
                             padding-block: 3px;
                         }
+                    }
+
+                    [dir="rtl"] &::after {
+                        background: $tertiary url("../icons/arrow-white.svg") no-repeat center;
+                        transform: rotate(180deg);
+                        display: inline-block;
+                        padding-block: 1px;
+                        padding-inline: 8px;
+                        margin-right: 15px;
                     }
                 }
             }
@@ -321,6 +336,10 @@
                 top: 4px;
                 width: 16px;
                 left: 4px;
+
+                [dir="rtl"] & {
+                    right: 4px;
+                }
             }
 
             li:after {
@@ -332,6 +351,10 @@
                 top: 8px;
                 width: 8px;
                 left: 8px;
+
+                [dir="rtl"] & {
+                    right: 8px;
+                }
             }
 
             img {
@@ -519,6 +542,15 @@
                         padding-block: 3px;
                         fill: $white;
                     }
+
+                    [dir="rtl"] &::after {
+                        background: $tertiary url("../icons/arrow-white.svg") no-repeat center;
+                        transform: rotate(180deg);
+                        display: inline-block;
+                        padding-block: 1px;
+                        padding-inline: 8px;
+                        margin-right: 15px;
+                    }
                 }
             }
         }
@@ -658,7 +690,7 @@
 }
 
 
-#block-sass-theme-msd-views-block-articles-block-3{
+#block-sass-theme-msd-views-block-articles-block-3 {
     @include tablet {
         padding-top: 150px !important;
     }

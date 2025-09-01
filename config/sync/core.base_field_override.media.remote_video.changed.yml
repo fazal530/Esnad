@@ -1,0 +1,18 @@
+uuid: e98b8cb5-094c-4c3d-a0b6-0b23cc3a98fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.changed
+field_name: changed
+entity_type: media
+bundle: remote_video
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

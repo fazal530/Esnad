@@ -9,10 +9,10 @@ id: paragraph.pin.field_area2
 field_name: field_area2
 entity_type: paragraph
 bundle: pin
-label: Area2
+label: Area
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
