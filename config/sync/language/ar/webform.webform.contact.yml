@@ -1,3 +1,18 @@
 title: اتصل
 settings:
-  confirmation_message: 'أُرسلت رسالتك.'
+  confirmation_message: '<p>أُرسلت رسالتك.</p>'
+description: '<p>Basic email contact webform.</p>'
+elements: |
+  name:
+    '#placeholder': '*الاسم الكامل'
+  email:
+    '#placeholder': '*عنوان البريد الإلكتروني'
+  type_of_inquiry:
+    '#placeholder': '*نوع الاستفسار'
+    '#options':
+      esnad: 'خدمات إسناد'
+      career: الوظائف
+  description:
+    '#placeholder': '*وصف الاستفسار'
+  actions:
+    '#submit__label': أرسل

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<p class="body3">Media center</p><p class="body13">WHAT’S HAPPENING AT</p><p class="body13 bold">ESNAD</p>'
+            format: full_html
+  block_3:
+    display_options:
+      fields:
+        view_node:
+          text: 'اقرأ المزيد'

@@ -15,7 +15,7 @@ bundle: services_cards
 label: 'Card Icon'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

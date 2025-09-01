@@ -31,6 +31,9 @@
       bottom: 10%;
       color: $white;
       font-size: 25px;
+      [dir="rtl"] & {
+        right: 10%;
+      }
       @include tablet{
          font-size: 43px;
       }

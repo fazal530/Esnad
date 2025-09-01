@@ -1,123 +1,146 @@
+.home-service {
+    .services-wrapper {
+        background-color: $primary;
 
-.home-service{
-.services-wrapper {
-    background-color: $primary;
+        .services-text {
+            p {
+                color: $gray-light;
+            }
 
-    .services-text {
-        p {
-            color: $gray-light;
-        }
+            .body7 {
+                color: $light-gray;
 
-        .body7 {
-            color: $light-gray;
-           
-        }
+            }
 
-        p {
-            span {
-                @extend .body7;
-                color: $gray-extra-light;
+            p {
+                span {
+                    @extend .body7;
+                    color: $gray-extra-light;
+                }
+            }
+
+            .body8 {
+                color: $light-gray;
+                padding-block: 34px 21px;
+
+                @include tablet {
+                    padding-block: 40px 21px;
+                }
+
+                @include desktop {
+                    padding-block: 55px 76px;
+                }
             }
         }
 
-        .body8 {
-            color: $light-gray;
-            padding-block: 34px 21px;
-            @include tablet{
-                 padding-block: 40px 21px;
-            }
-            @include desktop{
-                padding-block: 55px 76px;
-            }
-        }
-    }
 
-
-    .paragraph--type--services-card-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        @include desktop {
-            flex-direction: row;
-        }
-
-        .services-card-wrapper {
-            width: 100%;
-            height: 250px;
+        .paragraph--type--services-card-wrapper {
             display: flex;
-            justify-content: left;
-            align-items: center;
-            padding-left: 20px;
-            background-color: $gray-light;
-            border-radius: 30px;
-            &:hover{
-                background-color: $light-gray ;
-            }
-
-            @include tablet {
-                height: 263px;
-            }
+            flex-direction: column;
+            gap: 10px;
 
             @include desktop {
-                height: 250px;
+                flex-direction: row;
             }
 
-            .services-card {
+            .services-card-wrapper {
+                width: 100%;
+                height: 250px;
                 display: flex;
-                flex-direction: column;
-                gap: 25px;
+                justify-content: left;
+                align-items: center;
+                padding-left: 20px;
+                background-color: $gray-light;
+                border-radius: 30px;
 
-                h2 {
-                    @extend .body9;
-                    font-weight: 700 !important;
-                    color: $secondary;
+                [dir="rtl"] & {
+                    justify-content: right;
+                    padding-right: 20px;
+                }
+
+                &:hover {
+                    background-color: $light-gray ;
+                }
+
+                @include tablet {
+                    height: 263px;
+                }
+
+                @include desktop {
+                    height: 250px;
+                }
+
+                .services-card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    h2 {
+                        @extend .body9;
+                        font-weight: 700 !important;
+                        color: $secondary;
+                    }
                 }
             }
         }
     }
 }
-}
 
-.link-button{
-text-align: right;
-padding-block: 20px 82px;
-@include tablet{
-    padding-block: 20px 50px;
-}
-@include desktop{
-    padding-block: 117px 70px;
-}
+.link-button {
+    text-align: right;
+    padding-block: 20px 82px;
 
-.link-text {
-    
-    align-items: center;
-    background: $tertiary;
-    display: inline-block;
-    padding: 11px;
-    border-radius: 50px;
+    @include tablet {
+        padding-block: 20px 50px;
+    }
 
-    a {
-        @extend .body5;
-        color: $off-white;
-        text-decoration: none;
+    @include desktop {
+        padding-block: 117px 70px;
+    }
 
-        &::after {
-            content: url("../icons/arrow.svg");
-            padding: 11px;
-            background: white;
-            border-radius: 50%;
-            margin-left: 15px;
-            transition: all 0.3s ease;
+    .link-text {
 
-        }
+        align-items: center;
+        background: $tertiary;
+        display: inline-block;
+        padding: 11px;
+        border-radius: 50px;
 
-        &:hover {
+        a {
+            @extend .body5;
+            color: $off-white;
+            text-decoration: none;
+
             &::after {
-                margin-left: 30px;
+                content: url("../icons/arrow.svg");
+                padding: 11px;
+                background: white;
+                border-radius: 50%;
+                margin-left: 15px;
+                transition: all 0.3s ease;
+            }
+
+            [dir="rtl"] &::after {
+                background: $white url("../icons/arrow-white.svg") no-repeat center;
+                transform: rotate(180deg);
+                display: inline-block;
+                padding-block: 0px;
+                padding-inline: 8px;
+                margin-right: 15px;
+
+                &:hover {
+                    &::after {
+                        margin-right: 50px !important;
+                    }
+                }
+            }
+
+            &:hover {
+                &::after {
+                    margin-left: 30px;
+                }
             }
         }
-}
 
     }
 }

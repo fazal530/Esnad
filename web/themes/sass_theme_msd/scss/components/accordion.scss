@@ -30,9 +30,9 @@
                             &::after {
                                 transform: rotate(180deg) !important;
                                 right: 7px !important;
-                                background: #00717f!important;
+                                background: #00717f !important;
                                 -webkit-transition: ease-out;
-                                 transition: ease-out;
+                                transition: ease-out;
                             }
 
                             &::before {
@@ -43,6 +43,10 @@
                             right: 12px !important;
                             left: auto !important;
 
+                            [dir="rtl"] & {
+                                right: auto !important;
+                                left: 12px !important;
+                            }
                         }
                     }
                 }
@@ -78,6 +82,10 @@
 
                             right: 12px !important;
                             left: auto !important;
+                            [dir="rtl"] & {
+                                right: auto !important;
+                                left: 12px !important;
+                            }
                         }
                     }
                 }

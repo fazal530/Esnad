@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<p>مركز الإعلام</p><h4>ما الجديد في</h4><h2>إسناد</h2>'
+            format: full_html
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'اقرأ المزيد'
+  block_3:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<p>الأخبار الموصى بها</p><h4><span>اعرف المزيد&nbsp;</span></h4>'
+            format: full_html
+      fields:
+        view_node:
+          text: 'اقرأ المزيد'
+  block_2:
+    display_options:
+      fields:
+        view_node:
+          text: 'اقرأ المزيد'

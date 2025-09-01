@@ -1,0 +1,18 @@
+uuid: 403bc4d3-78a9-4ed0-a8e1-3e18d3cc2c0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_icons
+id: block_content.social_icons.info
+field_name: info
+entity_type: block_content
+bundle: social_icons
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
