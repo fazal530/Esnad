@@ -165,7 +165,6 @@
         align-items: center;
         gap: 0;
     }
-
     .image-wrapper {
         width: 100%;
         height: 100%;
@@ -253,8 +252,11 @@
             }
         }
     }
-}
+    [dir="rtl"] & {
+        display: none;
+    }
 
+}
 
 .paragraph--type--objectives {
     background-color: $primary;
@@ -275,6 +277,9 @@
             @include desktop {
                 position: sticky;
                 top: 20rem;
+            }
+            [dir="rtl"] & {
+                margin-bottom: 100px;
             }
         }
 

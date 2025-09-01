@@ -18,7 +18,7 @@ content:
     type: file_video
     label: visually_hidden
     settings:
-      controls: false
+      controls: true
       autoplay: true
       loop: true
       multiple_file_display_type: tags
