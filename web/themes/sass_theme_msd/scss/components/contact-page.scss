@@ -14,13 +14,26 @@
             @extend .container;
 
             .info-block {
-                width: 28%;
+                width: 90%;
+                bottom: 0%;
+                right: 5%;
                 background-color: $primary;
-                padding: 2.4rem;
                 border-radius: 20px;
                 position: absolute;
-                bottom: 5%;
-                right: 5%;
+                padding: 14px;
+
+                @include tablet {
+                    width: 50%;
+                    bottom: 10%;
+                    right: 0%;
+                }
+
+                @include desktop {
+                    width: 28%;
+                    padding: 2.4rem;
+                    bottom: 5%;
+                    right: 5%;
+                }
 
                 .info-title {
                     @extend .body32;
@@ -179,6 +192,8 @@
 
                     .webform-submission-form {
 
+
+
                         .webform-main_wrapper {
                             .webform_wrapper {
                                 display: flex;
@@ -204,11 +219,7 @@
                                             @extend .body26;
                                             color: $light-gray !important;
                                             padding-block: 16px 24px;
-
-                                            @include desktop {
-                                                width: 100%;
-                                            }
-
+                                            width: 100%;
                                             &::placeholder {
                                                 color: $light-gray !important;
                                             }
@@ -339,6 +350,7 @@
                             }
 
                         }
+
                     }
                 }
             }
@@ -347,6 +359,7 @@
 
 
     .select2-container--open {
+
         .select2-dropdown--below {
             padding: 20px;
             border-radius: 30px;
@@ -368,4 +381,10 @@
                 }
             }
         }
+    }
+
+
+
+    .select2-search__field {
+        display: none;
     }

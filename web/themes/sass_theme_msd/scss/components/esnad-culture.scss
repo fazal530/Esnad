@@ -3,8 +3,11 @@
     @extend .container;
     display: flex;
     gap: 60px;
-    padding-block: 135px;
+    padding-bottom: 0;
     flex-direction: column;
+    @include desktop {
+        padding-block: 135px;
+    }
 
     @include desktop {
         flex-direction: row;

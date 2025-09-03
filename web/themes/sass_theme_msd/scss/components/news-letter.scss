@@ -1,12 +1,24 @@
 .paragraph--type--news-letter {
-    padding-inline-start: calc(28.576px + 3.57vw);
-    padding-block: calc(68.576px + 3.57vw);
+   
     background-color: $primary;
     display: flex;
     @extend .container;
-
+    flex-wrap: wrap;
+    @include tablet{
+        flex-wrap: nowrap;
+        padding-inline-start: calc(28.576px + 3.57vw);
+        padding-bottom: 40px;
+        gap: 40px;
+       
+    }
+@include desktop {
+    padding-block: calc(68.576px + 3.57vw);
+}
     .left-section {
-        width: 50%;
+        @include desktop {
+            width: 50%;
+        }
+      
 
         .field_text {
             color: #cfd2d3;
@@ -56,13 +68,22 @@
     }
 
     .right-section {
-        width: 50%;
+       width: 100%;
+       padding-block: 30px;
+        @include desktop {
+            width: 50%;
+        }
 
         .file-attachment {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             gap: 50px;
-
+            @include desktop {
+                justify-content: flex-end;
+            }
+            @include desktop-xlarge {
+                justify-content: space-evenly;
+            }
             .file-wrapper {
                 display: flex;
                 flex-direction: column;

@@ -5,8 +5,15 @@
     .header_wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-block: 20PX;
+        position: relative;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-inline: -24px;
+
+        @include desktop-sm{
+            justify-content: space-between;
+            padding-block: 20px;
+        }
 
         .flex {
             display: flex;
@@ -14,10 +21,61 @@
             gap: 32px;
 
             #block-sass-theme-msd-mainnavigation {
+                    position: absolute;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    top: 54px;
+
+                @include desktop-sm{
+                    position: static;
+                    width: auto;
+                    justify-content: space-between;
+                }
+
+                .sf-accordion-toggle {
+                    position: absolute;
+                    top: -38px;
+                    @include desktop {
+                        position: static;
+                    }
+                    a {
+
+                        color: white;
+                        background-color: transparent;
+                        z-index: 999;
+
+                    }
+
+                }
+
                 .menu {
                     display: flex;
-                    margin: 0px !important;
-                    align-items: center;
+
+
+                    li {
+                        align-items: flex-start !important;
+                    }
+                        flex-direction: column;
+                        position: absolute;
+                        width: 100%;
+                        background-color: $primary;
+                        height: 100vh;
+                        justify-content: space-around;
+                    @include tablet {
+                        left: auto !important;
+                        right: -20px !important;
+                        width: 50%;
+                    }
+
+                    @include desktop-sm{
+                        position: static;
+                        margin: 0px !important;
+                        align-items: center;
+                        flex-direction: row;
+                        height: auto;
+                        background-color: transparent;
+                    }
 
                     >li {
                         background-color: transparent !important;
@@ -35,6 +93,13 @@
                             color: $white;
                             @extend .body1;
                             padding: 0 !important;
+                            white-space: nowrap;
+                            @include desktop-sm {
+                                font-size: 12px;
+                            }
+                            @include desktop{
+                                font-size: 16px;
+                            }
 
                             .sf-sub-indicator {
                                 display: none;
@@ -44,14 +109,22 @@
 
                         ul {
                             padding: 0 !important;
-                            position: absolute;
+                           position: relative;
                             top: 100%;
                             width: max-content;
                             margin-top: 12px !important;
+                            @include desktop {
+                                position: absolute;
+                            }
 
                             li {
-                                background-color: $primary !important;
                                 padding: 0 !important;
+                                display: flex;
+                                background-color: $primary !important;
+                                @include desktop {
+                                    display: block;
+                                    background-color: transparent;
+                                }
 
                                 a {
                                     text-decoration: none;
@@ -83,10 +156,11 @@
                 }
             }
         }
-     a.is-active{
-        background-color: transparent !important;
-        color:$orange !important;
-    }
+
+        a.is-active {
+            background-color: transparent !important;
+            color: $orange !important;
+        }
 
 
         .flex-2 {
@@ -94,11 +168,11 @@
             align-items: center;
             gap: 21px;
 
-            #block-sass-theme-msd-search{
-                    a {
-                        text-decoration: none;
-                        color: $white;
-                    }
+            #block-sass-theme-msd-search {
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
             }
 
             .language-switcher-language-url {
@@ -130,7 +204,8 @@
                     }
                 }
             }
-            button{
+
+            button {
                 display: none;
             }
         }

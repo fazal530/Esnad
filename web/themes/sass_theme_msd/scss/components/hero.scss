@@ -3,10 +3,17 @@
 .hero-section{
    
  .hero-video {
+  // height:312px;
+  @include tablet {
+    height: 1152px;
+  }
+  @include desktop {
+    height: 810px;
+  }
         video {
 
             width: 100%;
-            height:312px;
+            height:100vh;
             object-fit: cover;
             @include tablet{
                 height:1152px;
