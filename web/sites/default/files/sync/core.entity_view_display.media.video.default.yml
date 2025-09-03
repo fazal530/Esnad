@@ -19,8 +19,8 @@ content:
     label: visually_hidden
     settings:
       controls: true
-      autoplay: true
-      loop: true
+      autoplay: false
+      loop: false
       multiple_file_display_type: tags
       muted: true
       playsinline: true

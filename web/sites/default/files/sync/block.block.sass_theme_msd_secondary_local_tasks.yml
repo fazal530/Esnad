@@ -9,7 +9,7 @@ _core:
 id: sass_theme_msd_secondary_local_tasks
 theme: sass_theme_msd
 region: highlighted
-weight: -7
+weight: -10
 provider: null
 plugin: local_tasks_block
 settings:
