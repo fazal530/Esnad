@@ -35,9 +35,54 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <a class="use-ajax" href="/search" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:1240,&quot;height&quot;:550}">
+    {# <a class="use-ajax" href="/search" data-dialog-type="modal" data-dialog-options="{&quot;width&quot;:1240,&quot;height&quot;:550}">
       {{content.field_search}}
 
-    </a>
+    </a> #}
+    <div class="search-wrapper"></div>
+
   {% endblock %}
 </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  console.log('abc');
+  const trigger = document.querySelector(".search-wrapper"); // the element user clicks to open search
+  const overlay = document.createElement("div");
+  overlay.classList.add("search-overlay");
+  document.body.appendChild(overlay);
+
+  const searchBlock = document.getElementById("block-sass-theme-msd-exposedformarticlespage-1");
+
+  // Create close button if not in markup
+  if (!searchBlock.querySelector(".close-btn")) {
+    const closeBtn = document.createElement("span");
+    closeBtn.classList.add("close-btn");
+    closeBtn.innerHTML = "&times;";
+    searchBlock.appendChild(closeBtn);
+
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.remove("active");
+      searchBlock.classList.remove("active");
+    });
+  }
+
+  // Open on trigger click
+  trigger.addEventListener("click", () => {
+    overlay.classList.add("active");
+    searchBlock.classList.add("active");
+    overlay.appendChild(searchBlock); // move block into overlay
+  });
+
+  // Close when clicking outside
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove("active");
+      searchBlock.classList.remove("active");
+      document.body.appendChild(searchBlock); // put block back if needed
+    }
+  });
+});
+
+</script>

@@ -1,10 +1,10 @@
 .paragraph--type--career-community-section {
     background-color: $primary;
-    padding-block: 93px;
+    padding-block: 40px;
     @extend .container;
 
     @include tablet {
-        padding-block: 112px 196px;
+        padding-block: 50px;
     }
 
     @include desktop {

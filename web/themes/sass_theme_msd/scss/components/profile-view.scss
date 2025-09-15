@@ -1,6 +1,7 @@
 .profile-outerwrapper{
     background-color: $primary;
     @extend .container;
+
     header{
         @extend .body3;
         color: $dark-gray;
@@ -15,6 +16,10 @@
     }
     .profile-wrapper{
         padding-bottom: 30%;
+        row-gap: 30px;
+        @include tablet{
+            row-gap: 45px;
+        }
        .views-row{
         grid-column: span 5;
 
@@ -23,20 +28,27 @@
         }
         @include desktop{
             grid-column: span 3;
+            
 
         }
        }
         .profile{
+            text-align: center;
             .image{
-                height: 201px;
+                height: 100%;
                 width: 100%;
+                margin-bottom: 22px;
 
                 @include tablet{
-                    height: 20rem;
+                    height: 100%;
                 }
                 @include desktop {
-                    height: 201px;
+                    height: 100%;
                 }
+                @include desktop{
+                    margin-bottom: 22px;
+                }
+
                 img{
                     width: 100%;
                     height: 100%;
@@ -48,29 +60,23 @@
                         border-radius: unset !important;
                     }
                 }
-                margin-bottom: 25px;
-                @include tablet{
-                    margin-bottom: 28px;
-
-                }
-                @include desktop{
-                    margin-bottom: 38px;
-                }
                
             }
             .name{
                 color: $off-white;
-                @extend .body25;
+                // @extend .body25;
                 margin-bottom: 7px;
                 @include tablet{
-                    margin-bottom: 12px;   
+                    margin-bottom: 12px; 
+                    text-align: center;  
                 }
                 @include desktop {
                     margin-bottom: 16px;
+                    text-align: center;
                 }
             }
             .designation{
-                @extend .body26;
+                // @extend .body26;
                 color: $light-gray;
             }
         }

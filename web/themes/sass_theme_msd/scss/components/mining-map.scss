@@ -166,6 +166,7 @@
                               border-radius: 50px;
                               margin-top: 100px;
                               padding-inline: 20px;
+                              justify-content: center;
 
                               .granite-complexes {
                                   color: #FFB81C;
@@ -199,6 +200,7 @@
                                   border-radius: 40px;
                                   @include desktop {
                                     padding: 40px;
+                                    font-size: 18px;
                                   }
 
                                   div {
@@ -206,7 +208,7 @@
                                       color: #ffb81c;
                                       font-weight: 500;
                                       @include desktop {
-                                        font-size: 20px;
+                                        font-size: 24px;
                                       }
                                   }
                               }

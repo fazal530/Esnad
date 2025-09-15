@@ -2,13 +2,19 @@
     background-color: $primary;
 
     .accordion-wrapper {
-        padding-block: 80px 50px;
+     padding-block: 40px;
         @extend .container;
+        @include desktop {
+            padding-block: 80px 50px;
+        }
 
         h1 {
             @extend .body33;
             color: $gray-light;
-            padding-block: 70px;
+           
+            @include desktop {
+                padding-block: 70px;
+            }
         }
 
         .ckeditor-accordion-container {

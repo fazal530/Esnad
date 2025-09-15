@@ -97,16 +97,23 @@
         gap: 10px;
         margin-top: 110px;
 
-        @include tablet {
-            padding-inline: 175px;
-        }
+        // @include tablet {
+        //     padding-inline: 175px;
+        // }
 
-        @include desktop {
+        @include tablet{
+            flex-wrap: wrap;
             flex-direction: row;
             padding-inline: 0px;
         }
 
         .services-card-wrapper {
+            @include tablet {
+                flex-basis: 49%;
+            }
+            @include desktop {
+                flex-basis: 24%;
+            }
             padding: 20px;
             background-color: $half-black;
             border-radius: 30px;
@@ -150,11 +157,20 @@
 
 
 .focus-section {
+    background-color: $primary;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include tablet {
+        flex-direction: row;
+    }
 
     .paragraph--type--image-with-text {
-        flex: 0 0 20%;
-        max-width: 20%;
+        @include tablet{
+            flex: 0 0 18.8%;
+            max-width: 20%;
+        }
+      
         position: relative;
         overflow: hidden;
         transition: all 0.8s ease;
@@ -167,8 +183,11 @@
             img {
                 width: 100%;
                 height: 600px;
-                object-fit: cover;
+               object-fit: fill;
                 display: block;
+                @include tablet {
+                    object-fit: cover;
+                }
             }
         }
 
@@ -191,33 +210,48 @@
                 transform: translateY(0);
                 transition: all 0.8s ease;
                 text-align: center;
+              
             }
 
 
             p {
                 @extend .body16;
                 margin-top: 10px;
-                opacity: 0;
+                opacity: 1;
                 transform: translateY(30px);
                 transition: all 0.8s ease;
+                @include tablet {
+                    opacity: 0;
+                }
             }
         }
 
         &:hover {
-            flex: 0 0 30%;
-            max-width: 30%;
+            @include tablet {
+                flex: 0 0 30%;
+                max-width: 30%;
+            }
+           
 
             .text-wrapper {
                 h2 {
-                    @extend .body21;
-                    transform: translateY(-20px);
+
+                    @include tablet {
+                        
+                        transform: translateY(-20px);
+                    }
+                   
                 }
 
                 p {
                     @extend .body16;
-                    opacity: 1;
-                    transform: translateY(0);
-                    text-align: center;
+                    @include tablet {
+                        
+                        opacity: 1;
+                        transform: translateY(0);
+                        text-align: center;
+                    }
+                  
                 }
             }
         }

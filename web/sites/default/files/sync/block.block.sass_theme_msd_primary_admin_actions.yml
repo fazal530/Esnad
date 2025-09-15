@@ -9,7 +9,7 @@ _core:
 id: sass_theme_msd_primary_admin_actions
 theme: sass_theme_msd
 region: highlighted
-weight: -9
+weight: -12
 provider: null
 plugin: local_actions_block
 settings:
