@@ -1,6 +1,4 @@
 title: اتصل
-settings:
-  confirmation_message: '<p>أُرسلت رسالتك.</p>'
 description: '<p>Basic email contact webform.</p>'
 elements: |
   name:
@@ -16,3 +14,5 @@ elements: |
     '#placeholder': '*وصف الاستفسار'
   actions:
     '#submit__label': أرسل
+settings:
+  confirmation_message: '<p>أُرسلت رسالتك.</p>'

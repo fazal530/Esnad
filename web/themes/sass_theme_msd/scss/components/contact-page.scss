@@ -1,5 +1,6 @@
     #block-sass-theme-msd-map,
     #block-map {
+        position: relative;
         .map-wrapper {
             background-color: $primary;
 
@@ -172,7 +173,7 @@
                 .title {
                     @extend .body31;
                     font-weight: 400;
-                    color: $light-gray;
+                    color: #fafbfb;
 
                     span {
                         @extend .body31;

@@ -1,6 +1,8 @@
 .header-section {
     @extend .container;
     background-color: $primary;
+    z-index: 50;
+    position: relative;
 
     .header_wrapper {
         display: flex;

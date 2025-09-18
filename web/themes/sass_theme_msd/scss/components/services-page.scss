@@ -3,22 +3,17 @@
 
     .hero-section {
         background-color: #303336c4;
+
         .hero-image {
             position: relative;
             width: 100%;
             height: 100%;
             overflow: hidden;
 
-
-
             img {
                 width: 100%;
-                height: 390px;
+                height: 310px;
                 object-fit: cover;
-
-                @include tablet {
-                    height: 610px;
-                }
 
                 @include desktop {
                     height: 720px;
@@ -40,14 +35,15 @@
 
         .hero-text {
             position: absolute;
-            top: 55%;
+            top: 66%;
             left: 5%;
+
             [dir="rtl"] & {
                 right: 5%;
             }
 
-            @include tablet {
-                top: 70%;
+            @include desktop {
+                top: 72%;
             }
 
             h1 {
@@ -101,7 +97,7 @@
         //     padding-inline: 175px;
         // }
 
-        @include tablet{
+        @include tablet {
             flex-wrap: wrap;
             flex-direction: row;
             padding-inline: 0px;
@@ -111,9 +107,11 @@
             @include tablet {
                 flex-basis: 49%;
             }
+
             @include desktop {
                 flex-basis: 24%;
             }
+
             padding: 20px;
             background-color: $half-black;
             border-radius: 30px;
@@ -160,20 +158,37 @@
     background-color: $primary;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    @extend .container;
+
     @include tablet {
         flex-direction: row;
+        padding: 0 !important;
+        margin: 0 !important;
+
     }
 
     .paragraph--type--image-with-text {
-        @include tablet{
-            flex: 0 0 18.8%;
+        @include tablet {
+            flex: 0 1 20%;
             max-width: 20%;
         }
-      
+
         position: relative;
         overflow: hidden;
         transition: all 0.8s ease;
+
+        @include tablet {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+        }
 
         .image-wrapper {
             width: 100%;
@@ -182,46 +197,57 @@
 
             img {
                 width: 100%;
-                height: 600px;
-               object-fit: fill;
+                height: 350px;
+                object-fit: cover;
                 display: block;
+                border-radius: 30px;
+
                 @include tablet {
                     object-fit: cover;
+                    height: 600px;
+                    border-radius: unset !important;
                 }
             }
         }
 
-
         .text-wrapper {
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            right: 0;
-            padding: 20px;
-            color: #fff;
-            transition: all 0.8s ease;
 
+            padding-top: 40px;
+
+            @include tablet {
+                position: absolute;
+                top: 90%;
+                left: 0;
+                right: 0;
+                padding: 20px;
+                transition: all 1s ease;
+                z-index: 2;
+            }
 
             h2 {
                 @extend .body21;
                 font-size: 24px;
                 font-weight: bold;
-                opacity: 1;
                 transform: translateY(0);
                 transition: all 0.8s ease;
-                text-align: center;
-              
-            }
+                color: #fff;
 
+                @include tablet {
+                    text-align: center;
+                }
+            }
 
             p {
                 @extend .body16;
-                margin-top: 10px;
-                opacity: 1;
-                transform: translateY(30px);
-                transition: all 0.8s ease;
+                padding-block: 20px 40px;
+                color: #cfd2d3;
+                font-size: 14px;
+                line-height: 27px;
+
                 @include tablet {
-                    opacity: 0;
+                    margin-top: 10px;
+                    transform: translateY(30px);
+                    transition: all 0.8s ease;
                 }
             }
         }
@@ -231,29 +257,22 @@
                 flex: 0 0 30%;
                 max-width: 30%;
             }
-           
 
             .text-wrapper {
-                h2 {
-
-                    @include tablet {
-                        
-                        transform: translateY(-20px);
-                    }
-                   
-                }
+                top: 60%;
 
                 p {
                     @extend .body16;
+                    font-size: 14px;
+                    line-height: 27px;
                     @include tablet {
-                        
-                        opacity: 1;
-                        transform: translateY(0);
                         text-align: center;
+                        font-size: 18px;
+                        line-height: 18px;
                     }
-                  
                 }
             }
         }
     }
+
 }

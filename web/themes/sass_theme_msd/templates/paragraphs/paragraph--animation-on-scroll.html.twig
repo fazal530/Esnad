@@ -1,33 +1,32 @@
-
 {% set value = paragraph.field_select_list.value %}
 {%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished',
-    value|clean_class
+set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+not paragraph.isPublished() ? 'paragraph--unpublished',
+value|clean_class
 
-  ]
+]
 %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+{{ attach_library('mytheme/aos') }}
 
-    <div class="scrole-content">
-      <div class="scrole-image" data-scroll-item>
-        {{ content.field_media }}
+<div{{ attributes.addClass(classes) }}>
+  <div class="scrole-content">
+    <div class="scrole-image" data-aos="fade-left">
+      {{ content.field_media }}
+    </div>
+    <div class="scrole-text" data-aos="fade-right">
+      <div class="scrole-heading">
+        {{ content.field_ceo_caption }}
       </div>
-
-
-<div class="scrole-text animate__animated animate__fadeInLeftBig"  data-aos="fade-in" data-aos-duration="4000">
-        <div class="scrole-heading">
-          {{ content.field_ceo_caption }}
-        </div>
-        <div class="scrole-para">
-          {{ content.field_hero_text }}
-        </div>
+      <div class="scrole-para">
+        {{ content.field_hero_text }}
       </div>
     </div>
   </div>
-{% endblock paragraph %}
+</div>
+
+  {% endblock paragraph %}

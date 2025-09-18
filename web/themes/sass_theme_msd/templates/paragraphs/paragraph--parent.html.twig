@@ -52,9 +52,7 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {% set content = content|without('field_service_design') %}
-
       {{ content }}
-    
     {% endblock %}
   </div>
 {% endblock paragraph %}
