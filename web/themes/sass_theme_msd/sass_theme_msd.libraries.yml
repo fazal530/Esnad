@@ -1,10 +1,9 @@
 slick:
- 
   css:
     component:
       libs/slick-theme.css: {}
       libs/slick.css: {}
-      https://unpkg.com/aos@next/dist/aos.css: {}
+      https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css: {}
   js:
     libs/slick.min.js: {}
     https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js: {}
@@ -39,7 +38,3 @@ mining_map:
   dependencies:
     - core/drupal
     - core/jquery
-
-
-
-

@@ -1,6 +1,6 @@
-
 .counter-section {
     @extend .hide-on-tablet;
+
     .background-image {
         background-image: url("../icons/background.svg");
         background-repeat: no-repeat;
@@ -23,27 +23,37 @@
         padding-top: 20px;
         padding-left: 20px;
         font-weight: 400 !important;
-        span{
-            font-weight: 600 !important;
+
+        h3 {
+            font-weight: 400 !important;
+        }
+
+        p {
+            @extend .body26;
+            padding-top: 20px;
+        }
+
+        h2 {
+            font-weight: 400 !important;
         }
     }
 
     .paragraph--type--statistic-wrapper {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         padding-block: 21px 40px;
         padding-inline: 45px;
         background: $secondary;
         gap: 25px;
         border-radius: 18px;
-        
-        @include desktop{
+
+        @include desktop {
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
             padding-inline: 44px;
             padding-block: 62px;
-           
+
         }
 
         .statistic-item {
@@ -52,10 +62,26 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .counter {
+                @include desktop {
+                    font-size: 30px !important;
+                    line-height: 35px !important;
+                }
+            }
+
             .statistic-text {
                 text-align: center;
+
+                p {
+                    @include desktop {
+                        font-size: 15px !important;
+                        line-height: 28px;
+                    }
+                }
             }
-            @include desktop{
+
+            @include desktop {
                 flex-basis: 18%;
             }
         }

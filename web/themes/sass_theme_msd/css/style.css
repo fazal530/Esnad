@@ -115,20 +115,20 @@
   line-height: 32px;
 }
 
-.body9, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
+.body9, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 h6, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
   font-family: Arial;
   font-weight: 400;
   font-size: 19.2px;
   line-height: 32.8px;
 }
 @media (min-width: 768px) {
-  .body9, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
+  .body9, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 h6, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
     font-size: 20.6px;
     line-height: 34.32px;
   }
 }
 @media (min-width: 1280px) {
-  .body9, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
+  .body9, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 h6, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
     font-size: 18px;
     line-height: 29.98px;
   }
@@ -172,7 +172,8 @@
 }
 
 .body11, .left-image .scrole-content .scrole-heading, .left-image .scrole-image .scrole-heading,
-.left-image .scrole-text .scrole-heading, .right-image .scrole-image .scrole-heading,
+.left-image .scrole-text .scrole-heading,
+.right-image .scrole-image .scrole-heading,
 .right-image .scrole-text .scrole-heading, .paragraph--type--ceo .ceo-message {
   font-family: Arial;
   font-weight: 400;
@@ -181,7 +182,8 @@
 }
 @media (min-width: 768px) {
   .body11, .left-image .scrole-content .scrole-heading, .left-image .scrole-image .scrole-heading,
-  .left-image .scrole-text .scrole-heading, .right-image .scrole-image .scrole-heading,
+  .left-image .scrole-text .scrole-heading,
+  .right-image .scrole-image .scrole-heading,
   .right-image .scrole-text .scrole-heading, .paragraph--type--ceo .ceo-message {
     font-size: 30.4px;
     line-height: 42.56px;
@@ -189,7 +191,8 @@
 }
 @media (min-width: 1280px) {
   .body11, .left-image .scrole-content .scrole-heading, .left-image .scrole-image .scrole-heading,
-  .left-image .scrole-text .scrole-heading, .right-image .scrole-image .scrole-heading,
+  .left-image .scrole-text .scrole-heading,
+  .right-image .scrole-image .scrole-heading,
   .right-image .scrole-text .scrole-heading, .paragraph--type--ceo .ceo-message {
     font-size: 40px;
     line-height: 56px;
@@ -244,7 +247,7 @@
   line-height: 14px;
 }
 
-.body15, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
+.body15, .service-page .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
   font-family: Arial;
   font-weight: 700;
   font-size: 18px;
@@ -252,7 +255,8 @@
 }
 
 .body16, .left-image .scrole-image .scrole-para p,
-.left-image .scrole-text .scrole-para p, .right-image .scrole-image .scrole-para p,
+.left-image .scrole-text .scrole-para p,
+.right-image .scrole-image .scrole-para p,
 .right-image .scrole-text .scrole-para p, .paragraph--type--career-community-section .services-text p, .site-footer__top .footer-terms .footer-term #block-sass-theme-msd-termsofuse-2 h3, .site-footer__top .upper-footer .social-icon .socialicon h3, .site-footer__top .upper-footer .terms-of-use #block-sass-theme-msd-termsofuse h3, .site-footer__top .upper-footer .menu #block-sass-theme-msd-mainnavigation-3 h3, .site-footer__top .upper-footer .menu-child #block-sass-theme-msd-mainnavigation-2 h3, .focus-section .paragraph--type--image-with-text:hover .text-wrapper p, .focus-section .paragraph--type--image-with-text .text-wrapper p {
   font-family: "IBM_plex", Arial;
   font-weight: 400;
@@ -412,21 +416,21 @@
   }
 }
 
-.body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .service-page .services-wrapper .services-text p span {
+.body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .counter-section .services-text p, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .service-page .services-wrapper .services-text p span {
   font-family: Arial;
   font-size: 8.2px;
   font-weight: 400;
   line-height: 12.37px;
 }
 @media (min-width: 768px) {
-  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .service-page .services-wrapper .services-text p span {
+  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .counter-section .services-text p, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .service-page .services-wrapper .services-text p span {
     font-size: 9.6px;
     font-weight: 400;
     line-height: 14.39px;
   }
 }
 @media (min-width: 1280px) {
-  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .service-page .services-wrapper .services-text p span {
+  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .counter-section .services-text p, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .service-page .services-wrapper .services-text p span {
     font-size: 12px;
     font-weight: 400;
     line-height: 17.98px;
@@ -452,20 +456,20 @@
   }
 }
 
-.body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .service-page .services-wrapper .services-text p span {
+.body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .counter-section .services-text p, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .service-page .services-wrapper .services-text p span {
   font-family: Arial;
   font-size: 14.2px;
   font-weight: 400;
   line-height: 22.17px;
 }
 @media (min-width: 768px) {
-  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .service-page .services-wrapper .services-text p span {
+  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .counter-section .services-text p, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .service-page .services-wrapper .services-text p span {
     font-size: 15.6px;
     line-height: 24.26px;
   }
 }
 @media (min-width: 1280px) {
-  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .service-page .services-wrapper .services-text p span {
+  .body26, .select2-container--open .select2-dropdown--below .select2-results ul li, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .message .js-form-type-textfield input, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered .select2-selection__placeholder, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item .select2-container .selection .select2-selection .select2-selection__rendered, .contact-main-wrapper .contact-wrapper .webfrom #block-webform .webform-submission-form .webform-main_wrapper .webform_wrapper .info .js-form-item input, .body-wrapper .main-body .body p, .make-yourself .text-wrapper p, .paragraph--type--ceo .ceo-section-wrapper .left-section .caption, .counter-section .services-text p, .leaders .text-wrapper p, .who-we-are-value .paragraph--type--our-values .our-value_body .icon-text_with_detail, .besiness-insight .text-wrapper p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .right-description p, .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p, .service-page .services-wrapper .services-text p span {
     font-size: 18px;
     line-height: 27.98px;
   }
@@ -497,14 +501,14 @@
   }
 }
 
-.body29, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card p {
+.body29, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 p, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 p, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 p {
   font-family: Arial;
   font-weight: 400;
   font-size: 14.5px;
   line-height: 22px;
 }
 @media (min-width: 768px) {
-  .body29, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card p {
+  .body29, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 p, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 p, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 p {
     font-size: 14px;
     line-height: 21px;
   }
@@ -589,7 +593,7 @@
 #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-duplicate-of-articles-block-3,
 #block-views-block-duplicate-of-articles-block-3, #block-views-block-articles-block-1,
 .search-carousel,
-#block-sass-theme-msd-views-block-articles-block-3, .about-section, .site-footer__top, .header-section {
+#block-sass-theme-msd-views-block-articles-block-3, .about-section, .site-footer__top, .focus-section, .header-section {
   padding-inline: 24px !important;
   margin-inline: auto;
 }
@@ -598,7 +602,7 @@
   #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-duplicate-of-articles-block-3,
   #block-views-block-duplicate-of-articles-block-3, #block-views-block-articles-block-1,
   .search-carousel,
-  #block-sass-theme-msd-views-block-articles-block-3, .about-section, .site-footer__top, .header-section {
+  #block-sass-theme-msd-views-block-articles-block-3, .about-section, .site-footer__top, .focus-section, .header-section {
     padding-inline: 44px !important;
   }
 }
@@ -607,7 +611,7 @@
   #block-map .info-main-wrapper, .body-wrapper .main-body, .culture-value, .make-yourself, .mining-map, .make-slider .slider-2, .paragraph--type--career-community-section, .paragraph--type--ceo, .profile-outerwrapper, .counter-section, .paragraph--type--objectives, .leaders, .who-we-are-value, .besiness-insight, .paragraph--type--heading-with-colu .main_wrapper, #block-sass-theme-msd-views-block-duplicate-of-articles-block-3,
   #block-views-block-duplicate-of-articles-block-3, #block-views-block-articles-block-1,
   .search-carousel,
-  #block-sass-theme-msd-views-block-articles-block-3, .about-section, .site-footer__top, .header-section {
+  #block-sass-theme-msd-views-block-articles-block-3, .about-section, .site-footer__top, .focus-section, .header-section {
     padding-inline: 80px !important;
   }
 }
@@ -871,6 +875,8 @@ html, body {
 
 .header-section {
   background-color: #303336;
+  z-index: 50;
+  position: relative;
 }
 .header-section .header_wrapper {
   display: flex;
@@ -1058,28 +1064,26 @@ html, body {
   position: relative;
 }
 @media (min-width: 768px) {
-  .hero-wrapper .hero-section .hero-video {
-    height: 1152px;
+  .hero-wrapper {
+    margin-top: -13rem;
   }
 }
-@media (min-width: 1280px) {
+.hero-wrapper .hero-section .hero-video {
+  height: 40vh;
+}
+@media (min-width: 768px) {
   .hero-wrapper .hero-section .hero-video {
-    height: 810px;
+    height: 100vh;
   }
 }
 .hero-wrapper .hero-section .hero-video video {
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   object-fit: cover;
 }
 @media (min-width: 768px) {
   .hero-wrapper .hero-section .hero-video video {
-    height: 1152px;
-  }
-}
-@media (min-width: 1280px) {
-  .hero-wrapper .hero-section .hero-video video {
-    height: 810px;
+    height: 100vh;
   }
 }
 .hero-wrapper .hero-section .hero-text {
@@ -1185,9 +1189,6 @@ html, body {
   justify-content: right;
   padding-right: 20px;
 }
-.home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper:hover {
-  background-color: #CFD2D3;
-}
 @media (min-width: 768px) {
   .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper {
     height: 263px;
@@ -1206,6 +1207,13 @@ html, body {
 .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 {
   font-weight: 700 !important;
   color: #4A4F53;
+}
+.home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper:hover {
+  background-color: #CFD2D3;
+}
+.home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper:hover img {
+  background-color: #99c8cc;
+  border-radius: 50%;
 }
 
 .link-button {
@@ -1270,13 +1278,8 @@ html, body {
 }
 .services-wrapper .hero-section .hero-image img {
   width: 100%;
-  height: 390px;
+  height: 310px;
   object-fit: cover;
-}
-@media (min-width: 768px) {
-  .services-wrapper .hero-section .hero-image img {
-    height: 610px;
-  }
 }
 @media (min-width: 1280px) {
   .services-wrapper .hero-section .hero-image img {
@@ -1295,15 +1298,15 @@ html, body {
 }
 .services-wrapper .hero-section .hero-text {
   position: absolute;
-  top: 55%;
+  top: 66%;
   left: 5%;
 }
 [dir=rtl] .services-wrapper .hero-section .hero-text {
   right: 5%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .services-wrapper .hero-section .hero-text {
-    top: 70%;
+    top: 72%;
   }
 }
 .services-wrapper .hero-section .hero-text h1 {
@@ -1384,11 +1387,12 @@ html, body {
   background-color: #303336;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 @media (min-width: 768px) {
   .focus-section {
     flex-direction: row;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 .focus-section .paragraph--type--image-with-text {
@@ -1398,8 +1402,20 @@ html, body {
 }
 @media (min-width: 768px) {
   .focus-section .paragraph--type--image-with-text {
-    flex: 0 0 18.8%;
+    flex: 0 1 20%;
     max-width: 20%;
+  }
+}
+@media (min-width: 768px) {
+  .focus-section .paragraph--type--image-with-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
 }
 .focus-section .paragraph--type--image-with-text .image-wrapper {
@@ -1409,41 +1425,55 @@ html, body {
 }
 .focus-section .paragraph--type--image-with-text .image-wrapper img {
   width: 100%;
-  height: 600px;
-  object-fit: fill;
+  height: 350px;
+  object-fit: cover;
   display: block;
+  border-radius: 30px;
 }
 @media (min-width: 768px) {
   .focus-section .paragraph--type--image-with-text .image-wrapper img {
     object-fit: cover;
+    height: 600px;
+    border-radius: unset !important;
   }
 }
 .focus-section .paragraph--type--image-with-text .text-wrapper {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  color: #fff;
-  transition: all 0.8s ease;
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .focus-section .paragraph--type--image-with-text .text-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    transition: all 1s ease;
+    z-index: 2;
+  }
 }
 .focus-section .paragraph--type--image-with-text .text-wrapper h2 {
   font-size: 24px;
   font-weight: bold;
-  opacity: 1;
   transform: translateY(0);
   transition: all 0.8s ease;
-  text-align: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .focus-section .paragraph--type--image-with-text .text-wrapper h2 {
+    text-align: center;
+  }
 }
 .focus-section .paragraph--type--image-with-text .text-wrapper p {
-  margin-top: 10px;
-  opacity: 1;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
+  padding-block: 20px 40px;
+  color: #cfd2d3;
+  font-size: 14px;
+  line-height: 27px;
 }
 @media (min-width: 768px) {
   .focus-section .paragraph--type--image-with-text .text-wrapper p {
-    opacity: 0;
+    margin-top: 10px;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
   }
 }
 @media (min-width: 768px) {
@@ -1452,16 +1482,18 @@ html, body {
     max-width: 30%;
   }
 }
-@media (min-width: 768px) {
-  .focus-section .paragraph--type--image-with-text:hover .text-wrapper h2 {
-    transform: translateY(-20px);
-  }
+.focus-section .paragraph--type--image-with-text:hover .text-wrapper {
+  top: 60%;
+}
+.focus-section .paragraph--type--image-with-text:hover .text-wrapper p {
+  font-size: 14px;
+  line-height: 27px;
 }
 @media (min-width: 768px) {
   .focus-section .paragraph--type--image-with-text:hover .text-wrapper p {
-    opacity: 1;
-    transform: translateY(0);
     text-align: center;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
@@ -2558,13 +2590,18 @@ html, body {
 .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper {
   display: flex;
   gap: 30px;
-  flex-direction: column;
   padding-top: 30px;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper {
-    gap: 200px !important;
+    gap: 100px !important;
     flex-direction: row;
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper {
+    gap: 200px !important;
   }
 }
 .paragraph--type--heading-with-colu .main_wrapper .body-section .main-wrapper .left-description p {
@@ -2809,9 +2846,21 @@ html, body {
 }
 .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card {
   background-color: #CFD2D3;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 23px;
+  border-radius: 30px;
   margin-bottom: 15px;
+}
+.paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9, .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 h6, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 h6, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 {
+  padding-block: 47px;
+}
+.paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 h6, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 h6, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 h6 {
+  padding: 0px;
+  font-weight: 600;
+  color: #4A4F54;
+}
+.paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card .body9 p, .paragraph--type--objectives .objective_wrapper .home-service .services-wrapper .paragraph--type--services-card-wrapper .services-card-wrapper .services-card h2 p, .home-service .services-wrapper .paragraph--type--services-card-wrapper .paragraph--type--objectives .objective_wrapper .services-card-wrapper .services-card h2 p {
+  padding-top: 5px;
+  color: #4A4F54;
 }
 @media (min-width: 1280px) {
   .paragraph--type--objectives .objective_wrapper .services-card-wrapper:nth-child(2), .paragraph--type--objectives .objective_wrapper .services-card-wrapper:nth-child(4), .paragraph--type--objectives .objective_wrapper .services-card-wrapper:nth-child(6) {
@@ -2840,8 +2889,14 @@ html, body {
   padding-left: 20px;
   font-weight: 400 !important;
 }
-.counter-section .services-text span {
-  font-weight: 600 !important;
+.counter-section .services-text h3 {
+  font-weight: 400 !important;
+}
+.counter-section .services-text p {
+  padding-top: 20px;
+}
+.counter-section .services-text h2 {
+  font-weight: 400 !important;
 }
 .counter-section .paragraph--type--statistic-wrapper {
   display: flex;
@@ -2868,8 +2923,20 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1280px) {
+  .counter-section .paragraph--type--statistic-wrapper .statistic-item .counter {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+}
 .counter-section .paragraph--type--statistic-wrapper .statistic-item .statistic-text {
   text-align: center;
+}
+@media (min-width: 1280px) {
+  .counter-section .paragraph--type--statistic-wrapper .statistic-item .statistic-text p {
+    font-size: 15px !important;
+    line-height: 28px;
+  }
 }
 @media (min-width: 1280px) {
   .counter-section .paragraph--type--statistic-wrapper .statistic-item {
@@ -3184,13 +3251,15 @@ html, body {
   display: block;
 }
 
-.left-image, .right-image {
+.left-image,
+.right-image {
   /* IMAGE BLOCK (move from LEFT -> center) */
   /* TEXT BLOCK (move from RIGHT -> center) */
   /* VISIBLE STATE (when in viewport) */
   /* Responsive adjustments */
 }
-.left-image .scrole-content, .right-image .scrole-content {
+.left-image .scrole-content,
+.right-image .scrole-content {
   background-color: #303336;
   display: flex;
   align-items: center;
@@ -3200,77 +3269,112 @@ html, body {
   box-sizing: border-box;
 }
 .left-image .scrole-image,
-.left-image .scrole-text, .right-image .scrole-image,
+.left-image .scrole-text,
+.right-image .scrole-image,
 .right-image .scrole-text {
   flex: 1;
   transition: transform 0.9s cubic-bezier(0.2, 0.9, 0.2, 1), opacity 0.9s ease-out;
   will-change: transform, opacity;
 }
 .left-image .scrole-image .scrole-heading,
-.left-image .scrole-text .scrole-heading, .right-image .scrole-image .scrole-heading,
+.left-image .scrole-text .scrole-heading,
+.right-image .scrole-image .scrole-heading,
 .right-image .scrole-text .scrole-heading {
   font-weight: 600;
   color: #CFD2D3;
   text-shadow: 0px 0px 10px #000000;
   letter-spacing: 1px;
-  transform: translateX(-100px);
 }
-.left-image .scrole-image .scrole-para,
-.left-image .scrole-text .scrole-para, .right-image .scrole-image .scrole-para,
-.right-image .scrole-text .scrole-para {
-  padding: 10px;
+@media (min-width: 1280px) {
+  .left-image .scrole-image .scrole-heading,
+  .left-image .scrole-text .scrole-heading,
+  .right-image .scrole-image .scrole-heading,
+  .right-image .scrole-text .scrole-heading {
+    transform: translateX(-100px);
+  }
+}
+@media (min-width: 768px) {
+  .left-image .scrole-image .scrole-para,
+  .left-image .scrole-text .scrole-para,
+  .right-image .scrole-image .scrole-para,
+  .right-image .scrole-text .scrole-para {
+    padding: 10px;
+  }
 }
 .left-image .scrole-image .scrole-para p,
-.left-image .scrole-text .scrole-para p, .right-image .scrole-image .scrole-para p,
+.left-image .scrole-text .scrole-para p,
+.right-image .scrole-image .scrole-para p,
 .right-image .scrole-text .scrole-para p {
   color: #FAFBFB;
 }
-.left-image .scrole-image, .right-image .scrole-image {
-  transform: translateX(-150px);
-  max-width: 600px;
+.left-image .scrole-image,
+.right-image .scrole-image {
+  max-width: 100%;
   height: auto;
 }
-.left-image .scrole-image img, .right-image .scrole-image img {
+@media (min-width: 768px) {
+  .left-image .scrole-image,
+  .right-image .scrole-image {
+    max-width: 490px;
+    transform: translateX(-150px);
+  }
+}
+.left-image .scrole-image img,
+.right-image .scrole-image img {
   width: 100%;
   height: 550px;
-  max-height: 100%; /* optional limit */
+  max-height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 10px; /* nice rounded corners */
+  border-radius: 30px;
 }
-.left-image .scrole-text, .right-image .scrole-text {
+.left-image .scrole-text,
+.right-image .scrole-text {
   transform: translateX(150px);
   max-width: 600px;
 }
-.left-image .scrole-heading, .right-image .scrole-heading {
+.left-image .scrole-heading,
+.right-image .scrole-heading {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
-.left-image .scrole-para, .right-image .scrole-para {
+.left-image .scrole-para,
+.right-image .scrole-para {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #333;
 }
 .left-image .scrole-image.visible,
-.left-image .scrole-text.visible, .right-image .scrole-image.visible,
+.left-image .scrole-text.visible,
+.right-image .scrole-image.visible,
 .right-image .scrole-text.visible {
   transform: translateX(0);
   opacity: 1;
 }
 @media (max-width: 992px) {
-  .left-image .scrole-content, .right-image .scrole-content {
+  .left-image .scrole-content,
+  .right-image .scrole-content {
     flex-direction: column;
-    text-align: center;
   }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .left-image .scrole-content,
+  .right-image .scrole-content {
+    flex-direction: row;
+  }
+}
+@media (max-width: 992px) {
   .left-image .scrole-image,
-  .left-image .scrole-text, .right-image .scrole-image,
+  .left-image .scrole-text,
+  .right-image .scrole-image,
   .right-image .scrole-text {
-    transform: translateX(0); /* no animation on mobile for simplicity */
+    transform: translateX(0);
     opacity: 1;
     max-width: 100%;
   }
-  .left-image .scrole-image img, .right-image .scrole-image img {
+  .left-image .scrole-image img,
+  .right-image .scrole-image img {
     max-height: 300px;
   }
 }
@@ -3278,19 +3382,26 @@ html, body {
 .left-image .scrole-content {
   background-color: #303336;
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   overflow: hidden;
   min-height: 80vh;
   padding: 40px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  .left-image .scrole-content {
+    flex-direction: row-reverse;
+  }
+}
 .left-image .scrole-content .scrole-heading {
   font-weight: 600;
   color: #CFD2D3;
-  text-shadow: 0px 0px 10px #000000;
-  letter-spacing: 1px;
   transform: translateX(0);
+}
+@media (min-width: 768px) {
+  .left-image .scrole-content .scrole-heading {
+    text-align: right;
+  }
 }
 
 .make-slider {
@@ -3829,6 +3940,10 @@ html, body {
   margin-left: 30px;
 }
 
+#block-sass-theme-msd-map,
+#block-map {
+  position: relative;
+}
 #block-sass-theme-msd-map .map-wrapper,
 #block-map .map-wrapper {
   background-color: #303336;
@@ -3983,7 +4098,7 @@ html, body {
 }
 .contact-main-wrapper .contact-wrapper .heading-with-title .title {
   font-weight: 400;
-  color: #CFD2D3;
+  color: #fafbfb;
 }
 .contact-main-wrapper .contact-wrapper .heading-with-title .title span {
   color: #fff;

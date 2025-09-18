@@ -58,10 +58,6 @@
                     padding-right: 20px;
                 }
 
-                &:hover {
-                    background-color: $light-gray ;
-                }
-
                 @include tablet {
                     height: 263px;
                 }
@@ -79,6 +75,15 @@
                         @extend .body9;
                         font-weight: 700 !important;
                         color: $secondary;
+                    }
+                }
+
+                &:hover {
+                    background-color: $light-gray ;
+
+                    img {
+                        background-color: #99c8cc;
+                        border-radius: 50%;
                     }
                 }
             }
